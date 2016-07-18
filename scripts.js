@@ -3,7 +3,7 @@
 
   var subjects = [
     "Angular", "React", "Flux", "jQuery", "d3", "Bootstrap", "React Native",
-    "Foundation", "Underscore", "Loodash", "Backbone", "Ember", "Meteor",
+    "Foundation", "Underscore", "Lodash", "Backbone", "Ember", "Meteor",
     "HTML", "CSS", "PostCSS", "Redux", "Electron"
   ];
 
