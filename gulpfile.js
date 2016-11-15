@@ -28,9 +28,14 @@ gulp.task('img', () =>
     .pipe(gulp.dest('./dist/img/'))
 );
 
+gulp.task('mail', () =>
+  gulp.src('./mail/*.*')
+    .pipe(gulp.dest('./dist/mail/'))
+);
+
 gulp.task('copy', () => gulp.src('{CNAME,favicon*}').pipe(gulp.dest('dist')));
 
-gulp.task('default', ['stylus', 'pug', 'img', 'copy']);
+gulp.task('default', ['stylus', 'pug', 'img', 'copy', 'mail']);
 
 gulp.task('deploy', ['default'], () =>
   gulp.src('dist/**/*')
