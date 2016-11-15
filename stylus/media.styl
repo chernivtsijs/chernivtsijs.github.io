@@ -1,0 +1,97 @@
+transform(value)
+  -webkit-transform value
+  -moz-transform value
+  -o-transform value
+  transform value
+
+
+@media (max-height: 560px)
+  header
+    height auto
+
+  header .questions
+    margin-bottom 100px
+
+
+@media (max-width: 920px)
+  section#speakers .wrap-speakers .speaker
+    width 40%
+
+  footer
+    flex-direction column
+    padding-bottom 80px
+
+  footer .socials
+    position absolute
+    bottom 20px
+
+@media (max-width: 700px)
+  header
+    padding-top 30px
+    flex-direction column
+    align-items center
+
+  header .main-wrap .title
+    flex-direction column
+
+  header .main-wrap .title > div
+    padding-left 0
+    text-align center
+
+  header .socials
+    position relative
+    z-index 1
+    right 0
+    top 0
+    margin 0
+    width auto
+
+  header .socials ul
+    justify-content center
+
+  header .main-wrap .title
+    padding-left 0
+
+  header .scroll
+    display none
+
+  section#partners .wrap-partners
+    flex-direction column
+
+  section#partners .wrap-partners .partner
+    width 20%
+    margin 0
+    margin-top 20px
+    &:first-child
+      margin 0
+
+@media (max-width: 600px)
+  section#speakers .wrap-speakers .speaker
+    width 100%
+
+  section#partners .wrap-partners .partner
+    width 150px
+    &:first-child
+      width 150px
+
+  footer .contacts
+    flex-direction column
+
+  footer .contacts ul
+    text-align center
+
+  footer .contacts ul:not(:last-child)
+    margin-right 0
+    margin-bottom 30px
+
+@media (max-width: 500px)
+  header .main-wrap .title h1
+    font-size 70px
+
+@media (max-width: 420px)
+  header .main-wrap .title h1
+    font-size 60px
+
+@media (max-width: 355px)
+  header .main-wrap .title h1
+    font-size 50px
