@@ -31,16 +31,20 @@ header .socials ul {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
-  width: 150px;
 }
 footer .socials li,
 header .socials li {
   list-style: none;
   opacity: 0.6;
+  margin-left: 30px;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+}
+footer .socials li:first-child,
+header .socials li:first-child {
+  margin-left: 0;
 }
 footer .socials li:hover,
 header .socials li:hover {
@@ -92,10 +96,10 @@ header .main-wrap .title h1 {
   font-size: 80px;
   font-weight: 700;
 }
-header .main-wrap .title span p.desc {
+header .main-wrap .title div p.desc {
   font-size: 35px;
 }
-header .main-wrap .title > span {
+header .main-wrap .title > div {
   padding-left: 40px;
   color: #fff;
   text-shadow: 0 0 20px rgba(0,0,0,0.5);
