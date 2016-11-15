@@ -3,6 +3,7 @@ const stylus = require('gulp-stylus');
 const pug = require('gulp-pug');
 const deploy = require('gulp-gh-pages');
 const put = require('gulp-data');
+const imagemin = require('gulp-imagemin');
 
 const data = require('./data');
 
@@ -23,6 +24,7 @@ gulp.task('pug', () =>
 
 gulp.task('img', () =>
   gulp.src('./img/**/*.*')
+    .pipe(imagemin())
     .pipe(gulp.dest('./dist/img/'))
 );
 
