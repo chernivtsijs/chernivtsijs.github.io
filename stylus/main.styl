@@ -1,0 +1,303 @@
+// Mixins
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+prefix-flex()
+  display -webkit-box
+  display -ms-flexbox
+  display -webkit-flex
+  display flex
+
+transition(value)
+  -webkit-transition value
+  -moz-transition value
+  -o-transition value
+  transition value
+
+transform(value)
+  -webkit-transform value
+  -moz-transform value
+  -o-transform value
+  transform value
+
+// Variables
+yellowJavaScript = #F6D94C
+blackJavaScript = #2E2E2C
+
+shadowButton = 0 0 20px rgba(0, 0, 0, 0.5)
+
+
+// Main
+
+*
+  padding 0
+  margin 0
+
+body
+  font-family 'Lato', sans-serif
+
+/* ======== */
+/* HEADER */
+
+header
+  position relative
+  background-image url('../img/banner-back.jpg')
+  background-position center
+  background-size cover
+  height 100vh
+  prefix-flex()
+  justify-content center
+
+header .socials
+  position absolute
+  right 30px
+  top @right
+
+footer .socials ul,
+header .socials ul
+  prefix-flex()
+  justify-content space-between
+  width 150px
+
+footer .socials li,
+header .socials li
+  list-style none
+  opacity .6
+  transition(.2s)
+  &:hover
+    opacity 1
+    transition(.2s)
+
+footer .socials li a img,
+header .socials li a img
+  width 20px
+
+header .main-wrap
+  position relative
+  prefix-flex()
+  justify-content center
+  align-items center
+  flex-direction column
+
+section#bottom-banner .row:not(.questions),
+header .main-wrap .row:not(.questions)
+  margin-top 20px
+  margin-bottom 20px
+
+header .main-wrap .title
+  prefix-flex()
+  align-items center
+
+header .main-wrap .title .logo
+  display inline-block
+  float left
+  width 10em
+  height @width
+  border-radius(5px)
+  box-shadow shadowButton
+
+header .main-wrap .title h1
+  align-items middle
+  color white
+  font-size 80px
+  font-weight 700
+
+header .main-wrap .title span p.desc
+  font-size 35px
+
+header .main-wrap .title > span
+  padding-left 40px
+  color white
+  text-shadow 0 0 20px rgba(0, 0, 0, 0.5)
+
+header .main-wrap .title span.subject
+  color rgba(255, 255, 255, 0.8)
+
+section#bottom-banner .date
+header .main-wrap .date
+  color white
+  font-size 30px
+
+#buy-ticket
+  display block
+  height 65px
+  line-height @height
+  border-radius(3px)
+  padding-left 20px
+  padding-right @padding-left
+  width 200px
+  background yellowJavaScript
+  color blackJavaScript
+  text-align center
+  text-decoration none
+  text-transform uppercase
+  letter-spacing 2px
+  font-weight 700
+  box-shadow shadowButton
+
+.questions
+  margin-top 0
+
+.questions a
+  color rgba(255, 255, 255, .6)
+  font-size 20px
+  border-bottom 1px solid @color
+  text-decoration none
+  &:hover
+    color white
+    border-bottom-color white
+
+@keyframes move-icon-scroll
+    0%
+      bottom 20px
+    50%
+      bottom 10px
+    100%
+      bottom 20px
+
+header .main-wrap .scroll
+  position absolute
+  bottom 20px
+  animation move-icon-scroll
+  animation-duration 1s
+  animation-delay 3s
+  animation-iteration-count infinite
+
+header .main-wrap .scroll img
+  width 50px
+
+// Speakers and Partners and Map
+
+section
+  padding-top 50px
+  padding-bottom 50px
+
+section .title
+  font-weight 400
+  letter-spacing 2px
+  color blackJavaScript
+  text-align center
+  margin-bottom 50px
+  font-size 40px
+  text-transform uppercase
+  position relative
+  &:after
+    position absolute
+    content ''
+    width 70px
+    height 4px
+    background blackJavaScript
+    border-radius(2px)
+    top 100%
+    left 50%
+    transform(translateX(-50%) translateY(10px))
+
+section#map
+  width 100%
+  margin 0 auto
+
+section#map iframe
+  pointer-events none
+
+section#map .address
+  text-align center
+  color blackJavaScript
+  padding-bottom 20px
+
+section#partners
+  background-color #F9F9F6
+
+section#speakers
+  width 80%
+  margin 0 auto
+
+section#partners .wrap-partners,
+section#speakers .wrap-speakers
+  prefix-flex()
+  flex-wrap wrap
+  justify-content center
+  align-items center
+  padding-top 40px
+  padding-bottom @padding-top
+
+section#partners .wrap-partners .partner
+  position relative
+  width 15%
+  margin-left 50px
+  margin-right 50px
+
+section#partners .wrap-partners .partner img
+  width 100%
+
+section#speakers .wrap-speakers .speaker
+  margin-bottom 40px
+  prefix-flex()
+  justify-content center
+  align-items center
+  flex-direction column
+  width 30%
+  color blackJavaScript
+
+section#speakers .wrap-speakers .speaker .photo
+  width 150px
+  height @width
+  border-radius(50%)
+  overflow hidden
+  prefix-flex()
+  justify-content center
+  align-items center
+  margin-bottom 5px
+
+section#speakers .wrap-speakers .speaker img
+  height 150px
+  min-height @height
+
+section#speakers .wrap-speakers .speaker .name-speaker
+  font-weight 700
+
+section#speakers .wrap-speakers .speaker .work-place
+  font-style italic
+
+section#speakers .wrap-speakers .speaker .title-speach
+  font-weight 700
+  font-size 1.2em
+  &:after
+    content '"'
+  &:before
+    content '"'
+
+section#bottom-banner
+  height 400px
+  prefix-flex()
+  justify-content center
+  align-items center
+  flex-direction column
+  background-image url('../img/bottom-banner-back.jpg')
+  background-position center
+  background-size cover
+
+footer
+  prefix-flex()
+  align-items center
+  padding 40px 100px
+  position relative
+  justify-content space-between
+  background-color blackJavaScript
+
+footer .contacts
+  color rgba(255, 255, 255, .8)
+
+footer .contacts
+  prefix-flex()
+  justify-content space-around
+  align-items center
+
+footer .contacts ul:not(:last-child)
+  margin-right 100px
+
+footer .contacts ul li
+  list-style none
+  padding-top 5px
+  padding-bottom 5px

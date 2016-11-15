@@ -1,0 +1,27 @@
+{
+  "name": "chernivtsijs-markup",
+  "version": "0.0.1",
+  "description": "Markup for chernivtsi.js.org",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jestersunborn/chernivtsijs-markup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jestersunborn/chernivtsijs-markup/issues"
+  },
+  "homepage": "https://github.com/jestersunborn/chernivtsijs-markup#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.1.0",
+    "gulp-pug2": "0.0.1",
+    "gulp-stylus": "^2.6.0"
+  }
+}
