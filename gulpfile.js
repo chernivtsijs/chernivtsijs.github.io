@@ -26,7 +26,7 @@ gulp.task('img', () =>
     .pipe(gulp.dest('./dist/img/'))
 );
 
-gulp.task('copy', () => gulp.src('CNAME,favicon*}').pipe(gulp.dest('dist')));
+gulp.task('copy', () => gulp.src('{CNAME,favicon*}').pipe(gulp.dest('dist')));
 
 gulp.task('default', ['stylus', 'pug', 'img', 'copy']);
 

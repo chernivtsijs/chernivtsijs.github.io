@@ -59,13 +59,15 @@ footer .socials ul,
 header .socials ul
   prefix-flex()
   justify-content space-between
-  width 150px
 
 footer .socials li,
 header .socials li
   list-style none
   opacity .6
+  margin-left 30px
   transition(.2s)
+  &:first-child
+    margin-left 0
   &:hover
     opacity 1
     transition(.2s)
@@ -104,10 +106,10 @@ header .main-wrap .title h1
   font-size 80px
   font-weight 700
 
-header .main-wrap .title span p.desc
+header .main-wrap .title div p.desc
   font-size 35px
 
-header .main-wrap .title > span
+header .main-wrap .title > div
   padding-left 40px
   color white
   text-shadow 0 0 20px rgba(0, 0, 0, 0.5)
