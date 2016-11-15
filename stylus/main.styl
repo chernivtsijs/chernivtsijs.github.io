@@ -112,9 +112,6 @@ header .main-wrap .title > span
   color white
   text-shadow 0 0 20px rgba(0, 0, 0, 0.5)
 
-header .main-wrap .title span.subject
-  color rgba(255, 255, 255, 0.8)
-
 section#bottom-banner .date
 header .main-wrap .date
   color white
@@ -197,6 +194,7 @@ section .title
 section#map
   width 100%
   margin 0 auto
+  padding-bottom 0
 
 section#map iframe
   pointer-events none
@@ -263,6 +261,7 @@ section#speakers .wrap-speakers .speaker .work-place
 section#speakers .wrap-speakers .speaker .title-speach
   font-weight 700
   font-size 1.2em
+  text-align center
   &:after
     content '"'
   &:before
@@ -301,3 +300,11 @@ footer .contacts ul li
   list-style none
   padding-top 5px
   padding-bottom 5px
+
+footer .contacts ul li a
+  color rgba(255, 255, 255, .8)
+  text-decoration none
+  &:hover
+    color white
+  &:active
+    color rgba(255, 255, 255, .8)

@@ -1,0 +1,92 @@
+{
+  "date": "November 26, 2016",
+  "tickets": "http://buy.tfe-lite.ru/uk/61228/",
+  "place": {
+    "adress": "PAPOROt’ smart-prostir <br/> вул. Комарова, 15 IV пов. <br/> м. Чернівці",
+    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d808.012973157546!2d25.93571978911455!3d48.25812785923122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDE1JzMwLjUiTiAyNcKwNTYnMTEuMSJF!5e0!3m2!1sru!2sua!4v1479150744925"
+  },
+  "social": [
+    {
+      "link": "https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg",
+      "icon": "./img/telegram-icon.png"
+    },
+    {
+      "link": "https://www.facebook.com/chernivtsijs",
+      "icon": "./img/facebook-icon.png"
+    },
+    {
+      "link": "https://twitter.com/chernivtsijs",
+      "icon": "./img/twitter-icon.png"
+    },
+    {
+      "link": "https://gitter.im/dev-ua/chernivtsijs",
+      "icon": "./img/gitter-icon.png"
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Aleksey Shvayka",
+      "photo": "./img/speakers/alekseyshvayka.jpg",
+      "work": "Hell Yeah LLC, Kyiv",
+      "topic": "Authoring Web Components workshop"
+    },
+    {
+      "name": "Ivan Stetsenko",
+      "photo": "./img/speakers/ivanstetsenko.jpg",
+      "work": "Ezetech, Kyiv",
+      "topic": "React: Yet another awsm Van Helsing"
+    },
+    {
+      "name": "Denys Dovhan",
+      "photo": "./img/speakers/denysdovhan.jpg",
+      "work": "ELOGIC, Chernivtsi",
+      "topic": "Shells written in JavaScript"
+    },
+    {
+      "name": "Serhiy Boreyko",
+      "photo": "./img/speakers/serhiyboreyko.jpg",
+      "work": "Student, Chernivtsi",
+      "topic": "Nothing new about Electron."
+    },
+    {
+      "name": "Andrew Kostetskyi",
+      "photo": "./img/speakers/andrewkostetskyi.jpg",
+      "work": "ASD Team, Chernivtsi",
+      "topic": "JavaScript Reflection, що далі?"
+    }
+  ],
+  "partners": [
+    {
+      "name": "AlterEGO",
+      "logo": "./img/partners/alterego.png",
+      "link": "http://alterego.biz.ua"
+    },
+    {
+      "name": "NodeSchool Chernivtsi",
+      "logo": "./img/partners/nodeschool.png",
+      "link": "http://nodeschool.io/chernivtsi"
+    },
+    {
+      "name": "ELOGIC",
+      "logo": "./img/partners/elogic.png",
+      "link": "https://elogic.co"
+    },
+    {
+      "name": "Cbit",
+      "logo": "./img/partners/cbit.png",
+      "link": "http://cbit.org.ua"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Denys Dovhan",
+      "email": "email@denysdovhan.com",
+      "phone": "+380 (95) 11 00 392"
+    },
+    {
+      "name": "Denis Zavgorodny",
+      "email": "denis.zavgorodny@gmail.com",
+      "phone": "+380 (50) 76 28 045"
+    }
+  ]
+}

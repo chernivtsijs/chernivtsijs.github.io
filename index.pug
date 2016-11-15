@@ -11,96 +11,61 @@ html(lang='en')
     header
       .socials
         ul
-          li.social.telegram
-            a(href='http://chernivtsi.js.org/join')
-              img(src='./img/telegram-icon.png')
-          li.social.facebook
-            a(href='https://www.facebook.com/chernivtsijs')
-              img(src='./img/facebook-icon.png')
-          li.social.twitter
-            a(href='https://twitter.com/chernivtsijs')
-              img(src='./img/twitter-icon.png')
-          li.social.gitter
-            a(href='https://gitter.im/dev-ua/chernivtsijs')
-              img(src='./img/gitter-icon.png')
+          each item in social
+            li.social
+              a(href=item.link)
+                img(src=item.icon)
       .main-wrap
         .row.title
           img.logo(src='./img/logo.png', alt='')
           span
             h1 ChernivtsiJS
-            p.desc
-              | Let's talk about
-              span.subject JavaScript
-              | ?
-        .row.date November, 228, 1488
+            p.desc Let's talk about JavaScript?
+        .row.date= date
         .row.ticket
-          a(href='#', id="buy-ticket") Buy tickets
+          a(href=tickets, id="buy-ticket") Buy tickets
         .row.questions
-          a(href='#') Any questions?
+          a(href=social[0].link) Any questions?
         .scroll
           img(src='./img/scroll-icon.png', alt='')
     section#speakers
       h1.title Speakers
       .wrap-speakers
-        .speaker
-          .photo
-            img(src='./img/serhiy-boreyko.jpg')
-          .name-speaker Serhiy Boreyko
-          .work-place Google inc.
-          .title-speach Nothing new about Electron
-        .speaker
-          .photo
-            img(src='./img/denys-dovhan.jpg')
-          .name-speaker Denys Dovhan
-          .work-place Sarai inc.
-          .title-speach JS Shell
+        each speaker in speakers
+          .speaker
+            .photo
+              img(src=speaker.photo)
+            .name-speaker=speaker.name
+            .work-place=speaker.work
+            .title-speach=speaker.topic
     section#partners
       h1.title partners
       .wrap-partners
-        .partner
-          img(src='./img/alterego.png')
-        .partner
-          img(src='./img/nodeschool.png')
-        .partner
-          img(src='./img/elogic.png')
-        .partner
-          img(src='./img/cbit.png')
+        each partner in partners
+          .partner
+            a(href=partner.link, title=partner.name)
+              img(src=partner.logo, alt=partner.name)
     section#map
       h1.title Map
-      p.address
-        | Чернівці
-        br
-        | вул. Комарова 15 IV
-        br
-        | "Папороть"
-      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d808.012973157546!2d25.93571978911455!3d48.25812785923122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDE1JzMwLjUiTiAyNcKwNTYnMTEuMSJF!5e0!3m2!1sru!2sua!4v1479150744925?zoom=disable', width='100%', height='500', frameborder='0', style='border:0', allowfullscreen='')
+      p.address!= place.adress
+      iframe(src=place.location, width='100%', height='500', frameborder='0', style='border:0', allowfullscreen='')
     section#bottom-banner
-      .row.date November, 228, 1488
+      .row.date=date
       .row.ticket
-        a(href='#', id="buy-ticket") Buy tickets
+        a(href=tickets, id="buy-ticket") Buy tickets
       .row.questions
-        a(href='#') Any questions?
+        a(href=social[0].link) Any questions?
     footer
       .socials
         ul
-          li.social.telegram
-            a(href='http://chernivtsi.js.org/join')
-              img(src='./img/telegram-icon.png')
-          li.social.facebook
-            a(href='https://www.facebook.com/chernivtsijs')
-              img(src='./img/facebook-icon.png')
-          li.social.twitter
-            a(href='https://twitter.com/chernivtsijs')
-              img(src='./img/twitter-icon.png')
-          li.social.gitter
-            a(href='https://gitter.im/dev-ua/chernivtsijs')
-              img(src='./img/gitter-icon.png')
+          each item in social
+            li.social
+              a(href=item.link)
+                img(src=item.icon)
       .contacts
-        ul
-          li.name Denys Dovhan
-          li.email jestersunborn@gmail.com
-          li.phone +38 (066) 091 66 13
-        ul
-          li.name Denys Zavgorodny
-          li.email jestersunborn@gmail.com
-          li.phone +38 (066) 091 66 13
+        each contact in contacts
+          ul
+            li.name=contact.name
+            li.email
+              a(href="mailto:"+contact.email)=contact.email
+            li.phone=contact.phone
