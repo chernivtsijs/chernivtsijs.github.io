@@ -100,9 +100,6 @@ header .main-wrap .title > span {
   color: #fff;
   text-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
-header .main-wrap .title span.subject {
-  color: rgba(255,255,255,0.8);
-}
 section#bottom-banner .date,
 header .main-wrap .date {
   color: #fff;
@@ -184,6 +181,7 @@ section .title:after {
 section#map {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 0;
 }
 section#map iframe {
   pointer-events: none;
@@ -261,6 +259,7 @@ section#speakers .wrap-speakers .speaker .work-place {
 section#speakers .wrap-speakers .speaker .title-speach {
   font-weight: 700;
   font-size: 1.2em;
+  text-align: center;
 }
 section#speakers .wrap-speakers .speaker .title-speach:after {
   content: '"';
@@ -310,6 +309,16 @@ footer .contacts ul li {
   list-style: none;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+footer .contacts ul li a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+footer .contacts ul li a:hover {
+  color: #fff;
+}
+footer .contacts ul li a:active {
+  color: rgba(255,255,255,0.8);
 }
 @-moz-keyframes move-icon-scroll {
   0% {
