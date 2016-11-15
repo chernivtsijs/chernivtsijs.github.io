@@ -1,35 +1,50 @@
-const gulp = require('gulp'),
-      stylus = require('gulp-stylus'),
-      pug = require('gulp-pug')
+const gulp = require('gulp');
+const stylus = require('gulp-stylus');
+const pug = require('gulp-pug');
+const deploy = require('gulp-gh-pages');
+const put = require('gulp-data');
 
+const data = require('./data');
 
-gulp.task('stylus', () => {
-  return gulp.src('./stylus/*.styl')
+gulp.task('stylus', () =>
+  gulp.src('./stylus/*.styl')
     .pipe(stylus())
     .pipe(gulp.dest('./dist/css/'))
-})
+);
 
-gulp.task('pug', () => {
-  return gulp.src('./*.pug')
+gulp.task('pug', () =>
+  gulp.src('*.pug')
+    .pipe(put(data))
     .pipe(pug({
       pretty: true
     }))
     .pipe(gulp.dest('./dist/'))
-})
+);
 
-gulp.task('img', () => {
-  return gulp.src('./img/*.*')
+gulp.task('img', () =>
+  gulp.src('./img/**/*.*')
     .pipe(gulp.dest('./dist/img/'))
-})
+);
 
-gulp.task('default', ['stylus', 'pug', 'img'])
+gulp.task('copy', () => gulp.src('CNAME,favicon*}').pipe(gulp.dest('dist')));
 
-gulp.task('watch-stylus', () => {
-  return gulp.watch('./stylus/*.styl', ['stylus'])
-})
+gulp.task('default', ['stylus', 'pug', 'img', 'copy']);
 
-gulp.task('watch-pug', () => {
-  return gulp.watch('./*.pug', ['pug'])
-})
+gulp.task('deploy', ['default'], () =>
+  gulp.src('dist/**/*')
+    .pipe(deploy({
+      branch: 'master',
+      push: true,
+      message: `Update ${new Date()}`
+    }))
+);
+
+gulp.task('watch-stylus', () =>
+  gulp.watch('./stylus/*.styl', ['stylus'])
+);
+
+gulp.task('watch-pug', () =>
+  gulp.watch('./*.pug', ['pug'])
+);
 
 gulp.task('watch', ['watch-stylus', 'watch-pug'])
