@@ -75,6 +75,11 @@
       "name": "Cbit",
       "logo": "./img/partners/cbit.png",
       "link": "http://cbit.org.ua"
+    },
+    {
+      "name": "MobiDev",
+      "logo": "./img/partners/mobidev.png",
+      "link": "http://mobidev.com.ua/"
     }
   ],
   "contacts": [
