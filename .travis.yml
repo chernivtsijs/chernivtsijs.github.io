@@ -1,7 +1,7 @@
 language: node_js
 node_js: node
 branches:
-  only: master
+  only: premaster
 before_script:
 - git config --global user.email "email@denysdovhan.com"
 - git config --global user.name "Denys Dovhan"
