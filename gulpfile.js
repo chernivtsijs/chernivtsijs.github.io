@@ -1,57 +1,97 @@
+const fs = require('fs');
+
 const gulp = require('gulp');
+const plumber = require('gulp-plumber');
 const stylus = require('gulp-stylus');
+const postcss = require('gulp-postcss');
 const pug = require('gulp-pug');
-const deploy = require('gulp-gh-pages');
 const put = require('gulp-data');
 const imagemin = require('gulp-imagemin');
+const deploy = require('gulp-gh-pages');
+const sourcemaps = require('gulp-sourcemaps');
 
-const data = require('./data');
+const JSON5 = require('json5');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const del = require('del');
+const BS = require('browser-sync');
 
-gulp.task('stylus', () =>
-  gulp.src('./stylus/*.styl')
-    .pipe(stylus())
-    .pipe(gulp.dest('./dist/css/'))
-);
+const browserSync = BS.create();
 
-gulp.task('pug', () =>
+const getData = (path) => {
+  try {
+    return JSON5.parse(fs.readFileSync(path, 'utf8'))
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+gulp.task('layout', () =>
   gulp.src('*.pug')
-    .pipe(put(data))
-    .pipe(pug({
-      pretty: true
-    }))
-    .pipe(gulp.dest('./dist/'))
+    .pipe(plumber())
+    .pipe(put(() => getData('./data.json')))
+    .pipe(pug({ pretty: true }))
+    .pipe(gulp.dest('dist'))
 );
 
-gulp.task('img', () =>
-  gulp.src('./img/**/*.*')
-    // .pipe(imagemin())
-    .pipe(gulp.dest('./dist/img/'))
+gulp.task('styles', () => {
+  const processors = [
+    autoprefixer,
+    cssnano,
+  ];
+
+  return gulp.src('styles/*.styl')
+    .pipe(sourcemaps.init())
+    .pipe(plumber())
+    .pipe(stylus())
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('dist/styles'))
+});
+
+gulp.task('images', () =>
+  gulp.src('images/**/*.*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/images'))
 );
 
-gulp.task('mail', () =>
-  gulp.src('./mail/*.*')
-    .pipe(gulp.dest('./dist/mail/'))
+gulp.task('copy', () =>
+  gulp.src([
+    'CNAME', 'favicon*', './mail/*.*', 'join/*.*'], { base: '.' })
+    .pipe(gulp.dest('dist'))
 );
 
-gulp.task('copy', () => gulp.src('{CNAME,favicon*}').pipe(gulp.dest('dist')));
+gulp.task('clean', () => del('dist'));
 
-gulp.task('default', ['stylus', 'pug', 'img', 'copy', 'mail']);
+gulp.task('build', gulp.series(
+  'clean',
+  gulp.parallel(
+    'layout',
+    'styles',
+    'images',
+    'copy'
+  )
+));
 
-gulp.task('deploy', ['default'], () =>
+gulp.task('deploy', gulp.series('build', () =>
   gulp.src('dist/**/*')
     .pipe(deploy({
       branch: 'master',
       push: true,
       message: `Update ${new Date()}`
     }))
-);
+));
 
-gulp.task('watch-stylus', () =>
-  gulp.watch('./stylus/*.styl', ['stylus'])
-);
+gulp.task('watch', () => {
+  browserSync.init({
+    server: 'dist',
+  });
 
-gulp.task('watch-pug', () =>
-  gulp.watch('./*.pug', ['pug'])
-);
+  gulp.watch(['*.pug', '*.json'], gulp.series('layout'));
+  gulp.watch('styles/*.styl', gulp.series('styles'));
+  gulp.watch('images/**/*.*', gulp.series('images'));
 
-gulp.task('watch', ['watch-stylus', 'watch-pug'])
+  browserSync.watch('dist/**/*.*').on('change', browserSync.reload);
+});
+
+gulp.task('default', gulp.series('build', 'watch'));
