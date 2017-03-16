@@ -1,27 +1,3 @@
-// Mixins
-border-radius(n)
-  -webkit-border-radius n
-  -moz-border-radius n
-  border-radius n
-
-prefix-flex()
-  display -webkit-box
-  display -ms-flexbox
-  display -webkit-flex
-  display flex
-
-transition(value)
-  -webkit-transition value
-  -moz-transition value
-  -o-transition value
-  transition value
-
-transform(value)
-  -webkit-transform value
-  -moz-transform value
-  -o-transform value
-  transform value
-
 // Variables
 yellowJavaScript = #F6D94C
 blackJavaScript = #2E2E2C
@@ -38,16 +14,16 @@ shadowButton = 0 0 20px rgba(0, 0, 0, 0.5)
 body
   font-family 'Lato', sans-serif
 
-/* ======== */
+/* ====== */
 /* HEADER */
 
 header
   position relative
-  background-image url('../img/banner-back.jpg')
+  background-image url('../images/banner-back.jpg')
   background-position center
   background-size cover
   height 100vh
-  prefix-flex()
+  display flex
   justify-content center
 
 header .socials
@@ -57,7 +33,7 @@ header .socials
 
 footer .socials ul,
 header .socials ul
-  prefix-flex()
+  display flex
   justify-content space-between
 
 footer .socials li,
@@ -65,12 +41,12 @@ header .socials li
   list-style none
   opacity .6
   margin-left 30px
-  transition(.2s)
+  transition .2s
   &:first-child
     margin-left 0
   &:hover
     opacity 1
-    transition(.2s)
+    transition .2s
 
 footer .socials li a img,
 header .socials li a img
@@ -78,7 +54,7 @@ header .socials li a img
 
 header .main-wrap
   position relative
-  prefix-flex()
+  display flex
   justify-content center
   align-items center
   flex-direction column
@@ -89,7 +65,7 @@ header .main-wrap .row:not(.questions)
   margin-bottom 20px
 
 header .main-wrap .title
-  prefix-flex()
+  display flex
   align-items center
 
 header .main-wrap .title .logo
@@ -97,7 +73,7 @@ header .main-wrap .title .logo
   float left
   width 10em
   height @width
-  border-radius(5px)
+  border-radius 5px
   box-shadow shadowButton
 
 header .main-wrap .title h1
@@ -118,11 +94,11 @@ header .main-wrap .date
   color white
   font-size 30px
 
-#buy-ticket
+.action-btn
   display block
   height 65px
   line-height @height
-  border-radius(3px)
+  border-radius 3px
   padding-left 20px
   padding-right @padding-left
   width 200px
@@ -172,6 +148,19 @@ section
   padding-top 50px
   padding-bottom 50px
 
+  p
+    text-align center
+    font-size 2rem
+    color rgba(blackJavaScript, 0.7)
+    margin-bottom 1rem
+
+  a
+    color rgba(blackJavaScript, 0.7);
+
+  .action-btn
+    box-shadow 0 0 20px rgba(0, 0, 0, 0.2)
+    margin-top 2rem
+
 section .title
   font-weight 400
   letter-spacing 2px
@@ -187,10 +176,10 @@ section .title
     width 70px
     height 4px
     background blackJavaScript
-    border-radius(2px)
+    border-radius 2px
     top 100%
     left 50%
-    transform(translateX(-50%) translateY(10px))
+    transform translateX(-50%) translateY(10px)
 
 section#map
   width 100%
@@ -208,13 +197,11 @@ section#map .address
 section#partners
   background-color #F9F9F6
 
-section#speakers
-  width 80%
-  margin 0 auto
-
 section#partners .wrap-partners,
 section#speakers .wrap-speakers
-  prefix-flex()
+  width 80%
+  margin 0 auto
+  display flex
   flex-wrap wrap
   justify-content center
   align-items center
@@ -231,7 +218,7 @@ section#partners .wrap-partners .partner img
 
 section#speakers .wrap-speakers .speaker
   margin-bottom 40px
-  prefix-flex()
+  display flex
   justify-content center
   align-items center
   flex-direction column
@@ -241,9 +228,9 @@ section#speakers .wrap-speakers .speaker
 section#speakers .wrap-speakers .speaker .photo
   width 150px
   height @width
-  border-radius(50%)
+  border-radius 50%
   overflow hidden
-  prefix-flex()
+  display flex
   justify-content center
   align-items center
   margin-bottom 5px
@@ -269,16 +256,16 @@ section#speakers .wrap-speakers .speaker .title-speach
 
 section#bottom-banner
   height 400px
-  prefix-flex()
+  display flex
   justify-content center
   align-items center
   flex-direction column
-  background-image url('../img/bottom-banner-back.jpg')
+  background-image url('../images/bottom-banner-back.jpg')
   background-position center
   background-size cover
 
 footer
-  prefix-flex()
+  display flex
   align-items center
   padding 40px 100px
   position relative
@@ -289,7 +276,7 @@ footer .contacts
   color rgba(255, 255, 255, .8)
 
 footer .contacts
-  prefix-flex()
+  display flex
   justify-content space-around
   align-items center
 

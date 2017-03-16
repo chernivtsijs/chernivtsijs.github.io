@@ -1,17 +1,18 @@
 doctype html
 html(lang='en')
   head
-    meta(property='og:title', content='ChernivtsiJS #2')
+    meta(property='og:title', content='ChernivtsiJS #3')
     meta(property='og:type', content='website')
     meta(property='og:url', content='http://chernivtsi.js.org/')
-    meta(property='og:image', content='http://chernivtsi.js.org/img/logo.png')
+    meta(property='og:image', content='http://chernivtsi.js.org/images/logo.png')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700')
-    link(rel='stylesheet', href='./css/main.css')
-    link(rel='stylesheet', href='./css/media.css')
-    title ChernivtsiJS
+    link(rel='stylesheet', href='./styles/main.css')
+    link(rel='stylesheet', href='./styles/media.css')
+    title #{date} — #{title} — #{subtitle}
+
   body
     header
       .socials
@@ -22,44 +23,58 @@ html(lang='en')
                 img(src=item.icon)
       .main-wrap
         .row.title
-          img.logo(src='./img/logo.png', alt='')
+          img.logo(src='./images/logo.png', alt='')
           div
-            h1 ChernivtsiJS
-            p.desc Let's talk about JavaScript?
+            h1= title
+            p.desc= description
         .row.date= date
         .row.ticket
-          a(href=tickets, id="buy-ticket") Buy tickets
+          a(href=action, class="action-btn") Call for speakers
         .row.questions
           a(href=social[0].link) Any questions?
         .scroll
-          img(src='./img/scroll-icon.png', alt='')
+          img(src='./images/scroll-icon.png', alt='')
+
     section#speakers
       h1.title Speakers
       .wrap-speakers
-        each speaker in speakers
-          .speaker
-            .photo
-              img(src=speaker.photo)
-            .name-speaker=speaker.name
-            .work-place=speaker.work
-            .title-speach=speaker.topic
+        p.
+          We're looking for speakers for the next event!
+        p.
+          If you have interesting experience of JavaScript usage welcome to join the Speakers Team.
+        a(href=action, class="action-btn") Submit proposal
+        //- each speaker in speakers
+        //-   .speaker
+        //-     .photo
+        //-       img(src=speaker.photo)
+        //-     .name-speaker=speaker.name
+        //-     .work-place=speaker.work
+        //-     .title-speach=speaker.topic
+        
     section#partners
       h1.title partners
       .wrap-partners
-        each partner in partners
-          .partner
-            a(href=partner.link, title=partner.name)
-              img(src=partner.logo, alt=partner.name)
+        p
+          | Want to help us? 
+          a(href='mailto:chernivtsijs@gmail.com') Join our community as a partner. 
+          
+        //- each partner in partners
+        //-   .partner
+        //-     a(href=partner.link, title=partner.name)
+        //-       img(src=partner.logo, alt=partner.name)
+
     section#map
       h1.title Map
       p.address!= place.adress
       iframe(src=place.location, width='100%', height='500', frameborder='0', style='border:0', allowfullscreen='')
+
     section#bottom-banner
       .row.date=date
       .row.ticket
-        a(href=tickets, id="buy-ticket") Buy tickets
+        a(href=action, class="action-btn") Call for Speaker
       .row.questions
         a(href=social[0].link) Any questions?
+
     footer
       .socials
         ul

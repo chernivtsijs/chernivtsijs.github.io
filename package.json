@@ -3,28 +3,38 @@
   "name": "chernivtsijs",
   "version": "0.0.1",
   "description": "Chernivtsi JavaScript Community",
-  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp"
+    "start": "gulp",
+    "build": "gulp build",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jestersunborn/chernivtsijs-markup.git"
+    "url": "git+https://github.com/chernivtsijs/chernivtsijs.github.oi"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ChernivtsiJS Team",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jestersunborn/chernivtsijs-markup/issues"
+    "url": "https://github.com/chernivtsijs/chernivtsijs.github.io/issues"
   },
-  "homepage": "https://github.com/jestersunborn/chernivtsijs-markup#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/chernivtsijs/chernivtsijs.github.io#readme",
+  "dependencies": {
+    "gulp-sourcemaps": "^2.4.1"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "gulpjs/gulp#4.0",
     "gulp-data": "^1.2.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
     "gulp-pug": "^3.1.0",
-    "gulp-stylus": "^2.6.0"
+    "gulp-stylus": "^2.6.0",
+    "json5": "^0.5.1",
+    "postcss": "^5.2.16"
   }
 }

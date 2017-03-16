@@ -1,9 +1,11 @@
 {
-  "date": "November 26, 2016",
-  "tickets": "http://buy.tfe-lite.ru/uk/61228/",
+  "title": "ChernivtsiJS",
+  "description": "Let's talk about JavaScript?",
+  "date": "May 27, 2016",
+  "action": "https://goo.gl/forms/yQ0er82ToA7LxHUt2",
   "place": {
-    "adress": "PAPOROt’ smart-prostir <br/> вул. Комарова, 15 IV пов. <br/> м. Чернівці",
-    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d808.012973157546!2d25.93571978911455!3d48.25812785923122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDE1JzMwLjUiTiAyNcKwNTYnMTEuMSJF!5e0!3m2!1sru!2sua!4v1479150744925"
+    "adress": "Chernivtsi, Ukraine",
+    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84897.06576252062!2d25.863878765467643!3d48.32144088861532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734087fe2f6cd05%3A0xc5b396f659796d7a!2sChernivtsi%2C+Chernivets%27ka+oblast!5e0!3m2!1sen!2sua!4v1489673892936&zoom=2"
   },
   "social": [
     {
