@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/media.css">
-    <title>May 27, 2017 — ChernivtsiJS — </title>
+    <title>May 27, 2016 — ChernivtsiJS — </title>
   </head>
   <body>
     <header>
@@ -30,8 +31,8 @@
             <p class="desc">Let's talk about JavaScript?</p>
           </div>
         </div>
-        <div class="row date">May 27, 2017</div>
-        <div class="row ticket"><a class="action-btn" href="https://goo.gl/forms/yQ0er82ToA7LxHUt2">Call for speakers</a></div>
+        <div class="row date">May 27, 2016</div>
+        <div class="row ticket"><a class="action-btn" href="#">Cooming soon</a></div>
         <div class="row questions"><a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg">Any questions?</a></div>
         <div class="scroll"><img src="./images/scroll-icon.png" alt=""></div>
       </div>
@@ -39,8 +40,48 @@
     <section id="speakers">
       <h1 class="title">Speakers</h1>
       <div class="wrap-speakers">
-        <p>We're looking for speakers for the next event!</p>
-        <p>If you have interesting experience of JavaScript usage welcome to join the Speakers Team.</p><a class="action-btn" href="https://goo.gl/forms/yQ0er82ToA7LxHUt2">Submit proposal</a>
+        <div class="speaker">
+          <div class="photo"><img src="./images/speakers/oleksandr-lapshin.jpg"></div>
+          <div class="name-speaker">Oleksandr Lapshin</div>
+          <div class="work-place">Rails Reactor, Kyiv</div>
+          <div class="title-speach">Peg.js and writing custom grammar parser</div>
+        </div>
+        <div class="speaker">
+          <div class="photo"><img src="./images/speakers/ihor-zenich.jpg"></div>
+          <div class="name-speaker">Ihor Zenich</div>
+          <div class="work-place">EPAM, Kharkiv</div>
+          <div class="title-speach">Bootstrap: как правильно и что нового в 4-ке</div>
+        </div>
+        <div class="speaker">
+          <div class="photo"><img src="./images/speakers/volodymyr-stelmakh.jpg"></div>
+          <div class="name-speaker">Volodymyr Stelmakh</div>
+          <div class="work-place">Hell Yeah LLC, Kyiv</div>
+          <div class="title-speach">Мобильные приложения на JS. Как, зачем, почему бы и нет?</div>
+        </div>
+        <div class="speaker">
+          <div class="photo"><img src="./images/speakers/roman-lutikov.jpg"></div>
+          <div class="name-speaker">Roman Lutikov</div>
+          <div class="work-place">Attendify, Kyiv</div>
+          <div class="title-speach">Secret Topic</div>
+        </div>
+        <div class="speaker">
+          <div class="photo"><img src="./images/speakers/artem-yavorsky.jpg"></div>
+          <div class="name-speaker">Artem Yavorsky</div>
+          <div class="work-place">Hell Yeah LLC, Kyiv</div>
+          <div class="title-speach">What's new in Babel 7?</div>
+        </div>
+        <div class="speaker">
+          <div class="photo"><img src="./images/speakers/kirill-yakovenko.jpg"></div>
+          <div class="name-speaker">Kirill Yakovenko</div>
+          <div class="work-place">Kharkiv</div>
+          <div class="title-speach">Secret Topic</div>
+        </div>
+        <div class="speaker">
+          <div class="photo"><img src="./images/speakers/andrew-kostetskyi.jpg"></div>
+          <div class="name-speaker">Andrew Kostetskyi</div>
+          <div class="work-place">ASD Team, Chernivtsi</div>
+          <div class="title-speach">Програмування мікроконтроллерів на JavaScript</div>
+        </div>
       </div>
     </section>
     <section id="partners">
@@ -51,12 +92,12 @@
     </section>
     <section id="map">
       <h1 class="title">Map</h1>
-      <p class="address">Chernivtsi, Ukraine</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84897.06576252062!2d25.863878765467643!3d48.32144088861532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734087fe2f6cd05%3A0xc5b396f659796d7a!2sChernivtsi%2C+Chernivets%27ka+oblast!5e0!3m2!1sen!2sua!4v1489673892936&amp;zoom=2" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <p class="address">Chernivtsi National University, <br> вул. Коцюбинського 2, <br> Chernivtsi, Ukraine</p>
+      <div id="venue"></div>
     </section>
     <section id="bottom-banner">
-      <div class="row date">May 27, 2017</div>
-      <div class="row ticket"><a class="action-btn" href="https://goo.gl/forms/yQ0er82ToA7LxHUt2">Call for Speaker</a></div>
+      <div class="row date">May 27, 2016</div>
+      <div class="row ticket"><a class="action-btn" href="#">Cooming soon</a></div>
       <div class="row questions"><a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg">Any questions?</a></div>
     </section>
     <footer>
@@ -81,5 +122,13 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script>
+      window.coords = [
+        48.297188,
+        25.9242539,
+      ]
+    </script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
