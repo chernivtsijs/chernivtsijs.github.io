@@ -38,18 +38,13 @@ html(lang='en')
     section#speakers
       h1.title Speakers
       .wrap-speakers
-        p.
-          We're looking for speakers for the next event!
-        p.
-          If you have interesting experience of JavaScript usage welcome to join the Speakers Team.
-        a(href=action, class="action-btn") Submit proposal
-        //- each speaker in speakers
-        //-   .speaker
-        //-     .photo
-        //-       img(src=speaker.photo)
-        //-     .name-speaker=speaker.name
-        //-     .work-place=speaker.work
-        //-     .title-speach=speaker.topic
+        each speaker in speakers
+          .speaker
+            .photo
+              img(src=speaker.photo)
+            .name-speaker=speaker.name
+            .work-place=speaker.work
+            .title-speach=speaker.topic
     //- section#schedule
     //-   h1.title schedule
     //-   table.pad_null(align='center', width='100%', border='0', cellpadding='0', cellspacing='0', style='border-collapse:collapse; font-family: Arial, sans; width: 100%; background: #f9f9f6; margin-left: auto; margin-right: auto; ')

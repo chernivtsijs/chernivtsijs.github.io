@@ -27,34 +27,46 @@
   ],
   "speakers": [
     {
-      "name": "Aleksey Shvayka",
-      "photo": "./images/speakers/alekseyshvayka.jpg",
+      "name": "Oleksandr Lapshin",
+      "photo": "./images/speakers/oleksandr-lapshin.jpg",
+      "work": "Rails Reactor, Kyiv",
+      "topic": "Peg.js and writing custom grammar parser"
+    },
+    {
+      "name": "Ihor Zenich",
+      "photo": "./images/speakers/ihor-zenich.jpg",
+      "work": "EPAM, Kharkiv",
+      "topic": "Bootstrap: как правильно и что нового в 4-ке"
+    },
+    {
+      "name": "Volodymyr Stelmakh",
+      "photo": "./images/speakers/volodymyr-stelmakh.jpg",
       "work": "Hell Yeah LLC, Kyiv",
-      "topic": "Authoring Web Components workshop"
+      "topic": "Мобильные приложения на JS. Как, зачем, почему бы и нет?"
     },
     {
-      "name": "Ivan Stetsenko",
-      "photo": "./images/speakers/ivanstetsenko.jpg",
-      "work": "Ezetech, Kyiv",
-      "topic": "React: Yet another awsm Van Helsing"
+      "name": "Roman Lutikov",
+      "photo": "./images/speakers/roman-lutikov.jpg",
+      "work": "Attendify, Kyiv",
+      "topic": "Secret Topic"
     },
     {
-      "name": "Denys Dovhan",
-      "photo": "./images/speakers/denysdovhan.jpg",
-      "work": "ELOGIC, Chernivtsi",
-      "topic": "Shells written in JavaScript"
+      "name": "Artem Yavorsky",
+      "photo": "./images/speakers/artem-yavorsky.jpg",
+      "work": "Hell Yeah LLC, Kyiv",
+      "topic": "What's new in Babel 7?"
     },
     {
-      "name": "Serhiy Boreyko",
-      "photo": "./images/speakers/serhiyboreyko.jpg",
-      "work": "Student, Chernivtsi",
-      "topic": "Nothing new about Electron."
+      "name": "Kirill Yakovenko",
+      "photo": "./images/speakers/kirill-yakovenko.jpg",
+      "work": "Kharkiv",
+      "topic": "Secret Topic"
     },
     {
       "name": "Andrew Kostetskyi",
-      "photo": "./images/speakers/andrewkostetskyi.jpg",
+      "photo": "./images/speakers/andrew-kostetskyi.jpg",
       "work": "ASD Team, Chernivtsi",
-      "topic": "JavaScript Reflection, що далі?"
+      "topic": "Програмування мікроконтроллерів на JavaScript"
     }
   ],
   "partners": [
