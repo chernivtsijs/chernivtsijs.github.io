@@ -57,7 +57,7 @@
       "name": "Artem Yavorsky",
       "photo": "./images/speakers/artem-yavorsky.jpg",
       "work": "Hell Yeah LLC, Kyiv",
-      "topic": "What's new in Babel 7?"
+      "topic": "How to keep node_modules huge with Babel"
     },
     {
       "name": "Kirill Yakovenko",
