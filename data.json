@@ -5,7 +5,10 @@
   "action": "https://goo.gl/forms/yQ0er82ToA7LxHUt2",
   "place": {
     "adress": "Chernivtsi, Ukraine",
-    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84897.06576252062!2d25.863878765467643!3d48.32144088861532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734087fe2f6cd05%3A0xc5b396f659796d7a!2sChernivtsi%2C+Chernivets%27ka+oblast!5e0!3m2!1sen!2sua!4v1489673892936&zoom=2"
+    "coords": {
+      "latitude": 48.297188,
+      "longitude": 25.9242539
+    }
   },
   "social": [
     {
