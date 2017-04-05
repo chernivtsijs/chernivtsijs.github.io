@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const stylus = require('gulp-stylus');
 const postcss = require('gulp-postcss');
+const babel = require('gulp-babel');
 const pug = require('gulp-pug');
 const put = require('gulp-data');
 const imagemin = require('gulp-imagemin');
@@ -49,6 +50,12 @@ gulp.task('styles', () => {
     .pipe(gulp.dest('dist/styles'))
 });
 
+gulp.task('scripts', () =>
+  gulp.src('scripts/*.js')
+    .pipe(babel())
+    .pipe(gulp.dest('dist/scripts'))
+)
+
 gulp.task('images', () =>
   gulp.src('images/**/*.*')
     .pipe(imagemin())
@@ -68,6 +75,7 @@ gulp.task('build', gulp.series(
   gulp.parallel(
     'layout',
     'styles',
+    'scripts',
     'images',
     'copy'
   )
@@ -89,6 +97,7 @@ gulp.task('watch', () => {
 
   gulp.watch(['*.pug', '*.json'], gulp.series('layout'));
   gulp.watch('styles/*.styl', gulp.series('styles'));
+  gulp.watch('scripts/*.js', gulp.series('scripts'));
   gulp.watch('images/**/*.*', gulp.series('images'));
 
   browserSync.watch('dist/**/*.*').on('change', browserSync.reload);
