@@ -30,7 +30,7 @@
   ],
   "speakers": [
     {
-      "name": "Oleksandr Lapshin",
+      "name": "Oleksandr Lapshyn",
       "photo": "./images/speakers/oleksandr-lapshin.jpg",
       "work": "Rails Reactor, Kyiv",
       "topic": "Peg.js and writing custom grammar parser"
