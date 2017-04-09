@@ -266,14 +266,26 @@ section#speakers .wrap-speakers .speaker
 section#speakers .wrap-speakers .speaker .photo
   width 150px
   height @width
-  border-radius 50%
-  overflow hidden
+  position relative
   display flex
   justify-content center
   align-items center
-  margin-bottom 5px
+  margin-bottom 1rem
+
+  &.is-lightning::after
+    content: 'Lightning'
+    position: absolute;
+    bottom: -.5rem
+    right: -1rem
+    z-index: 10
+    padding: .5rem
+    font-weight: bold
+    color: blackJavaScript
+    border-radius: 3px
+    background-color: yellowJavaScript
 
 section#speakers .wrap-speakers .speaker img
+  border-radius 50%
   height 150px
   min-height @height
 

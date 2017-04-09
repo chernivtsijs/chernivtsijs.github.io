@@ -41,7 +41,7 @@ html(lang='en')
       .wrap-speakers
         each speaker in speakers
           .speaker
-            .photo
+            .photo(class=speaker.lightning ? "is-lightning": "")
               img(src=speaker.photo)
             .name-speaker=speaker.name
             .work-place=speaker.work

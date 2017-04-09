@@ -66,6 +66,7 @@
       "topic": "Secret Topic"
     },
     {
+      "lightning": true,
       "name": "Andrew Kostetskyi",
       "photo": "./images/speakers/andrew-kostetskyi.jpg",
       "work": "ASD Team, Chernivtsi",
