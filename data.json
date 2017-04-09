@@ -71,6 +71,13 @@
       "photo": "./images/speakers/andrew-kostetskyi.jpg",
       "work": "ASD Team, Chernivtsi",
       "topic": "Програмування мікроконтроллерів на JavaScript"
+    },
+    {
+      "lightning": true,
+      "name": "Aleksey Shvayka",
+      "photo": "./images/speakers/aleksey-shvayka.jpg",
+      "work": "Hell Yeah LLC, Kyiv",
+      "topic": "A word on Regular Expressions"
     }
   ],
   "partners": [
