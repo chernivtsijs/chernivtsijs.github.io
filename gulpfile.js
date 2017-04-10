@@ -28,7 +28,7 @@ const getData = (path) => {
 }
 
 gulp.task('layout', () =>
-  gulp.src('*.pug')
+  gulp.src('layout/[!_]*.pug')
     .pipe(plumber())
     .pipe(put(() => getData('./data.json')))
     .pipe(pug({ pretty: true }))
@@ -38,10 +38,10 @@ gulp.task('layout', () =>
 gulp.task('styles', () => {
   const processors = [
     autoprefixer,
-    cssnano,
+    // cssnano,
   ]
 
-  return gulp.src('styles/*.styl')
+  return gulp.src('styles/[!_]*.styl')
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(stylus())
@@ -95,9 +95,9 @@ gulp.task('watch', () => {
     server: 'dist',
   })
 
-  gulp.watch(['*.pug', '*.json'], gulp.series('layout'))
-  gulp.watch('styles/*.styl', gulp.series('styles'))
-  gulp.watch('scripts/*.js', gulp.series('scripts'))
+  gulp.watch(['layout/**/*.pug', '*.json'], gulp.series('layout'))
+  gulp.watch('styles/**/*.styl', gulp.series('styles'))
+  gulp.watch('scripts/**/*.js', gulp.series('scripts'))
   gulp.watch('images/**/*.*', gulp.series('images'))
 
   browserSync.watch('dist/**/*.*').on('change', browserSync.reload)
