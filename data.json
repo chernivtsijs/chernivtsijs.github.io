@@ -13,19 +13,19 @@
   "social": [
     {
       "link": "https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg",
-      "icon": "./images/telegram-icon.png"
+      "icon": "./images/icons/telegram.png"
     },
     {
       "link": "https://www.facebook.com/chernivtsijs",
-      "icon": "./images/facebook-icon.png"
+      "icon": "./images/icons/facebook.png"
     },
     {
       "link": "https://twitter.com/chernivtsijs",
-      "icon": "./images/twitter-icon.png"
+      "icon": "./images/icons/twitter.png"
     },
     {
       "link": "https://gitter.im/dev-ua/chernivtsijs",
-      "icon": "./images/gitter-icon.png"
+      "icon": "./images/icons/gitter.png"
     }
   ],
   "speakers": [
