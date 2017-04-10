@@ -1,0 +1,29 @@
+.slideshow
+  background-color: black
+  height: 100%
+  list-style: none
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: -2
+
+  .slide
+    animation: slide-animation
+    animation-duration: $slide-delay * 3
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+    backface-visibility: hidden
+    background-position: 50% 50%
+    background-size: cover
+    color: transparent
+    height: 100%
+    opacity: 0
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: -1
+
+    for $index in (0..$slides-amount)
+      &:nth-child({$index+1})
+        animation-delay: $slide-delay * $index
+        // background-image: url($slides-path + $slide)

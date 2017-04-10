@@ -1,0 +1,127 @@
+@import _variables
+@import _base
+@import _misc
+@import _schedule
+@import _slideshow
+
+.header
+  background-image: url('../images/banner-bg.jpg')
+  background-position: center
+  background-size: cover
+  display: flex
+  height: 100vh
+  justify-content: center
+  position: relative
+  &-wrapper
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+  &-title
+    align-items: center
+    display: flex
+    div
+      padding-left: 40px
+      text-shadow: 0 0 20px rgba(0, 0, 0, .5)
+      > h1
+        color: white
+        font-size: 80px
+        font-weight: 700
+      > p.desc
+        color: white
+        font-size: 35px
+  &-logo
+    border-radius: 5px
+    box-shadow: $button-shadow
+    display: inline-block
+    float: left
+    height: @width
+    width: 10em
+
+.partner
+  margin: 25px
+  position: relative
+  width: 15%
+  & img
+    width: 100%
+
+.speaker
+  align-items: center
+  color: $js-black
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-bottom: 40px
+  width: 30%
+  .photo
+    align-items: center
+    display: flex
+    height: @width
+    justify-content: center
+    margin-bottom: 1rem
+    position: relative
+    width: 150px
+    & > img
+      border-radius: 50%
+      height: 150px
+      min-height: @height
+    &.is-lightning::after
+      background-color: $js-yellow
+      border-radius: 3px
+      bottom: -.5rem
+      color: $js-black
+      content: 'Lightning'
+      font-weight: bold
+      padding: .5rem
+      position: absolute
+      right: -1rem
+      z-index: 10
+  .name-speaker
+    font-weight: 700
+  .work-place
+    font-style: italic
+  .title-speach
+    font-size: 1.2em
+    font-weight: 700
+    padding: 0 5%
+    text-align: center
+
+.map
+  margin: 0 auto
+  padding-bottom: 0
+  width: 100%
+  #embedded-map
+    height: 600px
+  .address
+    color: $js-black
+    padding-bottom: 20px
+    text-align: center
+
+.venue
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5))
+  color: white
+  height: 700px
+  position: relative
+  .title
+    color: white
+    &::after
+      background-color: white
+
+.bottom-banner
+  align-items: center
+  background-image: url('../images/bottom-banner-bg.jpg')
+  background-position: center
+  background-size: cover
+  display: flex
+  flex-direction: column
+  height: 400px
+  justify-content: center
+
+.footer
+  align-items: center
+  background-color: $js-black
+  display: flex
+  justify-content: space-between
+  padding: 40px 100px
+  position: relative
