@@ -1,0 +1,68 @@
+doctype html
+html(lang=lang)
+  head
+    title=title
+    include _head
+  body
+    header.header
+      include _social
+      .header-wrapper
+        .row.header-title
+          img.header-logo(src='./images/logo.png', alt='')
+          div
+            h1= title
+            p.desc= description
+        .row.date= date
+        .row
+          a(href=action, class="action-btn") Cooming soon
+        .row.questions
+          a(href=social[0].link) Any questions?
+        .scroll
+          img(src='./images/icons/scroll.png', alt='')
+
+    section.speakers
+      h1.title Speakers
+      .container
+        each speaker in speakers
+          .speaker
+            .photo(class=speaker.lightning ? 'is-lightning': '')
+              img(src=speaker.photo)
+            .name-speaker=speaker.name
+            .work-place=speaker.work
+            .title-speach=speaker.topic
+
+    section.partners
+      h1.title partners
+      .container
+        .row.partners
+          each partner in partners
+            .partner
+              a(href=partner.link, title=partner.name)
+                img(src=partner.logo, alt=partner.name)
+        .row
+          p
+            | Want to help us? 
+            a(href='mailto:chernivtsijs@gmail.com') Join our community as a partner.
+
+    section.venue
+      h1.title Venue
+      ul.slideshow
+        each slide in venue
+          li.slide(style="background-image: url("+ slide + ")") slide
+
+    section.map
+      h1.title Map
+      p.address!= place.adress
+      div#embedded-map
+
+    section.bottom-banner
+      .row.date=date
+      .row.ticket
+        a(href=action, class="action-btn") Cooming soon
+      .row.questions
+        a(href=social[0].link) Any questions?
+
+    footer.footer
+      include _social
+      include _contacts
+    include _scripts

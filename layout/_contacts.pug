@@ -1,0 +1,7 @@
+.contacts
+  each contact in contacts
+    ul
+      li.name=contact.name
+      li.email
+        a(href="mailto:"+contact.email)=contact.email
+      li.phone=contact.phone
