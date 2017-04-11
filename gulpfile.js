@@ -11,7 +11,7 @@ const imagemin = require('gulp-imagemin')
 const deploy = require('gulp-gh-pages')
 const sourcemaps = require('gulp-sourcemaps')
 
-const JSON5 = require('json5')
+const yaml = require('js-yaml')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
 const del = require('del')
@@ -21,7 +21,7 @@ const browserSync = BS.create()
 
 const getData = (path) => {
   try {
-    return JSON5.parse(fs.readFileSync(path, 'utf8'))
+    return yaml.safeLoad(fs.readFileSync(path, 'utf8'))
   } catch (e) {
     console.error(e) // eslint-disable-line
   }
@@ -30,7 +30,7 @@ const getData = (path) => {
 gulp.task('layout', () =>
   gulp.src('layout/[!_]*.pug')
     .pipe(plumber())
-    .pipe(put(() => getData('./data.json')))
+    .pipe(put(() => getData('./data.yml')))
     .pipe(pug({ pretty: true }))
     .pipe(gulp.dest('dist'))
 )
