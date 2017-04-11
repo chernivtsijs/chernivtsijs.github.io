@@ -38,7 +38,7 @@ gulp.task('layout', () =>
 gulp.task('styles', () => {
   const processors = [
     autoprefixer,
-    // cssnano,
+    cssnano,
   ]
 
   return gulp.src('styles/[!_]*.styl')
