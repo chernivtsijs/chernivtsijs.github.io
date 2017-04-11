@@ -23,7 +23,7 @@
     width: 100%
     z-index: -1
 
+    // Set animation delay for each of slides
     for $index in (0..$slides-amount)
       &:nth-child({$index+1})
         animation-delay: $slide-delay * $index
-        // background-image: url($slides-path + $slide)

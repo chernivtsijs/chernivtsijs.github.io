@@ -74,17 +74,6 @@
   color: white
   font-size: 30px
 
-// Icon for scrolling
-.scroll
-  animation: move-icon-scroll
-  animation-delay: 3s
-  animation-duration: 1s
-  animation-iteration-count: infinite
-  bottom: 20px
-  position: absolute
-  & img
-    width: 50px
-
 // Section title
 .title
   color: $js-black
@@ -112,15 +101,16 @@
   color: rgba(white, .8)
   display: flex
   justify-content: space-around
-  & ul:not(:last-child)
-    margin-right: 100px
-  & ul li
-    list-style: none
-    padding: 5px 0
-    > a
-      color: rgba(white, .8)
-      text-decoration: none
-      &:hover
-        color: white
-      &:active
+  ul
+    &:not(:last-child)
+      margin-right: 100px
+    & li
+      list-style: none
+      padding: 5px 0
+      > a
         color: rgba(white, .8)
+        text-decoration: none
+        &:hover
+          color: white
+        &:active
+          color: rgba(white, .8)

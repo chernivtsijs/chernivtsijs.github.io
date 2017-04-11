@@ -38,54 +38,79 @@
     float: left
     height: @width
     width: 10em
+  .scroll
+    animation: move-icon-scroll
+    animation-delay: 3s
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    bottom: 20px
+    position: absolute
+    & img
+      width: 50px
 
-.partner
-  margin: 25px
-  position: relative
-  width: 15%
-  & img
-    width: 100%
-
-.speaker
-  align-items: center
-  color: $js-black
-  display: flex
-  flex-direction: column
-  justify-content: center
-  margin-bottom: 40px
-  width: 30%
-  .photo
+.speakers
+  background-color: white
+  .speaker
     align-items: center
+    color: $js-black
     display: flex
-    height: @width
+    flex-direction: column
     justify-content: center
-    margin-bottom: 1rem
+    margin-bottom: 40px
+    width: 30%
+    .photo
+      align-items: center
+      display: flex
+      height: @width
+      justify-content: center
+      margin-bottom: 1rem
+      position: relative
+      width: 150px
+      & > img
+        border-radius: 50%
+        height: 150px
+        min-height: @height
+      &.is-lightning::after
+        background-color: $js-yellow
+        border-radius: 3px
+        bottom: -.5rem
+        color: $js-black
+        content: 'Lightning'
+        font-weight: bold
+        padding: .5rem
+        position: absolute
+        right: -1rem
+        z-index: 10
+    .name-speaker
+      font-weight: 700
+    .work-place
+      font-style: italic
+    .title-speach
+      font-size: 1.2em
+      font-weight: 700
+      padding: 0 5%
+      text-align: center
+
+.partners
+  background-color: white
+  .container
+    align-items: center
+  .partner
+    margin: 25px
     position: relative
-    width: 150px
-    & > img
-      border-radius: 50%
-      height: 150px
-      min-height: @height
-    &.is-lightning::after
-      background-color: $js-yellow
-      border-radius: 3px
-      bottom: -.5rem
-      color: $js-black
-      content: 'Lightning'
-      font-weight: bold
-      padding: .5rem
-      position: absolute
-      right: -1rem
-      z-index: 10
-  .name-speaker
-    font-weight: 700
-  .work-place
-    font-style: italic
-  .title-speach
-    font-size: 1.2em
-    font-weight: 700
-    padding: 0 5%
-    text-align: center
+    width: 15%
+    & img
+      width: 100%
+
+.venue
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5))
+  color: white
+  height: 700px
+  position: relative
+  .title
+    color: white
+    &::after
+      background-color: white
 
 .map
   margin: 0 auto
@@ -97,16 +122,6 @@
     color: $js-black
     padding-bottom: 20px
     text-align: center
-
-.venue
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5))
-  color: white
-  height: 700px
-  position: relative
-  .title
-    color: white
-    &::after
-      background-color: white
 
 .bottom-banner
   align-items: center
