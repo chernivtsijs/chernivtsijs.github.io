@@ -48,6 +48,18 @@ html(lang=lang)
       ul.slideshow
         each slide in venue
           li.slide(style="background-image: url("+ slide + ")") slide
+      .container
+        .row.venue-name
+          h2 Marble Hall
+          p The Residence of Bukovinian and Dalmatian Metropolitans
+        .row.venue-about
+          .venue-half.logos
+            img(src="images/UNESCO.svg", alt="UNESCO").unesco
+            img(src="images/welterbe.svg", alt="Welterbe").welterbe
+          .venue-half.desc
+            p #[strong The Residence of Bukovinian and Dalmatian Metropolitans] in Chernivtsi is one of the most beautiful buildings in Ukraine.
+            p It was built between the years 1864–1882 to the designs of the Czech architect, #[strong Josef Hlávka].
+            p The Residence, whose buildings are now part of #[strong Chernivtsi National University], was declared a #[strong UNESCO World Heritage Site] in 2011.
 
     section.map
       h1.title Map

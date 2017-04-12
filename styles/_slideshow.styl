@@ -9,7 +9,7 @@
 
   .slide
     animation: slide-animation
-    animation-duration: $slide-delay * 3
+    animation-duration: $slide-delay * $slides-amount
     animation-iteration-count: infinite
     animation-timing-function: linear
     backface-visibility: hidden
@@ -24,6 +24,6 @@
     z-index: -1
 
     // Set animation delay for each of slides
-    for $index in (0..$slides-amount)
-      &:nth-child({$index+1})
-        animation-delay: $slide-delay * $index
+    for $index in (1..$slides-amount)
+      &:nth-child({$index})
+        animation-delay: $slide-delay * ($index - 1)

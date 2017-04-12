@@ -103,14 +103,47 @@
       width: 100%
 
 .venue
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5))
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6))
   color: white
-  height: 700px
   position: relative
   .title
     color: white
     &::after
       background-color: white
+  .container
+    padding: 0
+  &-name.row
+    line-height: 1.2
+    text-align: center
+    width: 100%
+    & h2
+      font-size: 2.3rem
+    p
+      color: white
+      font-size: 1.8rem
+      font-weight: lighter
+  &-about.row
+    align-items: center
+    display: flex
+    padding-bottom: 40px
+  &-half
+    color: white
+    width: 50%
+    &.logos
+      display: flex
+      justify-content: center
+      text-align: center
+      .unesco,
+      .welterbe
+        padding: 0 5%
+        width: 30%
+    &.desc p, a
+      color: white
+      font-size: 1.8rem
+      font-weight: lighter
+      text-align: left
+    &.desc a
+      font-weight: bold
 
 .map
   margin: 0 auto
