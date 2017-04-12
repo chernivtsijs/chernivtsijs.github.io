@@ -2,12 +2,18 @@ title: ChernivtsiJS
 description: Let's talk about JavaScript?
 date: Jun 10, 2017
 action: "#"
+
 place:
-  adress: Chernivtsi National University, <br> вул. Коцюбинського 2, <br> Chernivtsi,
-    Ukraine
+  adress:
+    Chernivtsi National University,
+    <br>
+    вул. Коцюбинського 2,
+    <br>
+    Chernivtsi, Ukraine
   coords:
     latitude: 48.297188
     longitude: 25.9242539
+
 social:
 - link: https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg
   icon: "./images/icons/telegram.png"
@@ -17,6 +23,7 @@ social:
   icon: "./images/icons/twitter.png"
 - link: https://gitter.im/dev-ua/chernivtsijs
   icon: "./images/icons/gitter.png"
+
 speakers:
 - name: Oleksandr Lapshin
   photo: "./images/speakers/oleksandr-lapshin.jpg"
@@ -42,16 +49,17 @@ speakers:
   photo: "./images/speakers/kirill-yakovenko.jpg"
   work: Kharkiv
   topic: Code is a data
-- lightning: true
-  name: Andrew Kostetskyi
+- name: Andrew Kostetskyi
   photo: "./images/speakers/andrew-kostetskyi.jpg"
   work: ASD Team, Chernivtsi
   topic: Програмування мікроконтроллерів на JavaScript
-- lightning: true
-  name: Aleksey Shvayka
+  lightning: true
+- name: Aleksey Shvayka
   photo: "./images/speakers/aleksey-shvayka.jpg"
   work: Hell Yeah LLC, Kyiv
   topic: A word on Regular Expressions
+  lightning: true
+
 partners:
 - name: AlterEGO
   logo: "./images/partners/alterego.png"
@@ -66,12 +74,17 @@ partners:
   logo: "./images/partners/cbit.png"
   link: http://cbit.org.ua
 - name: MobiDev
-  logo: "./images/partners/mobidev.png"
+  logo: "./images/partners/mobidev.svg"
   link: http://mobidev.com.ua/
+
+# DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
 venue:
 - ./images/venue/1.jpg
 - ./images/venue/2.jpg
 - ./images/venue/3.jpg
+- ./images/venue/4.jpg
+- ./images/venue/5.jpg
+
 contacts:
 - name: Denys Dovhan
   email: email@denysdovhan.com
