@@ -11,13 +11,23 @@
 @media (max-width: 920px)
   section.speakers .container .speaker
     width: 40%
+  section.venue .venue-about
+    flex-direction: column
+    .venue-half
+      width: 75%
+      &:first-child
+        align-items: center
+        flex-direction: column
+        order: 2
+        & img
+          padding: 1rem 0
+          width: 75%
   footer
     flex-direction: column
     padding-bottom: 80px
     .socials
       bottom: 20px
       position: absolute
-
   section#schedule table
     width: 100%
 
@@ -43,7 +53,6 @@
         justify-content center
     .scroll
       display: none
-
   section.partners .container
     flex-direction: column
     .partner
