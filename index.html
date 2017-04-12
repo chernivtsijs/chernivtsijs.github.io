@@ -1,48 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta property="og:title" content="ChernivtsiJS #3">
+    <title>ChernivtsiJS</title>
+    <meta property="og:title" content="ChernivtsiJS">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://chernivtsi.js.org/">
     <meta property="og:image" content="http://chernivtsi.js.org/images/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400italic,700">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/media.css">
-    <title>June 10, 2017 — ChernivtsiJS — </title>
+    <title>Jun 10, 2017 — ChernivtsiJS — </title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="socials">
         <ul>
-          <li class="social"><a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg"><img src="./images/telegram-icon.png"></a></li>
-          <li class="social"><a href="https://www.facebook.com/chernivtsijs"><img src="./images/facebook-icon.png"></a></li>
-          <li class="social"><a href="https://twitter.com/chernivtsijs"><img src="./images/twitter-icon.png"></a></li>
-          <li class="social"><a href="https://gitter.im/dev-ua/chernivtsijs"><img src="./images/gitter-icon.png"></a></li>
+          <li class="social"><a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg"><img src="./images/icons/telegram.png"></a></li>
+          <li class="social"><a href="https://www.facebook.com/chernivtsijs"><img src="./images/icons/facebook.png"></a></li>
+          <li class="social"><a href="https://twitter.com/chernivtsijs"><img src="./images/icons/twitter.png"></a></li>
+          <li class="social"><a href="https://gitter.im/dev-ua/chernivtsijs"><img src="./images/icons/gitter.png"></a></li>
         </ul>
       </div>
-      <div class="main-wrap">
-        <div class="row title"><img class="logo" src="./images/logo.png" alt="">
+      <div class="header-wrapper">
+        <div class="row header-title"><img class="header-logo" src="./images/logo.png" alt="">
           <div>
             <h1>ChernivtsiJS</h1>
             <p class="desc">Let's talk about JavaScript?</p>
           </div>
         </div>
-        <div class="row date">June 10, 2017</div>
-        <div class="row ticket"><a class="action-btn" href="#">Coming soon</a></div>
+        <div class="row date">Jun 10, 2017</div>
+        <div class="row"><a class="action-btn" href="#">Cooming soon</a></div>
         <div class="row questions"><a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg">Any questions?</a></div>
-        <div class="scroll"><img src="./images/scroll-icon.png" alt=""></div>
+        <div class="scroll"><img src="./images/icons/scroll.png" alt=""></div>
       </div>
     </header>
-    <section id="speakers">
+    <section class="speakers">
       <h1 class="title">Speakers</h1>
-      <div class="wrap-speakers">
+      <div class="container">
         <div class="speaker">
           <div class="photo"><img src="./images/speakers/oleksandr-lapshin.jpg"></div>
-          <div class="name-speaker">Oleksandr Lapshyn</div>
+          <div class="name-speaker">Oleksandr Lapshin</div>
           <div class="work-place">Rails Reactor, Kyiv</div>
           <div class="title-speach">Peg.js and writing custom grammar parser</div>
         </div>
@@ -60,7 +61,7 @@
         </div>
         <div class="speaker">
           <div class="photo"><img src="./images/speakers/roman-lutikov.jpg"></div>
-          <div class="name-speaker">Roman Liutikov</div>
+          <div class="name-speaker">Roman Lutikov</div>
           <div class="work-place">Attendify, Kyiv</div>
           <div class="title-speach">Secret Topic</div>
         </div>
@@ -72,41 +73,78 @@
         </div>
         <div class="speaker">
           <div class="photo"><img src="./images/speakers/kirill-yakovenko.jpg"></div>
-          <div class="name-speaker">Kyrylo Yakovenko</div>
-          <div class="work-place">CleverCrew, Kharkiv</div>
-          <div class="title-speach">Secret Topic</div>
+          <div class="name-speaker">Kirill Yakovenko</div>
+          <div class="work-place">Kharkiv</div>
+          <div class="title-speach">Code is a data</div>
         </div>
         <div class="speaker">
-          <div class="photo"><img src="./images/speakers/andrew-kostetskyi.jpg"></div>
+          <div class="photo is-lightning"><img src="./images/speakers/andrew-kostetskyi.jpg"></div>
           <div class="name-speaker">Andrew Kostetskyi</div>
           <div class="work-place">ASD Team, Chernivtsi</div>
           <div class="title-speach">Програмування мікроконтроллерів на JavaScript</div>
         </div>
+        <div class="speaker">
+          <div class="photo is-lightning"><img src="./images/speakers/aleksey-shvayka.jpg"></div>
+          <div class="name-speaker">Aleksey Shvayka</div>
+          <div class="work-place">Hell Yeah LLC, Kyiv</div>
+          <div class="title-speach">A word on Regular Expressions</div>
+        </div>
       </div>
     </section>
-    <section id="partners">
+    <section class="partners">
       <h1 class="title">partners</h1>
-      <div class="wrap-partners">
-        <p>Want to help us? <a href="mailto:chernivtsijs@gmail.com">Join our community as a partner. </a></p>
+      <div class="container">
+        <div class="partner"><a href="http://alterego.biz.ua" title="AlterEGO"><img src="./images/partners/alterego.png" alt="AlterEGO"></a></div>
+        <div class="partner"><a href="http://nodeschool.io/chernivtsi" title="NodeSchool Chernivtsi"><img src="./images/partners/nodeschool.png" alt="NodeSchool Chernivtsi"></a></div>
+        <div class="partner"><a href="https://elogic.co" title="ELOGIC"><img src="./images/partners/elogic.png" alt="ELOGIC"></a></div>
+        <div class="partner"><a href="http://cbit.org.ua" title="Cbit"><img src="./images/partners/cbit.png" alt="Cbit"></a></div>
+        <div class="partner"><a href="http://mobidev.com.ua/" title="MobiDev"><img src="./images/partners/mobidev.svg" alt="MobiDev"></a></div>
+        <div class="row">
+          <p>Want to help us? <a href="mailto:chernivtsijs@gmail.com">Join our community as a partner.</a></p>
+        </div>
       </div>
     </section>
-    <section id="map">
+    <section class="venue">
+      <h1 class="title">Venue</h1>
+      <ul class="slideshow">
+        <li class="slide" style="background-image: url(./images/venue/1.jpg);">slide</li>
+        <li class="slide" style="background-image: url(./images/venue/2.jpg);">slide</li>
+        <li class="slide" style="background-image: url(./images/venue/3.jpg);">slide</li>
+        <li class="slide" style="background-image: url(./images/venue/4.jpg);">slide</li>
+        <li class="slide" style="background-image: url(./images/venue/5.jpg);">slide</li>
+      </ul>
+      <div class="container">
+        <div class="row venue-name">
+          <h2>Marble Hall</h2>
+          <p>The Residence of Bukovinian and Dalmatian Metropolitans</p>
+        </div>
+        <div class="row venue-about">
+          <div class="venue-half logos"><img class="unesco" src="images/UNESCO.svg" alt="UNESCO"><img class="welterbe" src="images/welterbe.svg" alt="Welterbe"></div>
+          <div class="venue-half desc">
+            <p><strong>The Residence of Bukovinian and Dalmatian Metropolitans</strong> in Chernivtsi is one of the most beautiful buildings in Ukraine.</p>
+            <p>It was built between the years 1864–1882 to the designs of the Czech architect, <strong>Josef Hlávka</strong>.</p>
+            <p>The Residence, whose buildings are now part of <strong>Chernivtsi National University</strong>, was declared a <strong>UNESCO World Heritage Site</strong> in 2011.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
       <h1 class="title">Map</h1>
       <p class="address">Chernivtsi National University, <br> вул. Коцюбинського 2, <br> Chernivtsi, Ukraine</p>
-      <div id="venue"></div>
+      <div id="embedded-map"></div>
     </section>
-    <section id="bottom-banner">
-      <div class="row date">June 10, 2017</div>
-      <div class="row ticket"><a class="action-btn" href="#">Coming soon</a></div>
+    <section class="bottom-banner">
+      <div class="row date">Jun 10, 2017</div>
+      <div class="row ticket"><a class="action-btn" href="#">Cooming soon</a></div>
       <div class="row questions"><a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg">Any questions?</a></div>
     </section>
-    <footer>
+    <footer class="footer">
       <div class="socials">
         <ul>
-          <li class="social"><a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg"><img src="./images/telegram-icon.png"></a></li>
-          <li class="social"><a href="https://www.facebook.com/chernivtsijs"><img src="./images/facebook-icon.png"></a></li>
-          <li class="social"><a href="https://twitter.com/chernivtsijs"><img src="./images/twitter-icon.png"></a></li>
-          <li class="social"><a href="https://gitter.im/dev-ua/chernivtsijs"><img src="./images/gitter-icon.png"></a></li>
+          <li class="social"><a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg"><img src="./images/icons/telegram.png"></a></li>
+          <li class="social"><a href="https://www.facebook.com/chernivtsijs"><img src="./images/icons/facebook.png"></a></li>
+          <li class="social"><a href="https://twitter.com/chernivtsijs"><img src="./images/icons/twitter.png"></a></li>
+          <li class="social"><a href="https://gitter.im/dev-ua/chernivtsijs"><img src="./images/icons/gitter.png"></a></li>
         </ul>
       </div>
       <div class="contacts">
@@ -129,6 +167,6 @@
         25.9242539,
       ]
     </script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
