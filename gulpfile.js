@@ -95,7 +95,7 @@ gulp.task('watch', () => {
     server: 'dist',
   })
 
-  gulp.watch(['layout/**/*.pug', '*.json'], gulp.series('layout'))
+  gulp.watch(['layout/**/*.pug', '*.yml'], gulp.series('layout'))
   gulp.watch('styles/**/*.styl', gulp.series('styles'))
   gulp.watch('scripts/**/*.js', gulp.series('scripts'))
   gulp.watch('images/**/*.*', gulp.series('images'))
