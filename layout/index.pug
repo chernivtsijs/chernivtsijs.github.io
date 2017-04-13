@@ -1,7 +1,7 @@
 doctype html
 html(lang=lang)
   head
-    title=title
+    title #{date} — #{title} — #{subtitle}
     include _head
   body
     header.header
@@ -47,7 +47,7 @@ html(lang=lang)
       h1.title Venue
       ul.slideshow
         each slide in venue
-          li.slide(style="background-image: url("+ slide + ")") slide
+          li.slide(style="background-image: url("+ slide + ")")=slide
       .container
         .row.venue-name
           h2 Marble Hall

@@ -1,8 +1,10 @@
+# Common
 title: ChernivtsiJS
 description: Let's talk about JavaScript?
 date: June 10, 2017
 action: "#"
 
+# Location information
 place:
   adress:
     Chernivtsi National University,
@@ -14,6 +16,7 @@ place:
     latitude: 48.297188
     longitude: 25.9242539
 
+# Social links
 social:
 - link: https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg
   icon: "./images/icons/telegram.png"
@@ -24,6 +27,7 @@ social:
 - link: https://gitter.im/dev-ua/chernivtsijs
   icon: "./images/icons/gitter.png"
 
+# A list of speakers
 speakers:
 - name: Oleksandr Lapshin
   photo: "./images/speakers/oleksandr-lapshin.jpg"
@@ -60,6 +64,7 @@ speakers:
   topic: A word on Regular Expressions
   lightning: true
 
+# A list of partners
 partners:
 - name: AlterEGO
   logo: "./images/partners/alterego.png"
@@ -77,6 +82,7 @@ partners:
   logo: "./images/partners/mobidev.svg"
   link: http://mobidev.com.ua/
 
+# Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
 venue:
 - ./images/venue/1.jpg
@@ -85,6 +91,7 @@ venue:
 - ./images/venue/4.jpg
 - ./images/venue/5.jpg
 
+# Contacts links
 contacts:
 - name: Denys Dovhan
   email: email@denysdovhan.com
