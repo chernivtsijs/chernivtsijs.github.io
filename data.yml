@@ -53,6 +53,10 @@ speakers:
   photo: "./images/speakers/kirill-yakovenko.jpg"
   work: Kharkiv
   topic: Code is a data
+- name: Tanya Sakharov
+  photo: "./images/speakers/tanya-sakharova.jpg"
+  work: MobiDev, Chernivtsi
+  topic: Secret Topic
 - name: Andrew Kostetskyi
   photo: "./images/speakers/andrew-kostetskyi.jpg"
   work: ASD Team, Chernivtsi
