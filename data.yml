@@ -49,10 +49,10 @@ speakers:
   photo: "./images/speakers/artem-yavorsky.jpg"
   work: Hell Yeah LLC, Kyiv
   topic: How to keep node_modules huge with Babel
-- name: Kirill Yakovenko
+- name: Kyrylo Yakovenko
   photo: "./images/speakers/kirill-yakovenko.jpg"
-  work: Kharkiv
-  topic: Code is a data
+  work: CleverCrew, Kharkiv
+  topic: Styles in the world of components
 - name: Tanya Sakharov
   photo: "./images/speakers/tanya-sakharova.jpg"
   work: MobiDev, Chernivtsi
