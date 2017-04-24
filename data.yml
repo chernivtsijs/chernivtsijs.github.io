@@ -18,13 +18,13 @@ place:
 
 # Social links
 social:
-- link: https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg
+- link: //telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg
   icon: "./images/icons/telegram.png"
-- link: https://www.facebook.com/chernivtsijs
+- link: //www.facebook.com/chernivtsijs
   icon: "./images/icons/facebook.png"
-- link: https://twitter.com/chernivtsijs
+- link: //twitter.com/chernivtsijs
   icon: "./images/icons/twitter.png"
-- link: https://gitter.im/dev-ua/chernivtsijs
+- link: //gitter.im/dev-ua/chernivtsijs
   icon: "./images/icons/gitter.png"
 
 # A list of speakers
