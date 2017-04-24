@@ -41,7 +41,7 @@ html(lang=lang)
               .partners-wrapper(class=kind)
                 each partner in companies
                   .partner(id=partner.name.toLowerCase().replace(/\s/g, '-'))
-                    a(href=partner.link, title=partner.name)
+                    a(href=partner.link, title=partner.name, target='_blank')
                       img(src=partner.logo, alt=partner.name)
         .row
           p
