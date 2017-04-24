@@ -34,14 +34,20 @@ html(lang=lang)
     section.partners
       h1.title partners
       .container
-        //- each partner in partners
-        //-   .partner
-        //-     a(href=partner.link, title=partner.name)
-        //-       img(src=partner.logo, alt=partner.name)
+        each companies, kind in partners
+          .row
+            p.partners-kind=kind
+            if companies
+              .partners-wrapper(class=kind)
+                each partner in companies
+                  .partner(id=partner.name.toLowerCase().replace(/\s/g, '-'))
+                    a(href=partner.link, title=partner.name)
+                      img(src=partner.logo, alt=partner.name)
         .row
           p
-            | Want to help us? 
-            a(href='mailto:chernivtsijs@gmail.com') Join our community as a partner.
+            | Want to join us?
+            br
+            a(href='mailto:chernivtsijs@gmail.com') Join our community as a partner
 
     section.venue
       h1.title Venue

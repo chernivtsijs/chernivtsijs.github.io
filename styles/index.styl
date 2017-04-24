@@ -105,16 +105,38 @@
 // --- --- ---
 
 .partners
-  background-color: white
+  font-weight: 300
+  background-color: darken(white, 2.5%)
   .container
+    display: block
+  p
+    display: block
+  &-kind
+    text-transform: capitalize
+  &-wrapper
+    display: flex
+    justify-content: center
     align-items: center
   .partner
-    margin: 25px
-    position: relative
-    width: 15%
-    & img
+    display: flex
+    padding: 2%
+    box-sizing: border-box
+    width: 30%
+    a
+      margin: 0 auto
+    img
       width: 100%
-
+    &#asd-team img
+      margin-top: -10%
+      height: 70px
+      width: auto
+    &#chernivtsi-national-university img
+      height: 200px
+      width: auto
+    &#cbit img,
+    &#nodeschool-chernivtsi img
+      height: 200px
+      width: auto
 // --- --- ---
 
 .venue

@@ -70,21 +70,33 @@ speakers:
 
 # A list of partners
 partners:
-- name: AlterEGO
-  logo: "./images/partners/alterego.png"
-  link: http://alterego.biz.ua
-- name: NodeSchool Chernivtsi
-  logo: "./images/partners/nodeschool.png"
-  link: http://nodeschool.io/chernivtsi
-- name: ELOGIC
-  logo: "./images/partners/elogic.png"
-  link: https://elogic.co
-- name: Cbit
-  logo: "./images/partners/cbit.png"
-  link: http://cbit.org.ua
-- name: MobiDev
-  logo: "./images/partners/mobidev.svg"
-  link: http://mobidev.com.ua/
+  special:
+    # special partners
+    - name: AlterEGO
+      logo: './images/partners/alterego.png'
+      link: http://alterego.biz.ua
+    - name: Chernivtsi National University
+      logo: './images/partners/chnu.png'
+      link: http://alterego.biz.ua
+  gold:
+    # gold partners
+    - name: MobiDev
+      logo: './images/partners/mobidev.svg'
+      link: http://mobidev.com.ua/
+    - name: SoftServe
+      logo: './images/partners/softserve.png'
+      link: https://www.softserveinc.com
+    - name: ASD Team
+      logo: './images/partners/asd.png'
+      link: http://asd-team.com/
+  silver:
+    # silver partners
+    - name: Cbit
+      logo: './images/partners/cbit.png'
+      link: http://cbit.org.ua
+    - name: NodeSchool Chernivtsi
+      logo: './images/partners/nodeschool.png'
+      link: http://nodeschool.io/chernivtsi
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
