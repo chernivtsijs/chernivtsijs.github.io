@@ -14,7 +14,7 @@ html(lang=lang)
             p.desc= description
         .row.date= date
         .row
-          a(href=action, class="action-btn") Buy your ticket
+          a(href=action, class="action-btn", onclick="fbq('track', 'InitiateCheckout');") Buy your ticket
         .row.questions
           a(href=social[0].link) Any questions?
         .scroll
