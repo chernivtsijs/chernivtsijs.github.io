@@ -44,7 +44,7 @@ speakers:
 - name: Roman Liutikov
   photo: "./images/speakers/roman-lutikov.jpg"
   work: Attendify, Kyiv
-  topic: Secret Topic
+  topic: Web Apps & Databases
 - name: Artem Yavorsky
   photo: "./images/speakers/artem-yavorsky.jpg"
   work: Hell Yeah LLC, Kyiv
@@ -56,7 +56,7 @@ speakers:
 - name: Tanya Sakharova
   photo: "./images/speakers/tanya-sakharova.jpg"
   work: MobiDev, Chernivtsi
-  topic: Secret Topic
+  topic: Как начать использовать современные технологии на legacy-проекте
 - name: Andrew Kostetskyi
   photo: "./images/speakers/andrew-kostetskyi.jpg"
   work: ASD Team, Chernivtsi
