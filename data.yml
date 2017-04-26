@@ -80,9 +80,6 @@ partners:
       link: //chnu.cv.ua/
   gold:
     # gold partners
-    - name: MobiDev
-      logo: './images/partners/mobidev.svg'
-      link: //mobidev.com.ua/
     - name: SoftServe
       logo: './images/partners/softserve.png'
       link: //www.softserveinc.com
