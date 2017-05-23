@@ -3,7 +3,7 @@ node_js: node
 branches:
   only: premaster
 before_script:
-- git config --global user.email "email@denysdovhan.com"
+- git config --global user.email "denysdovhan@gmail.com"
 - git config --global user.name "Denys Dovhan"
 - git remote rm origin
 - git remote add origin https://denysdovhan:${GH_TOKEN}@github.com/chernivtsijs/chernivtsijs.github.io.git
