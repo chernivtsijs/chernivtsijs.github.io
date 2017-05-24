@@ -97,6 +97,9 @@ partners:
     - name: Papercraft by Nazar Bogdanov
       logo: './images/partners/nazar.png'
       link: //bohdanov.github.io/
+    - name: LeadLine IT
+      logo: './images/partners/leadline.png'
+      link: //leadlineit.com/
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
