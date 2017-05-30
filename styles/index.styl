@@ -7,7 +7,6 @@
 @import _variables
 @import _base
 @import _misc
-// @import _schedule
 @import _slideshow
 
 // --- --- ---
@@ -104,6 +103,55 @@
 
 // --- --- ---
 
+section.schedule
+  background: #fff
+.schedule-container
+  width: 100%
+  max-width: 600px
+  margin: 0 auto
+  position: relative
+.schedule-time
+  display: inline-block
+  vertical-align: top
+  width: 120px
+  font-weight: normal
+.schedule-desc
+  display: inline-block
+  vertical-align: top
+  font-weight: normal
+  font-size: 14px
+  position: relative
+  &:before
+    content: ''
+    display: block
+    width: 7px
+    height: 7px
+    border: 2px solid $js-yellow
+    background: $js-yellow
+    border-radius: 50%
+    top: 50%
+    left: -23px
+    position: absolute
+    margin: -7px 0 0 0
+.schedule-item
+  margin: 3% 0
+.schedule-item.is-tech
+  .schedule-title
+    font-weight: bold
+.schedule-container
+  &:before
+    content: ''
+    position: absolute
+    width: 1px
+    height: 103%
+    background: #000
+    top: -2%
+    left: 105px
+.schedule-theme
+  font-family: Arial, sans-serif
+
+// --- --- ---
+
 .partners
   font-weight: 300
   background-color: darken(white, 2.5%)
@@ -130,15 +178,19 @@
       width: 100%
     &#asd-team img
       margin-top: -10%
-      height: 70px
+      height: 60px
       width: auto
     &#chernivtsi-national-university img
-      height: 200px
-      width: auto
+      height: auto
+      width: 70%
     &#cbit img,
     &#nodeschool-chernivtsi img
       height: 130px
       width: auto
+    &#department-of-computer-technology img
+      height: auto
+      width: 70%
+
 // --- --- ---
 
 .venue
@@ -220,16 +272,6 @@
   padding: 40px 100px
   position: relative
 
-.name:before
-    content: ''
-    background-image: url('../images/fb-small.png')
-    background-size: 100% auto
-    width: 17px
-    height: 17px
-    display: inline-block
-    vertical-align: middle
-    margin: 0 5px 0 0
-
 .name
   a
     display: inline-block
@@ -283,6 +325,7 @@ section.schedule
 .schedule--theme    
   font-family: Arial, sans-serif
 
-#dev-pro img {
+#dev-pro img
   max-width: 80%
-}
+
+
