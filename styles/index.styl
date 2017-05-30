@@ -135,7 +135,7 @@
       width: auto
     &#cbit img,
     &#nodeschool-chernivtsi img
-      height: 200px
+      height: 130px
       width: auto
 // --- --- ---
 
@@ -217,3 +217,66 @@
   justify-content: space-between
   padding: 40px 100px
   position: relative
+
+.name:before
+    content: ''
+    background-image: url('../images/fb-small.png')
+    background-size: 100% auto
+    width: 17px
+    height: 17px
+    display: inline-block
+    vertical-align: middle
+    margin: 0 5px 0 0
+
+.name
+  a
+    display: inline-block
+    vertical-align: middle
+
+
+section.schedule
+  background: #fff    
+.schedule--container 
+  width: 100%
+  max-width: 600px
+  margin: 0 auto  
+  position: relative
+.schedule--time 
+  display: inline-block
+  vertical-align: top
+  width: 120px
+  font-weight: normal
+.schedule--desc 
+  display: inline-block
+  vertical-align: top    
+  font-weight: normal
+  font-size: 14px
+  position: relative
+  &:before
+    content: ''
+    display: block
+    width: 7px
+    height: 7px
+    border: 2px solid $js-yellow
+    background: $js-yellow
+    border-radius: 50%
+    top: 50%
+    left: -23px
+    position: absolute
+    margin: -7px 0 0 0
+.schedule--item
+  margin: 3% 0  
+.schedule--item.is-tech
+  .schedule--title 
+    font-weight: bold
+.schedule--container
+  &:before
+    content: ''
+    position: absolute
+    width: 1px
+    height: 103%
+    background: #000
+    top: -2%
+    left: 105px
+.schedule--theme    
+  font-family: Arial, sans-serif

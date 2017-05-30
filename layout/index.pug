@@ -31,6 +31,17 @@ html(lang=lang)
             .work-place=speaker.work
             .title-speach=speaker.topic
 
+    section.schedule
+      h1.title Schedule
+      .schedule--container
+        each item in schedule
+          .schedule--item(class=item.tech ? 'is-tech' : '')
+            .schedule--time=item.time
+            .schedule--desc
+              .schedule--title=item.name
+              .schedule--theme=item.topic
+            
+
     section.partners
       h1.title partners
       .container

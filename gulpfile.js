@@ -64,7 +64,7 @@ gulp.task('images', () =>
 
 gulp.task('copy', () =>
   gulp.src([
-    'CNAME', 'favicon*', './mail/*.*', 'join/*.*'], { base: '.' })
+    'CNAME', 'favicon*', './mail/*/*/*.*', './mail/*/*/*/*/*.*', './mail/*/*/*/*.*', 'join/*.*'], { base: '.' })
     .pipe(gulp.dest('dist'))
 )
 

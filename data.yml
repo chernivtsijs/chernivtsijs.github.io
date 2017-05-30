@@ -68,6 +68,107 @@ speakers:
   topic: A word on Regular Expressions
   lightning: true
 
+# A schedule of speakers
+schedule:
+- name: "Реєстрація"
+  time: "09:00-10:00"
+  photo: ""
+  work: ""
+  topic: ""
+  tech: true
+- name: "Відкриття"
+  time: "10:00-10:20"
+  photo: ""
+  work: ""
+  topic: ""
+  tech: true
+
+- name: Oleksandr Lapshin
+  time: "10:20-11:00"
+  photo: "./images/speakers/oleksandr-lapshin.jpg"
+  work: Rails Reactor, Kyiv
+  topic: Peg.js and writing custom grammar parser
+  tech: false
+- name: Volodymyr Stelmakh
+  time: "11:00-11:40"
+  photo: "./images/speakers/volodymyr-stelmakh.jpg"
+  work: Hell Yeah LLC, Kyiv
+  topic: Мобильные приложения на JS. Как, зачем, почему бы и нет?
+  tech: false
+- name: Aleksey Shvayka
+  time: "11:40-12:00"
+  photo: "./images/speakers/aleksey-shvayka.jpg"
+  work: Hell Yeah LLC, Kyiv
+  topic: A word on Regular Expressions
+  lightning: true  
+  tech: false  
+- name: Artem Yavorsky
+  time: "12-00-12:40"
+  photo: "./images/speakers/artem-yavorsky.jpg"
+  work: Hell Yeah LLC, Kyiv
+  topic: How to keep node_modules huge with Babel  
+  tech: false
+- name: Tanya Sakharova
+  time: "12:40-13:20"
+  photo: "./images/speakers/tanya-sakharova.jpg"
+  work: MobiDev, Chernivtsi
+  topic: Как начать использовать современные технологии на legacy-проекте  
+  tech: false
+
+- name: "Перерва (Обід)"
+  time: "13:30-15:00"
+  photo: ""
+  work: ""
+  topic: ""
+  tech: true
+
+- name: Roman Liutikov
+  time: "15:00-15:40"
+  photo: "./images/speakers/roman-lutikov.jpg"
+  work: Attendify, Kyiv
+  topic: Optimizing Compilers
+  tech: false
+- name: Ihor Zenich
+  time: "15:40-16:20"
+  photo: "./images/speakers/ihor-zenich.jpg"
+  work: EPAM, Kharkiv
+  topic: 'Bootstrap: как правильно и что нового в 4-ке'
+  tech: false
+- name: Andrew Kostetskyi
+  time: "16:20-16:40"
+  photo: "./images/speakers/andrew-kostetskyi.jpg"
+  work: ASD Team, Chernivtsi
+  topic: Програмування мікроконтроллерів на JavaScript
+  lightning: true
+  tech: false
+- name: Kyrylo Yakovenko
+  time: "16:40-17:20"
+  photo: "./images/speakers/kirill-yakovenko.jpg"
+  work: CleverCrew, Kharkiv
+  topic: Styles in the world of components
+  tech: false
+
+- name: "QA-сесія"
+  time: "17:20-18:00"
+  photo: ""
+  work: ""
+  topic: ""
+  tech: true
+- name: "Закриття, фінальні розіграші, підбиття підсумків"
+  time: "18:00-18:30"
+  photo: ""
+  work: ""
+  topic: ""
+  tech: true
+- name: "Афтепаті"
+  time: "18:30-∞"
+  photo: ""
+  work: ""
+  topic: ""
+  tech: true    
+
+
+
 # A list of partners
 partners:
   special:
@@ -100,6 +201,10 @@ partners:
     - name: LeadLine IT
       logo: './images/partners/leadline.png'
       link: //leadlineit.com/
+    - name: OdessaJS
+      logo: './images/partners/logo_odessajs.png'
+      link: //odessajs.org/
+
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
@@ -114,7 +219,9 @@ venue:
 contacts:
 - name: Denys Dovhan
   email: denysdovhan@gmail.com
+  fb: https://www.facebook.com/denysdovhan
   phone: "+380 (95) 11 00 392"
 - name: Denis Zavgorodny
   email: denis.zavgorodny@gmail.com
+  fb: https://www.facebook.com/denis.zavgorodny
   phone: "+380 (50) 76 28 045"
