@@ -179,6 +179,9 @@ partners:
     - name: Chernivtsi National University
       logo: './images/partners/chnu.png'
       link: //chnu.cv.ua/
+    - name: Department of Computer Technology
+      logo: './images/partners/dct.png'
+      link: //ptcsi.chnu.edu.ua/
   gold:
     # gold partners
     - name: SoftServe
