@@ -100,19 +100,19 @@ schedule:
   photo: "./images/speakers/aleksey-shvayka.jpg"
   work: Hell Yeah LLC, Kyiv
   topic: A word on Regular Expressions
-  lightning: true  
-  tech: false  
+  lightning: true
+  tech: false
 - name: Artem Yavorsky
   time: "12-00-12:40"
   photo: "./images/speakers/artem-yavorsky.jpg"
   work: Hell Yeah LLC, Kyiv
-  topic: How to keep node_modules huge with Babel  
+  topic: How to keep node_modules huge with Babel
   tech: false
 - name: Tanya Sakharova
   time: "12:40-13:20"
   photo: "./images/speakers/tanya-sakharova.jpg"
   work: MobiDev, Chernivtsi
-  topic: Как начать использовать современные технологии на legacy-проекте  
+  topic: Как начать использовать современные технологии на legacy-проекте
   tech: false
 
 - name: "Перерва (Обід)"
@@ -165,7 +165,7 @@ schedule:
   photo: ""
   work: ""
   topic: ""
-  tech: true    
+  tech: true
 
 
 
