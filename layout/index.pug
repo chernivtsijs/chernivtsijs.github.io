@@ -33,14 +33,14 @@ html(lang=lang)
 
     section.schedule
       h1.title Schedule
-      .schedule--container
+      .schedule-container
         each item in schedule
-          .schedule--item(class=item.tech ? 'is-tech' : '')
-            .schedule--time=item.time
-            .schedule--desc
-              .schedule--title=item.name
-              .schedule--theme=item.topic
-            
+          .schedule-item(class=item.tech ? 'is-tech' : '')
+            .schedule-time=item.time
+            .schedule-desc
+              .schedule-title=item.name
+              .schedule-theme=item.topic
+
 
     section.partners
       h1.title partners

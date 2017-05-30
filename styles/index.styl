@@ -7,7 +7,6 @@
 @import _variables
 @import _base
 @import _misc
-// @import _schedule
 @import _slideshow
 
 // --- --- ---
@@ -101,6 +100,55 @@
       font-weight: 700
       padding: 0 5%
       text-align: center
+
+// --- --- ---
+
+section.schedule
+  background: #fff
+.schedule-container
+  width: 100%
+  max-width: 600px
+  margin: 0 auto
+  position: relative
+.schedule-time
+  display: inline-block
+  vertical-align: top
+  width: 120px
+  font-weight: normal
+.schedule-desc
+  display: inline-block
+  vertical-align: top
+  font-weight: normal
+  font-size: 14px
+  position: relative
+  &:before
+    content: ''
+    display: block
+    width: 7px
+    height: 7px
+    border: 2px solid $js-yellow
+    background: $js-yellow
+    border-radius: 50%
+    top: 50%
+    left: -23px
+    position: absolute
+    margin: -7px 0 0 0
+.schedule-item
+  margin: 3% 0
+.schedule-item.is-tech
+  .schedule-title
+    font-weight: bold
+.schedule-container
+  &:before
+    content: ''
+    position: absolute
+    width: 1px
+    height: 103%
+    background: #000
+    top: -2%
+    left: 105px
+.schedule-theme
+  font-family: Arial, sans-serif
 
 // --- --- ---
 
@@ -232,51 +280,3 @@
   a
     display: inline-block
     vertical-align: middle
-
-
-section.schedule
-  background: #fff    
-.schedule--container 
-  width: 100%
-  max-width: 600px
-  margin: 0 auto  
-  position: relative
-.schedule--time 
-  display: inline-block
-  vertical-align: top
-  width: 120px
-  font-weight: normal
-.schedule--desc 
-  display: inline-block
-  vertical-align: top    
-  font-weight: normal
-  font-size: 14px
-  position: relative
-  &:before
-    content: ''
-    display: block
-    width: 7px
-    height: 7px
-    border: 2px solid $js-yellow
-    background: $js-yellow
-    border-radius: 50%
-    top: 50%
-    left: -23px
-    position: absolute
-    margin: -7px 0 0 0
-.schedule--item
-  margin: 3% 0  
-.schedule--item.is-tech
-  .schedule--title 
-    font-weight: bold
-.schedule--container
-  &:before
-    content: ''
-    position: absolute
-    width: 1px
-    height: 103%
-    background: #000
-    top: -2%
-    left: 105px
-.schedule--theme    
-  font-family: Arial, sans-serif
