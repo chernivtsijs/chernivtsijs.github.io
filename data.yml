@@ -198,9 +198,6 @@ partners:
     - name: Chernivtsi National University
       logo: './images/partners/chnu.png'
       link: //chnu.cv.ua/
-    - name: Department of Computer Technology
-      logo: './images/partners/dct.png'
-      link: //ptcsi.chnu.edu.ua/
   gold:
     # gold partners
     - name: SoftServe
@@ -214,6 +211,10 @@ partners:
       link: https://www.epam.com/careers/ukraine
   silver:
     # silver partners
+    - name: Department of Computer Technology
+      logo: './images/partners/dct.png'
+      link: //ptcsi.chnu.edu.ua/
+    
     - name: Cbit
       logo: './images/partners/cbit.png'
       link: //cbit.org.ua
