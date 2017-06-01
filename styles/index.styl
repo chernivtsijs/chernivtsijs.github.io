@@ -112,15 +112,17 @@ section.schedule
   position: relative
 .schedule-time
   display: inline-block
-  vertical-align: top
+  vertical-align: middle
   width: 120px
   font-weight: normal
+  font-size: 14px
 .schedule-desc
   display: inline-block
-  vertical-align: top
+  vertical-align: middle
   font-weight: normal
   font-size: 14px
   position: relative
+  max-width: 480px
   &:before
     content: ''
     display: block
@@ -130,11 +132,12 @@ section.schedule
     background: $js-yellow
     border-radius: 50%
     top: 50%
-    left: -23px
+    left: -20px
     position: absolute
-    margin: -7px 0 0 0
+    margin: -6px 0 0 0
 .schedule-item
   margin: 3% 0
+  font-size: 0
 .schedule-item.is-tech
   .schedule-title
     font-weight: bold
