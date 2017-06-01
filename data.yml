@@ -67,6 +67,10 @@ speakers:
   work: Hell Yeah LLC, Kyiv
   topic: A word on Regular Expressions
   lightning: true
+- name: Anton Nemtsev
+  photo: "./images/speakers/anton-nemtsev.jpg"
+  work: TemplateMonster, Kyiv
+  topic: Что нам стоит дом построить. Давайте поговорим о методах формирования лаяутов. С самого начала.
 
 # A schedule of speakers
 schedule:
@@ -223,6 +227,9 @@ partners:
     - name: CyberBionic
       logo: './images/partners/CBS.png'
       link: http://edu.cbsystematics.com/ru/
+    - name: TemplateMonster
+      logo: './images/partners/tm.png'
+      link: https://www.templatemonster.com/ua/
 
 
 
