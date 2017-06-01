@@ -194,6 +194,9 @@ partners:
     - name: ASD Team
       logo: './images/partners/asd.png'
       link: //asd-team.com/
+    - name: EPAM
+      logo: './images/partners/epam.png'
+      link: https://www.epam.com/careers/ukraine
   silver:
     # silver partners
     - name: Cbit
