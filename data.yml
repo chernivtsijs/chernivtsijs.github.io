@@ -249,6 +249,12 @@ partners:
     - name: TemplateMonster
       logo: './images/partners/tm.png'
       link: https://www.templatemonster.com/ua/
+    - name: WFD
+      logo: './images/partners/fwdays.png'
+      link: https://frameworksdays.com/event/frontend-fwdays-17
+    - name: UVCA
+      logo: './images/partners/uvca.png'
+      link: http://www.uvca.eu/ua
 
 
 
