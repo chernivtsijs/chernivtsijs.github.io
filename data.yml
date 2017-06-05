@@ -233,9 +233,9 @@ partners:
     - name: ITVDN
       logo: './images/partners/ITVDN_logo.png'
       link: https://itvdn.com/ru
-    - name: DEV-PRO
-      logo: './images/partners/dev-pro.png'
-      link: https://www.dev-pro.net/
+    - name: DEV-TALK
+      logo: './images/partners/devtalk.png'
+      link: http://www.devtalk.dev-pro.net/ru/
     - name: DATA-ART
       logo: './images/partners/data-art.png'
       link: https://dataart.ua/
@@ -255,6 +255,11 @@ partners:
     - name: UVCA
       logo: './images/partners/uvca.png'
       link: http://www.uvca.eu/ua
+    - name: LOHIKA
+      logo: './images/partners/lohika.png'
+      link: http://www.lohika.com.ua/
+
+      
 
 
 
