@@ -100,7 +100,7 @@ schedule:
   topic: Мобильные приложения на JS. Как, зачем, почему бы и нет?
   tech: false
 - name: Andrew Kostetskyi
-  time: "16:40-17:20"
+  time: "11:30-11:50"
   photo: "./images/speakers/andrew-kostetskyi.jpg"
   work: ASD Team, Chernivtsi
   topic: Програмування мікроконтроллерів на JavaScript
@@ -154,7 +154,7 @@ schedule:
   topic: 'Bootstrap: как правильно и что нового в 4-ке'
   tech: false
 - name: Aleksey Shvayka
-  time: "11:30-11:50"
+  time: "16:40-17:20"
   photo: "./images/speakers/aleksey-shvayka.jpg"
   work: Hell Yeah LLC, Kyiv
   topic: Shipping new RegExp features
