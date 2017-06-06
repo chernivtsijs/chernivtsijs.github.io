@@ -65,7 +65,7 @@ speakers:
 - name: Aleksey Shvayka
   photo: "./images/speakers/aleksey-shvayka.jpg"
   work: Hell Yeah LLC, Kyiv
-  topic: A word on Regular Expressions
+  topic: Shipping new RegExp features
   lightning: true
 - name: Anton Nemtsev
   photo: "./images/speakers/anton-nemtsev.jpg"
@@ -103,7 +103,7 @@ schedule:
   time: "11:30-11:50"
   photo: "./images/speakers/aleksey-shvayka.jpg"
   work: Hell Yeah LLC, Kyiv
-  topic: A word on Regular Expressions
+  topic: Shipping new RegExp features
   lightning: true
   tech: false
 
