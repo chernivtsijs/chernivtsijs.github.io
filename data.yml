@@ -99,11 +99,11 @@ schedule:
   work: Hell Yeah LLC, Kyiv
   topic: Мобильные приложения на JS. Как, зачем, почему бы и нет?
   tech: false
-- name: Aleksey Shvayka
-  time: "11:30-11:50"
-  photo: "./images/speakers/aleksey-shvayka.jpg"
-  work: Hell Yeah LLC, Kyiv
-  topic: Shipping new RegExp features
+- name: Andrew Kostetskyi
+  time: "16:40-17:20"
+  photo: "./images/speakers/andrew-kostetskyi.jpg"
+  work: ASD Team, Chernivtsi
+  topic: Програмування мікроконтроллерів на JavaScript
   lightning: true
   tech: false
 
@@ -112,7 +112,7 @@ schedule:
   photo: ""
   work: ""
   topic: ""
-  tech: true  
+  tech: true
 
 - name: Artem Yavorsky
   time: "12-00-12:40"
@@ -146,18 +146,18 @@ schedule:
   photo: "./images/speakers/anton-nemtsev.jpg"
   work: emplateMonster, Kyiv
   topic: Что нам стоит дом построить. Давайте поговорим о методах формирования лаяутов. С самого начала.
-  tech: false  
+  tech: false
 - name: Ihor Zenich
   time: "16:00-16:40"
   photo: "./images/speakers/ihor-zenich.jpg"
   work: EPAM, Kharkiv
   topic: 'Bootstrap: как правильно и что нового в 4-ке'
   tech: false
-- name: Andrew Kostetskyi
-  time: "16:40-17:20"
-  photo: "./images/speakers/andrew-kostetskyi.jpg"
-  work: ASD Team, Chernivtsi
-  topic: Програмування мікроконтроллерів на JavaScript
+- name: Aleksey Shvayka
+  time: "11:30-11:50"
+  photo: "./images/speakers/aleksey-shvayka.jpg"
+  work: Hell Yeah LLC, Kyiv
+  topic: Shipping new RegExp features
   lightning: true
   tech: false
 - name: Kyrylo Yakovenko
@@ -214,7 +214,7 @@ partners:
     - name: Department of Computer Technology
       logo: './images/partners/dct.png'
       link: //ptcsi.chnu.edu.ua/
-    
+
     - name: Cbit
       logo: './images/partners/cbit.png'
       link: //cbit.org.ua
@@ -259,7 +259,7 @@ partners:
       logo: './images/partners/lohika.png'
       link: http://www.lohika.com.ua/
 
-      
+
 
 
 
