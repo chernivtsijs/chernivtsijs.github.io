@@ -258,6 +258,12 @@ partners:
     - name: LOHIKA
       logo: './images/partners/lohika.png'
       link: http://www.lohika.com.ua/
+    - name: STICKER-SHOP
+      logo: './images/partners/stick.png'
+      link: https://www.facebook.com/stikerShopUA/
+    - name: UNIT-LOGO
+      logo: './images/partners/UNIT-LOGO.png'
+      link: https://unit.ua/
 
 
 
