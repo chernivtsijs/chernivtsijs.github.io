@@ -1,6 +1,6 @@
 <a href="https://telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg">
   <div align="center">
-    <img src="./images/logo.png" width="250px">
+    <img src="./images/logo.svg" width="250px">
   </div>
 </a>
 
