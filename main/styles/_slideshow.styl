@@ -1,0 +1,34 @@
+//
+// SLIDESHOW
+// ---------
+// Slideshow component for venue section
+
+.slideshow
+  background-color: black
+  height: 100%
+  list-style: none
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: -2
+
+  .slide
+    animation: slide-animation
+    animation-duration: $slide-delay * $slides-amount
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+    backface-visibility: hidden
+    background-position: 50% 50%
+    background-size: cover
+    color: transparent
+    height: 100%
+    opacity: 0
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: -1
+
+    // Set animation delay for each of slides
+    for $index in (1..$slides-amount)
+      &:nth-child({$index})
+        animation-delay: $slide-delay * ($index - 1)

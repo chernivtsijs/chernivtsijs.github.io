@@ -1,0 +1,12 @@
+//- 
+//- Contacts component
+//- 
+
+.contacts
+  each contact in contacts
+    ul
+      li.name
+        a(href=contact.fb target="_blank")=contact.name
+      li.email
+        a(href="mailto:"+contact.email)=contact.email
+      li.phone=contact.phone

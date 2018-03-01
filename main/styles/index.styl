@@ -1,0 +1,355 @@
+//
+// ENTRY
+// -----
+// Entry point of styles
+
+// Import parts
+@import _variables
+@import _base
+@import _misc
+@import _slideshow
+
+// --- --- ---
+
+.header
+  background-image: url('../images/banner-bg.jpg')
+  background-position: center
+  background-size: cover
+  display: flex
+  height: 100vh
+  justify-content: center
+  position: relative
+  &-wrapper
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+  &-title
+    align-items: center
+    display: flex
+    div
+      padding-left: 40px
+      text-shadow: 0 0 20px rgba(0, 0, 0, .5)
+      h1
+        color: white
+        font-size: 80px
+        font-weight: 700
+      p.desc
+        color: white
+        font-size: 35px
+  &-logo
+    border-radius: 5px
+    box-shadow: $button-shadow
+    display: inline-block
+    float: left
+    height: @width
+    width: 10em
+  .scroll
+    animation: move-icon-scroll
+    animation-delay: 3s
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    bottom: 20px
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    img
+      width: 50px
+
+// --- --- ---
+
+.speakers
+  background-color: white
+  .speaker
+    align-items: center
+    color: $js-black
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-bottom: 40px
+    width: 30%
+    .photo
+      align-items: center
+      display: flex
+      justify-content: center
+      margin-bottom: 1rem
+      position: relative
+      width: 150px
+      img
+        border-radius: 50%
+        height: 150px
+        min-height: @height
+      &.is-lightning::after
+        background-color: $js-yellow
+        border-radius: 3px
+        bottom: -.5rem
+        color: $js-black
+        content: 'Lightning'
+        font-weight: bold
+        padding: .5rem
+        position: absolute
+        right: -1rem
+        z-index: 10
+    .name-speaker
+      font-weight: 700
+    .work-place
+      font-style: italic
+    .title-speach
+      font-size: 1.2em
+      font-weight: 700
+      padding: 0 5%
+      text-align: center
+
+// --- --- ---
+
+section.schedule
+  background: #fff
+.schedule-container
+  width: 100%
+  max-width: 600px
+  margin: 0 auto
+  position: relative
+.schedule-time
+  display: inline-block
+  vertical-align: middle
+  width: 120px
+  font-weight: normal
+  font-size: 14px
+.schedule-desc
+  display: inline-block
+  vertical-align: middle
+  font-weight: normal
+  font-size: 14px
+  position: relative
+  max-width: 480px
+  &:before
+    content: ''
+    display: block
+    width: 7px
+    height: 7px
+    border: 2px solid $js-yellow
+    background: $js-yellow
+    border-radius: 50%
+    top: 50%
+    left: -20px
+    position: absolute
+    margin: -6px 0 0 0
+.schedule-item
+  margin: 3% 0
+  font-size: 0
+.schedule-item.is-tech
+  .schedule-title
+    font-weight: bold
+.schedule-container
+  &:before
+    content: ''
+    position: absolute
+    width: 1px
+    height: 103%
+    background: #000
+    top: -2%
+    left: 105px
+.schedule-theme
+  font-family: Arial, sans-serif
+
+// --- --- ---
+
+.partners
+  font-weight: 300
+  background-color: darken(white, 2.5%)
+  .container
+    display: block
+  p
+    display: block
+  &-kind
+    text-transform: capitalize
+  &-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: row wrap
+  .partner
+    display: flex
+    padding: 2%
+    box-sizing: border-box
+    width: 20%
+    align-items: center
+    text-align: center
+    a
+      margin: 0 auto
+    img
+      width: 100%
+    &#epam
+      margin-top: 1%
+    &#uvca  
+      padding: 2% 0
+    &#alterego
+      padding: 2% 0  
+      width: 25%
+      margin: 0
+    &#alterego img
+      width: 95%
+        
+    &#asd-team img
+      width: 60%
+    &#chernivtsi-national-university img
+      height: auto
+      width: 80%
+    &#cbit img,
+    &#nodeschool-chernivtsi img
+      height: 130px
+      width: auto
+    &#department-of-computer-technology img
+      height: auto
+      width: 70%
+    &#templatemonster
+      padding-left: 0  
+      padding-right: 0  
+      width: 28%
+    &#templatemonster img
+      height: auto
+      width: 100%
+// --- --- ---
+
+.venue
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6))
+  color: white
+  position: relative
+  .title
+    color: white
+    &::after
+      background-color: white
+  .container
+    padding: 0
+  &-name.row
+    line-height: 1.2
+    text-align: center
+    width: 100%
+    & h2
+      font-size: 2.3rem
+      font-weight: lighter
+    p
+      color: white
+      font-size: 1.6rem
+      font-weight: lighter
+  &-about.row
+    align-items: center
+    display: flex
+    padding-bottom: 40px
+  &-half
+    color: white
+    width: 50%
+    &.logos
+      display: flex
+      justify-content: center
+      text-align: center
+      .unesco,
+      .welterbe
+        padding: 0 5%
+        width: 30%
+    &.desc p, a
+      color: white
+      font-size: 1.6rem
+      font-weight: lighter
+      text-align: left
+    &.desc a
+      font-weight: bold
+
+// --- --- ---
+
+.map
+  margin: 0 auto
+  padding-bottom: 0
+  width: 100%
+  #embedded-map
+    height: 600px
+  .address
+    color: $js-black
+    padding-bottom: 20px
+    text-align: center
+
+// --- --- ---
+
+.bottom-banner
+  align-items: center
+  background-image: url('../images/bottom-banner-bg.jpg')
+  background-position: center
+  background-size: cover
+  display: flex
+  flex-direction: column
+  height: 400px
+  justify-content: center
+
+// --- --- ---
+
+.footer
+  align-items: center
+  background-color: $js-black
+  display: flex
+  justify-content: space-between
+  padding: 40px 100px
+  position: relative
+
+.name
+  a
+    display: inline-block
+    vertical-align: middle
+
+
+section.schedule
+  background: #fff    
+.schedule--container 
+  width: 100%
+  max-width: 600px
+  margin: 0 auto  
+  position: relative
+.schedule--time 
+  display: inline-block
+  vertical-align: top
+  width: 120px
+  font-weight: normal
+.schedule--desc 
+  display: inline-block
+  vertical-align: top    
+  font-weight: normal
+  font-size: 14px
+  position: relative
+  &:before
+    content: ''
+    display: block
+    width: 7px
+    height: 7px
+    border: 2px solid $js-yellow
+    background: $js-yellow
+    border-radius: 50%
+    top: 50%
+    left: -23px
+    position: absolute
+    margin: -7px 0 0 0
+.schedule--item
+  margin: 3% 0  
+.schedule--item.is-tech
+  .schedule--title 
+    font-weight: bold
+.schedule--container
+  &:before
+    content: ''
+    position: absolute
+    width: 1px
+    height: 103%
+    background: #000
+    top: -2%
+    left: 105px
+.schedule--theme    
+  font-family: Arial, sans-serif
+
+#dev-pro img
+  max-width: 80%
+.row-thanks
+  margin-bottom: 7%
+  & .partners
+    font-size: 16px
+    font-size: 1.7vw
+
+
