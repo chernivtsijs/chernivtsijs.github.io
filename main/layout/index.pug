@@ -1,0 +1,27 @@
+doctype html
+html(lang=lang)
+  head
+    title #{date} — #{title} — #{subtitle}
+    include _head
+  body
+    header.header
+      include _links
+      include _social
+      .header-wrapper
+        .row.header-title
+          img.header-logo(src='./images/logo.svg', alt='')
+          div
+            h1= title
+            p.desc= description
+        .row.date= date
+        .row.actions
+          a(href=cfp, class="action-btn", onclick="fbq('track', 'InitiateCFP');") Call For Papers
+          a(href='mailto:chernivtsijs@gmail.com', class="action-btn") Become a Partner
+        .row.questions
+          a(href=social[0].link) Any questions?
+
+    footer.footer
+      include _social
+      include _contacts
+    include _scripts
+    include _analytics

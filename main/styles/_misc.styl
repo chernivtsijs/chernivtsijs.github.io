@@ -1,0 +1,144 @@
+//
+// MISC
+// ----
+// Misc components of the page
+
+// Content wrapper
+.container
+  align-items: flex-start
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin: 0 auto
+  padding-bottom: @padding-top
+  padding-top: 40px
+  width: 75%
+
+// Row container
+.row:not(.questions)
+  margin: 20px auto
+.row.actions
+  margin-left: 0
+  margin-right: 0
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  width: 100%
+  max-width: 500px
+  .action-btn
+    display: inline-block
+
+// Social links in header and footer
+.socials
+  header &
+    position: absolute
+    right: 30px
+    top: @right
+  ul
+    display: flex
+    justify-content: space-between
+  li
+    list-style: none
+    margin-left: 30px
+    opacity: .6
+    transition: .2s
+    &:first-chil  d
+      margin-left:   0
+    &:hover
+      opacity: 1
+      transition: .2s
+    & a img
+      width: 20px
+.links
+  header &
+    position: absolute
+    left: 30px
+    top: @left
+  ul
+    display: flex
+    justify-content: space-between
+  li
+    list-style: none
+    margin-left: 30px
+    transition: .2s
+    &.active
+      font-weight: bold
+    a
+      color: $js-yellow
+      text-decoration: none
+
+// Button for primary actions
+.action-btn
+  background: $js-yellow
+  border-radius: 3px
+  box-shadow: $button-shadow
+  color: $js-black
+  display: block
+  font-weight: 700
+  height: 65px
+  letter-spacing: 2px
+  line-height: @height
+  padding-left: 20px
+  padding-right: @padding-left
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  width: 200px
+
+// Questions link container
+.questions
+  margin-top: 0
+  & a
+    border-bottom: 1px solid @color
+    color: rgba(255, 255, 255, .6)
+    font-size: 20px
+    text-decoration: none
+    &:hover
+      border-bottom-color: white
+      color: white
+
+// Date in header and footer
+.date
+  color: white
+  font-size: 30px
+
+// Section title
+.title
+  color: $js-black
+  font-size: 40px
+  font-weight: 400
+  letter-spacing: 2px
+  margin-bottom: 50px
+  position: relative
+  text-align: center
+  text-transform: uppercase
+  &::after
+    background: $js-black
+    border-radius: 2px
+    content: ''
+    height: 4px
+    left: 50%
+    position: absolute
+    top: 100%
+    transform: translateX(-50%) translateY(10px)
+    width: 70px
+
+// Contacts list
+.contacts
+  align-items: center
+  color: rgba(white, .8)
+  display: flex
+  justify-content: space-around
+  ul
+    &:not(:last-child)
+      margin-right: 100px
+    & li
+      list-style: none
+      padding: 5px 0
+      > a
+        color: rgba(white, .8)
+        text-decoration: none
+        &:hover
+          color: white
+        &:active
+          color: rgba(white, .8)
