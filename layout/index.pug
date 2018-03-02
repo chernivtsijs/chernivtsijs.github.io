@@ -14,7 +14,7 @@ html(lang=lang)
             p.desc= description
         .row.date= date
         .row
-          a(href=actionHref, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action
+          a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action.title
         .row.questions
           a(href=social[0].link) Any questions?
         .scroll
@@ -101,7 +101,7 @@ html(lang=lang)
     section.bottom-banner
       .row.date=date
       .row.ticket
-        a(href=actionHref, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action
+        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action.title
       .row.questions
         a(href=social[0].link) Any questions?
 

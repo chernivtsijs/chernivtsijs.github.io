@@ -2,8 +2,9 @@
 title: ChernivtsiJS
 description: Let's talk about JavaScript?
 date: June 23, 2018
-actionHref: https://www.youtube.com/playlist?list=PLt-pAIa9BS40Rn0VDtQxutxlgor8wgc6U
-action: Submit your talk
+action:
+  link: https://goo.gl/forms/vZq4ATWCS41Ub6nX2
+  title: Submit your talk
 
 # Location information
 place:
