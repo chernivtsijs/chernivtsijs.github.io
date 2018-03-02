@@ -7,7 +7,7 @@
     "start": "gulp",
     "build": "gulp build",
     "lint": "eslint scripts gulpfile.js && stylint styles",
-    "deploy": "npm run build && gh-pages -d dist -m \"Updated at $(date +'%a, %d %b %Y, %T, %Z')\" --add"
+    "deploy": "npm run build && gh-pages -d dist -b master -m \"Updated at $(date +'%a, %d %b %Y, %T, %Z')\" --add"
   },
   "repository": {
     "type": "git",
