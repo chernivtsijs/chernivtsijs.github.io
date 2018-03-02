@@ -8,9 +8,7 @@ const babel = require('gulp-babel')
 const pug = require('gulp-pug')
 const put = require('gulp-data')
 const imagemin = require('gulp-imagemin')
-const deploy = require('gulp-gh-pages')
 const sourcemaps = require('gulp-sourcemaps')
-
 const yaml = require('js-yaml')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
@@ -79,15 +77,6 @@ gulp.task('build', gulp.series(
     'images',
     'copy'
   )
-))
-
-gulp.task('deploy', gulp.series('build', () =>
-  gulp.src('dist/**/*')
-    .pipe(deploy({
-      branch: 'master',
-      push: true,
-      message: `Update ${new Date()}`
-    }))
 ))
 
 gulp.task('watch', () => {

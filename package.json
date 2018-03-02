@@ -7,7 +7,7 @@
     "start": "gulp",
     "build": "gulp build",
     "lint": "eslint scripts gulpfile.js && stylint styles",
-    "deploy": "gulp deploy"
+    "deploy": "npm run build && gh-pages -d dist -m \"Updated at $(date +'%a, %d %b %Y, %T, %Z')\" --add"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,10 @@
     "cssnano": "^3.10.0",
     "del": "^2.2.2",
     "eslint": "^3.19.0",
+    "gh-pages": "^1.1.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-babel": "^6.1.2",
     "gulp-data": "^1.2.1",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^3.1.1",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.3.0",
