@@ -1,9 +1,9 @@
 # Common
 title: ChernivtsiJS
 description: Let's talk about JavaScript?
-date: June 10, 2017
+date: June 23, 2018
 actionHref: https://www.youtube.com/playlist?list=PLt-pAIa9BS40Rn0VDtQxutxlgor8wgc6U
-action: Watch talks
+action: Submit your talk
 
 # Location information
 place:
@@ -27,187 +27,25 @@ social:
   icon: "./images/icons/twitter.png"
 - link: //gitter.im/dev-ua/chernivtsijs
   icon: "./images/icons/gitter.png"
+- link: //github.com/chernivtsijs
+  icon: "./images/icons/github.png"
 
 # A list of speakers
 speakers:
-- name: Oleksandr Lapshin
-  photo: "./images/speakers/oleksandr-lapshin.jpg"
-  work: Rails Reactor, Kyiv
-  topic: Peg.js and writing custom grammar parser
-- name: Ihor Zenich
-  photo: "./images/speakers/ihor-zenich.jpg"
-  work: EPAM, Kharkiv
-  topic: 'Bootstrap: как правильно и что нового в 4-ке'
-- name: Volodymyr Stelmakh
-  photo: "./images/speakers/volodymyr-stelmakh.jpg"
-  work: Hell Yeah LLC, Kyiv
-  topic: Мобильные приложения на JS. Как, зачем, почему бы и нет?
-- name: Roman Liutikov
-  photo: "./images/speakers/roman-lutikov.jpg"
-  work: Attendify, Kyiv
-  topic: Optimizing Compilers
-- name: Artem Yavorsky
-  photo: "./images/speakers/artem-yavorsky.jpg"
-  work: Hell Yeah LLC, Kyiv
-  topic: How to keep node_modules huge with Babel
-- name: Kyrylo Yakovenko
-  photo: "./images/speakers/kirill-yakovenko.jpg"
-  work: CleverCrew, Kharkiv
-  topic: Styles in the world of components
-- name: Tanya Sakharova
-  photo: "./images/speakers/tanya-sakharova.jpg"
-  work: MobiDev, Chernivtsi
-  topic: Как начать использовать современные технологии на legacy-проекте
-- name: Andrew Kostetskyi
-  photo: "./images/speakers/andrew-kostetskyi.jpg"
-  work: ASD Team, Chernivtsi
-  topic: Програмування мікроконтроллерів на JavaScript
-  lightning: true
-- name: Aleksey Shvayka
-  photo: "./images/speakers/aleksey-shvayka.jpg"
-  work: Hell Yeah LLC, Kyiv
-  topic: Shipping new RegExp features
-  lightning: true
-- name: Anton Nemtsev
-  photo: "./images/speakers/anton-nemtsev.jpg"
-  work: TemplateMonster, Kyiv
-  topic: Что нам стоит дом построить. Давайте поговорим о методах формирования лаяутов. С самого начала.
+# Example of speaker object
+# - name: Oleksandr Lapshin
+#   photo: "./images/speakers/oleksandr-lapshin.jpg"
+#   work: Rails Reactor, Kyiv
+#   topic: Peg.js and writing custom grammar parser
 
 # A schedule of speakers
 schedule:
-- name: "Реєстрація"
-  time: "09:00-10:00"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true
-- name: "Відкриття"
-  time: "10:00-10:15"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true
-
 - name: Oleksandr Lapshin
   time: "10:15-10:50"
   photo: "./images/speakers/oleksandr-lapshin.jpg"
   work: Rails Reactor, Kyiv
   topic: Peg.js and writing custom grammar parser
   tech: false
-- name: Volodymyr Stelmakh
-  time: "10:50-11:25"
-  photo: "./images/speakers/volodymyr-stelmakh.jpg"
-  work: Hell Yeah LLC, Kyiv
-  topic: Мобильные приложения на JS. Как, зачем, почему бы и нет?
-  tech: false
-- name: Andrew Kostetskyi
-  time: "11:25-11:45"
-  photo: "./images/speakers/andrew-kostetskyi.jpg"
-  work: ASD Team, Chernivtsi
-  topic: Програмування мікроконтроллерів на JavaScript
-  lightning: true
-  tech: false
-
-- name: "Перерва на каву"
-  time: "11:45-12:00"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true
-
-
-
-- name: Artem Yavorsky
-  time: "12-00-12:35"
-  photo: "./images/speakers/artem-yavorsky.jpg"
-  work: Hell Yeah LLC, Kyiv
-  topic: How to keep node_modules huge with Babel
-  tech: false
-
-- name: Tanya Sakharova
-  time: "12:35-13:10"
-  photo: "./images/speakers/tanya-sakharova.jpg"
-  work: MobiDev, Chernivtsi
-  topic: Как начать использовать современные технологии на legacy-проекте
-  tech: false
-
-- name: "Перерва (Обід)"
-  time: "13:10-14:40"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true
-
-- name: "EPAM – партнерська програма"
-  time: "14:40-14:50"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true  
-
-
-- name: Anton Nemtsev
-  time: "14:50-15:25"
-  photo: "./images/speakers/anton-nemtsev.jpg"
-  work: emplateMonster, Kyiv
-  topic: Что нам стоит дом построить. Давайте поговорим о методах формирования лаяутов. С самого начала.
-  tech: false
-- name: Roman Liutikov
-  time: "15:25-16:00"
-  photo: "./images/speakers/roman-lutikov.jpg"
-  work: Attendify, Kyiv
-  topic: Optimizing Compilers
-  tech: false
-- name: Ihor Zenich
-  time: "16:00-16:35"
-  photo: "./images/speakers/ihor-zenich.jpg"
-  work: EPAM, Kharkiv
-  topic: 'Bootstrap: как правильно и что нового в 4-ке'
-  tech: false
-
-- name: "Перерва"
-  time: "16:35-16:40"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true  
-
-
-
-- name: Aleksey Shvayka
-  time: "16:40-17:00"
-  photo: "./images/speakers/aleksey-shvayka.jpg"
-  work: Hell Yeah LLC, Kyiv
-  topic: Shipping new RegExp features
-  lightning: true
-  tech: false
-- name: Kyrylo Yakovenko
-  time: "17:00-17:35"
-  photo: "./images/speakers/kirill-yakovenko.jpg"
-  work: CleverCrew, Kharkiv
-  topic: Styles in the world of components
-  tech: false
-
-- name: "QA-сесія"
-  time: "17:35-18:00"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true
-- name: "Закриття, фінальні розіграші, підбиття підсумків"
-  time: "18:00-18:30"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true
-- name: "Афтепаті"
-  time: "18:30-∞"
-  photo: ""
-  work: ""
-  topic: ""
-  tech: true
-
-
 
 # A list of partners
 partners:
@@ -216,79 +54,10 @@ partners:
     - name: AlterEGO
       logo: './images/partners/alterego.png'
       link: //alterego.biz.ua
-    - name: Chernivtsi National University
-      logo: './images/partners/chnu.png'
-      link: //chnu.cv.ua/
   gold:
     # gold partners
-    - name: SoftServe
-      logo: './images/partners/softserve.png'
-      link: //www.softserveinc.com
-    - name: ASD Team
-      logo: './images/partners/asd.png'
-      link: //asd-team.com/
-    - name: EPAM
-      logo: './images/partners/epam.png'
-      link: https://www.epam.com/careers/ukraine
   silver:
     # silver partners
-    - name: Department of Computer Technology
-      logo: './images/partners/dct.png'
-      link: //ptcsi.chnu.edu.ua/
-
-    - name: Cbit
-      logo: './images/partners/cbit.png'
-      link: //cbit.org.ua
-    - name: NodeSchool Chernivtsi
-      logo: './images/partners/nodeschool.png'
-      link: //nodeschool.io/chernivtsi
-    - name: Papercraft by Nazar Bogdanov
-      logo: './images/partners/nazar.png'
-      link: //bohdanov.github.io/
-    - name: LeadLine IT
-      logo: './images/partners/leadline.png'
-      link: //leadlineit.com/
-    - name: OdessaJS
-      logo: './images/partners/logo_odessajs.png'
-      link: //odessajs.org/
-    - name: ITVDN
-      logo: './images/partners/ITVDN_logo.png'
-      link: https://itvdn.com/ru
-    - name: DEV-TALK
-      logo: './images/partners/devtalk.png'
-      link: http://www.devtalk.dev-pro.net/ru/
-    - name: DATA-ART
-      logo: './images/partners/data-art.png'
-      link: https://dataart.ua/
-      max_width: "70%"
-    - name: РаботаUA
-      logo: './images/partners/rabota.png'
-      link: https://rabota.ua/
-    - name: CyberBionic
-      logo: './images/partners/CBS.png'
-      link: http://edu.cbsystematics.com/ru/
-    - name: TemplateMonster
-      logo: './images/partners/template-monster.png'
-      link: https://www.templatemonster.com/ua/
-    - name: WFD
-      logo: './images/partners/fwdays.png'
-      link: https://frameworksdays.com/event/frontend-fwdays-17
-    - name: UVCA
-      logo: './images/partners/uvca.png'
-      link: http://www.uvca.eu/ua
-    - name: LOHIKA
-      logo: './images/partners/lohika.png'
-      link: http://www.lohika.com.ua/
-    - name: STICKER-SHOP
-      logo: './images/partners/stick.png'
-      link: https://www.facebook.com/stikerShopUA/
-    - name: UNIT-LOGO
-      logo: './images/partners/UNIT-LOGO.png'
-      link: https://unit.ua/
-
-
-
-
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
