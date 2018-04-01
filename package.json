@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "chernivtsijs",
+  "description": "Chernivtsi JavaScript Community",
+  "version": "1.0.0",
+  "author": "ChernivtsiJS Team <chernivtsijs@gmail.com>",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chernivtsijs/chernivtsijs.github.oi"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chernivtsijs/chernivtsijs.github.io/issues"
+  },
+  "homepage": "https://chernivtsi.js.org",
+  "dependencies": {
+    "gatsby": "^1.9.238",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.1"
+  }
+}
