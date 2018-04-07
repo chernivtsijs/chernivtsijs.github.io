@@ -3,3 +3,5 @@ Thumbs.db
 node_modules/
 dist/
 .publish
+yarn.lock
+*.log
