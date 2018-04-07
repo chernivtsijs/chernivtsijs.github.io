@@ -1,19 +1,23 @@
 const fs = require('fs')
-
 const gulp = require('gulp')
+const frontMatter = require('gulp-front-matter')
+const remark = require('gulp-remark')
+const html = require('remark-html')
 const plumber = require('gulp-plumber')
 const stylus = require('gulp-stylus')
 const postcss = require('gulp-postcss')
 const babel = require('gulp-babel')
-const pug = require('gulp-pug')
-const put = require('gulp-data')
+const pug = require('pug')
 const imagemin = require('gulp-imagemin')
 const sourcemaps = require('gulp-sourcemaps')
 const yaml = require('js-yaml')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
+const through = require('through2')
 const del = require('del')
 const BS = require('browser-sync')
+
+// TODO: Add paths object here
 
 const browserSync = BS.create()
 
@@ -25,11 +29,24 @@ const getData = (path) => {
   }
 }
 
-gulp.task('layout', () =>
-  gulp.src('layout/[!_]*.pug')
+const applyTemplate = () => through.obj((file, enc, callback) => {
+  const layout = file.frontMatter.layout || 'layout/index.pug'
+  const data = Object.assign(getData('./data.yml'), file.frontMatter)
+
+  const html = pug.renderFile(layout, data)
+
+  file.contents = new Buffer(html)
+  file.extname = '.html'
+
+  return callback(null, file)
+})
+
+gulp.task('pages', () => 
+  gulp.src('pages/**/*.md')
     .pipe(plumber())
-    .pipe(put(() => getData('./data.yml')))
-    .pipe(pug({ pretty: true }))
+    .pipe(frontMatter())
+    .pipe(remark().use(html))
+    .pipe(applyTemplate())
     .pipe(gulp.dest('dist'))
 )
 
@@ -71,7 +88,7 @@ gulp.task('clean', () => del('dist'))
 gulp.task('build', gulp.series(
   'clean',
   gulp.parallel(
-    'layout',
+    'pages',
     'styles',
     'scripts',
     'images',
@@ -84,7 +101,7 @@ gulp.task('watch', () => {
     server: 'dist',
   })
 
-  gulp.watch(['layout/**/*.pug', '*.yml'], gulp.series('layout'))
+  gulp.watch(['layout/**/*.pug', '*.yml'], gulp.series('pages'))
   gulp.watch('styles/**/*.styl', gulp.series('styles'))
   gulp.watch('scripts/**/*.js', gulp.series('scripts'))
   gulp.watch('images/**/*.*', gulp.series('images'))
