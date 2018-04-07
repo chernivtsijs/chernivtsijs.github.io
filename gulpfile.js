@@ -7,7 +7,9 @@ const html = require('remark-html')
 const plumber = require('gulp-plumber')
 const stylus = require('gulp-stylus')
 const postcss = require('gulp-postcss')
-const babel = require('gulp-babel')
+const rollup = require('gulp-rollup')
+const rollupYaml = require('rollup-plugin-yaml')
+const rollupBabel = require('rollup-plugin-babel')
 const pug = require('pug')
 const imagemin = require('gulp-imagemin')
 const sourcemaps = require('gulp-sourcemaps')
@@ -75,8 +77,17 @@ gulp.task('styles', () => {
 })
 
 gulp.task('scripts', () =>
-  gulp.src('scripts/*.js')
-    .pipe(babel())
+  gulp.src('scripts/**/*.js')
+    .pipe(rollup({
+      input: 'scripts/index.js',
+      output: { format: 'cjs' },
+      plugins: [
+        rollupYaml(),
+        rollupBabel()
+      ],
+      allowRealFiles: true,
+    }))
+    // .pipe(babel())
     .pipe(gulp.dest('dist/scripts'))
 )
 

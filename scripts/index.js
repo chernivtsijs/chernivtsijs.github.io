@@ -1,21 +1,27 @@
 /* eslint no-undef: 0 */
-const mapboxURL = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+import config from '../data.yml'
+
+/**
+ * Map
+ */
+
+const { latitude, longitude } = config.place.coords
 
 const map = L
   .map('embedded-map', {
     scrollWheelZoom: false,
   })
-  .setView(coords, 16)
+  .setView([latitude, longitude], 16)
 
 L
-  .tileLayer(mapboxURL, {
+  .tileLayer(config.place.url, {
     maxZoom: 18,
     id: 'mapbox.streets',
   })
   .addTo(map)
 
 L
-  .marker(coords)
+  .marker([latitude, longitude])
   .addTo(map)
   .openPopup()
 
@@ -23,20 +29,12 @@ L
  * Tweets from last year
  */
 
-const tweetsContainer = document.getElementById('tweets-container')
-
-// FIXME: Read tweets from data.yml
-const tweets = [
-  '873561355571408896',
-  '873485295160885248',
-  '873569566961565701',
-  '873450367668936704',
-  '852477975811547136',
-  '873485917213913089',
-]
-
-tweets.forEach(tweetId => twttr.widgets.createTweet(
-  tweetId,
-  tweetsContainer,
-  { linkColor: 'red' }
-))
+if (config.tweets && config.tweets.length > 0) {
+  const tweetsContainer = document.getElementById('tweets-container')
+  
+  config.tweets.forEach(tweetId => twttr.widgets.createTweet(
+    tweetId,
+    tweetsContainer,
+    { linkColor: 'red' }
+  ))
+}

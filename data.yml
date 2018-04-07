@@ -14,6 +14,7 @@ place:
     Kotsyubyns'koho St, 2
     <br>
     Chernivtsi, Ukraine
+  url: 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
   coords:
     latitude: 48.297188
     longitude: 25.9242539
@@ -65,11 +66,19 @@ partners:
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
 venue:
-- ./images/venue/1.jpg
-- ./images/venue/2.jpg
-- ./images/venue/3.jpg
-- ./images/venue/4.jpg
-- ./images/venue/5.jpg
+- /images/venue/1.jpg
+- /images/venue/2.jpg
+- /images/venue/3.jpg
+- /images/venue/4.jpg
+- /images/venue/5.jpg
+
+tweets:
+- '873561355571408896'
+- '873485295160885248'
+- '873569566961565701'
+- '873450367668936704'
+- '852477975811547136'
+- '873485917213913089'
 
 # Contacts links
 contacts:
