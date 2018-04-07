@@ -2,4 +2,4 @@
 layout: layout/index.pug
 ---
 
-Hello, world!
+<!-- main page content -->

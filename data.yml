@@ -21,15 +21,15 @@ place:
 # Social links
 social:
 - link: //telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg
-  icon: "./images/icons/telegram.png"
+  icon: "/images/icons/telegram.png"
 - link: //www.facebook.com/chernivtsijs
-  icon: "./images/icons/facebook.png"
+  icon: "/images/icons/facebook.png"
 - link: //twitter.com/chernivtsijs
-  icon: "./images/icons/twitter.png"
+  icon: "/images/icons/twitter.png"
 - link: //gitter.im/dev-ua/chernivtsijs
-  icon: "./images/icons/gitter.png"
+  icon: "/images/icons/gitter.png"
 - link: //github.com/chernivtsijs
-  icon: "./images/icons/github.png"
+  icon: "/images/icons/github.png"
 
 # A list of speakers
 speakers:
@@ -43,7 +43,7 @@ speakers:
 schedule:
 - name: Oleksandr Lapshin
   time: "10:15-10:50"
-  photo: "./images/speakers/oleksandr-lapshin.jpg"
+  photo: "/images/speakers/oleksandr-lapshin.jpg"
   work: Rails Reactor, Kyiv
   topic: Peg.js and writing custom grammar parser
   tech: false
@@ -53,8 +53,10 @@ partners:
   special:
     # special partners
     - name: AlterEGO
-      logo: './images/partners/alterego.png'
+      logo: '/images/partners/alterego.png'
       link: //alterego.biz.ua
+  platinum:
+    # platinum partners
   gold:
     # gold partners
   silver:

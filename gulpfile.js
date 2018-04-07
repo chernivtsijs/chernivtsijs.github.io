@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 const gulp = require('gulp')
 const frontMatter = require('gulp-front-matter')
 const remark = require('gulp-remark')
@@ -30,13 +31,18 @@ const getData = (path) => {
 }
 
 const applyTemplate = () => through.obj((file, enc, callback) => {
-  const layout = file.frontMatter.layout || 'layout/index.pug'
-  const data = Object.assign(getData('./data.yml'), file.frontMatter)
-
+  const layout = file.headers.layout || 'layout/index.pug'
+  const data = Object.assign(getData('./data.yml'), {
+    headers: file.headers,
+    content: file.contents,
+  })
+  
   const html = pug.renderFile(layout, data)
+  const basename = path.basename(file.relative, path.extname(file.relative))
+  const dirname = basename !== 'index' ? basename : ''
 
   file.contents = new Buffer(html)
-  file.extname = '.html'
+  file.path = path.join(file.base, dirname, 'index.html')
 
   return callback(null, file)
 })
@@ -44,7 +50,10 @@ const applyTemplate = () => through.obj((file, enc, callback) => {
 gulp.task('pages', () => 
   gulp.src('pages/**/*.md')
     .pipe(plumber())
-    .pipe(frontMatter())
+    .pipe(frontMatter({
+      property: 'headers',
+      remove: true,
+    }))
     .pipe(remark().use(html))
     .pipe(applyTemplate())
     .pipe(gulp.dest('dist'))
@@ -100,6 +109,7 @@ gulp.task('watch', () => {
     server: 'dist',
   })
 
+  // TODO watch pages
   gulp.watch(['layout/**/*.pug', '*.yml'], gulp.series('pages'))
   gulp.watch('styles/**/*.styl', gulp.series('styles'))
   gulp.watch('scripts/**/*.js', gulp.series('scripts'))
