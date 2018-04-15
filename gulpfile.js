@@ -120,8 +120,7 @@ gulp.task('watch', () => {
     server: 'dist',
   })
 
-  // TODO watch pages
-  gulp.watch(['layout/**/*.pug', '*.yml'], gulp.series('pages'))
+  gulp.watch(['layout/**/*.pug', 'pages/**/*.md', '*.yml'], gulp.series('pages'))
   gulp.watch('styles/**/*.styl', gulp.series('styles'))
   gulp.watch('scripts/**/*.js', gulp.series('scripts'))
   gulp.watch('images/**/*.*', gulp.series('images'))
