@@ -19,6 +19,9 @@
   height: 100vh
   justify-content: center
   position: relative
+  &.page 
+    height: auto
+    padding: 5rem 0 3rem
   &-wrapper
     align-items: center
     display: flex
@@ -59,9 +62,63 @@
 
 // --- --- ---
 
+section.content
+  font-weight: 300
+  text-align: left
+
+  h1, h2, h3, h4
+    line-height 1.2
+    margin-top: 3rem
+    margin-bottom: 1rem
+
+  h1:not(.title)
+    margin-top 0
+    font-size 2.074rem
+
+  h2
+    font-size: 1.728rem
+
+  h3
+    font-size: 1.44em;
+
+  h4
+    font-size: 1.2rem;
+
+  small
+    font-size small-font-size
+
+  p
+    margin-bottom: 1.3rem 
+
+  code
+    // font-size .9rem
+    padding .2rem .5rem
+    background #eee
+    border-radius 3px
+
+  pre
+    background #eee
+    padding 1em
+    overflow-y auto
+    border-radius 3px
+
+  img
+    display block
+    max-width 100%
+    margin 0 auto
+    border-radius 3px
+
+  blockquote
+    margin 0
+    padding-left 1rem
+    border-left 3px solid #eee
+
+// --- --- ---
+
 .speakers
   font-weight: 300
   background-color: white
+  text-align: center
   .speaker
     align-items: center
     color: $js-black
@@ -159,6 +216,7 @@ section.schedule
 .partners
   font-weight: 300
   background-color: darken(white, 2.5%)
+  text-align: center
   .container
     display: block
   p
