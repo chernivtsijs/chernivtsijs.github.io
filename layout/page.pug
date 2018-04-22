@@ -2,9 +2,10 @@ extends _layout.pug
 
 block content
   header.header.page
+    include _navigation
     include _social
     .header-wrapper
-      .row.header-title
+      a(href='/').row.header-title
         img.header-logo(src='/images/logo.svg', alt='')
         div
           h1= title

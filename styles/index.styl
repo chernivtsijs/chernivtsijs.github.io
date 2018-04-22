@@ -11,23 +11,39 @@
 
 // --- --- ---
 
+.navigation
+  display: flex
+  align-items: center
+  height: 60px
+  padding: 0 30px
+  ul
+    display: flex
+    list-style-type: none
+    li
+      margin-right: 2rem
+      a
+        font-size: 20px
+        color: rgba(white, 0.6)
+        text-decoration: none
+        &:hover
+          color: white
+
 .header
   background-image: url('/images/banner-bg.jpg')
   background-position: center
   background-size: cover
-  display: flex
   height: 100vh
-  justify-content: center
   position: relative
   &.page 
     height: auto
-    padding: 5rem 0 3rem
+    padding-bottom: 3rem
   &-wrapper
     align-items: center
     display: flex
     flex-direction: column
     justify-content: center
     position: relative
+    height: calc(100% - 60px)
   &-title
     align-items: center
     display: flex

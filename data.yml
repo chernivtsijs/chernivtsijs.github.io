@@ -19,6 +19,12 @@ place:
     latitude: 48.297188
     longitude: 25.9242539
 
+navigation:
+- link: /code-of-conduct
+  title: Code Of Conduct
+- link: /2017
+  title: 2017
+
 # Social links
 social:
 - link: //telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg
