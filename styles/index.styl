@@ -11,23 +11,43 @@
 
 // --- --- ---
 
+.navigation
+  display: flex
+  align-items: center
+  height: 60px
+  padding: 0 30px
+  ul
+    display: flex
+    list-style-type: none
+    li
+      margin-right: 2rem
+      a
+        font-size: 20px
+        color: rgba(white, 0.6)
+        text-decoration: none
+        &:hover
+          color: white
+
 .header
-  background-image: url('../images/banner-bg.jpg')
+  background-image: url('/images/banner-bg.jpg')
   background-position: center
   background-size: cover
-  display: flex
   height: 100vh
-  justify-content: center
   position: relative
+  &-page
+    height: auto
+    padding-bottom: 3rem
   &-wrapper
     align-items: center
     display: flex
     flex-direction: column
     justify-content: center
     position: relative
+    height: calc(100% - 60px)
   &-title
     align-items: center
     display: flex
+    text-decoration: none
     div
       padding-left: 40px
       text-shadow: 0 0 20px rgba(0, 0, 0, .5)
@@ -59,9 +79,67 @@
 
 // --- --- ---
 
+section.content
+  font-size: 16px
+  font-weight: 300
+  text-align: left
+
+  h1, h2, h3, h4
+    line-height 1.2
+    margin-top: 3rem
+    margin-bottom: 1rem
+
+  h1:not(.title)
+    margin-top 0
+    font-size 2.074rem
+
+  h2
+    font-size: 1.728rem
+
+  h3
+    font-size: 1.44em;
+
+  h4
+    font-size: 1.2rem;
+
+  small
+    font-size small-font-size
+
+  p, ul, a
+    font-size: 1.5rem
+
+  p
+    margin-bottom: 1.3rem 
+
+  code
+    // font-size .9rem
+    padding .2rem .5rem
+    background #eee
+    border-radius 3px
+
+  pre
+    background #eee
+    padding 1em
+    overflow-y auto
+    border-radius 3px
+
+  img
+    display block
+    max-width 100%
+    margin 0 auto
+    border-radius 3px
+
+  blockquote
+    margin 0
+    padding-left 1rem
+    border-left 3px solid #eee
+
+// --- --- ---
+
 .speakers
   font-weight: 300
   background-color: white
+  text-align: center
   .speaker
     align-items: center
     color: $js-black
@@ -79,8 +157,11 @@
       width: 150px
       img
         border-radius: 50%
-        height: 150px
-        min-height: @height
+        width: 100%
+        height: auto
+        min-height: 150px
+        min-width: 150px
+        object-fit: cover
       &.is-lightning::after
         background-color: $js-yellow
         border-radius: 3px
@@ -159,6 +240,7 @@ section.schedule
 .partners
   font-weight: 300
   background-color: darken(white, 2.5%)
+  text-align: center
   .container
     display: block
   p
@@ -249,6 +331,7 @@ section.schedule
       .welterbe
         padding: 0 5%
         width: 30%
+        object-fit: contain
     &.desc p, a
       color: white
       font-size: 1.6rem
@@ -260,6 +343,18 @@ section.schedule
 // --- --- ---
 
 .last-year
+  #video-container
+    position: relative
+    width: 100%
+    height: 0
+    padding-bottom: 56.25%
+    margin: 0 1rem 4rem
+    .video
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
   #tweets-container
     display: flex
     overflow: hidden
@@ -287,7 +382,7 @@ section.schedule
 
 .bottom-banner
   align-items: center
-  background-image: url('../images/bottom-banner-bg.jpg')
+  background-image: url('/images/bottom-banner-bg.jpg')
   background-position: center
   background-size: cover
   display: flex
@@ -358,12 +453,8 @@ section.schedule
 .schedule--theme    
   font-family: Arial, sans-serif
 
-#dev-pro img
-  max-width: 80%
 .row-thanks
   margin-bottom: 7%
   & .partners
     font-size: 16px
     font-size: 1.7vw
-
-

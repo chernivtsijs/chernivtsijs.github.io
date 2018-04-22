@@ -1,0 +1,19 @@
+extends _layout.pug
+
+block content
+  header.header.header-page
+    include _navigation
+    include _social
+    .header-wrapper
+      a(href='/').row.header-title
+        img.header-logo(src='/images/logo.svg', alt='')
+        div
+          h1= title
+          p.desc= description
+      .row
+        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action.title
+
+  section.content
+    h1.title!=headers.title
+    article.container
+      .row!=content

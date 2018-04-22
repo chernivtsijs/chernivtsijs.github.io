@@ -1,0 +1,25 @@
+doctype html
+html(lang=lang)
+  head
+    if headers.title
+      title #{headers.title} — #{date} — #{title}
+    else
+      title #{date} — #{title}
+    include _head
+  body
+    block content
+      //- Page content goes here
+
+    section.bottom-banner
+      .row.date=date
+      .row.ticket
+        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action.title
+      .row.questions
+        a(href=social[0].link) Any questions?
+      include _navigation
+
+    footer.footer
+      include _social
+      include _contacts
+    include _scripts
+    include _analytics

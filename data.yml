@@ -3,8 +3,8 @@ title: ChernivtsiJS
 description: Let's talk about JavaScript?
 date: June 23, 2018
 action:
-  link: https://goo.gl/forms/vZq4ATWCS41Ub6nX2
-  title: Submit your talk
+  link: https://2event.com/events/1384395
+  title: Buy Tickets
 
 # Location information
 place:
@@ -14,60 +14,121 @@ place:
     Kotsyubyns'koho St, 2
     <br>
     Chernivtsi, Ukraine
+  url: 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
   coords:
     latitude: 48.297188
     longitude: 25.9242539
 
+navigation:
+- link: /code-of-conduct
+  title: Code Of Conduct
+- link: /city-guide
+  title: City Guide
+- link: /2017
+  title: 2017
+
 # Social links
 social:
 - link: //telegram.me/joinchat/Bq7KYT8X1sdwJ5WB8k-kOg
-  icon: "./images/icons/telegram.png"
+  icon: "/images/icons/telegram.png"
 - link: //www.facebook.com/chernivtsijs
-  icon: "./images/icons/facebook.png"
+  icon: "/images/icons/facebook.png"
 - link: //twitter.com/chernivtsijs
-  icon: "./images/icons/twitter.png"
-- link: //gitter.im/dev-ua/chernivtsijs
-  icon: "./images/icons/gitter.png"
+  icon: "/images/icons/twitter.png"
+- link: //instagram.com/chernivtsijs
+  icon: "/images/icons/instagram.png"
 - link: //github.com/chernivtsijs
-  icon: "./images/icons/github.png"
+  icon: "/images/icons/github.png"
 
 # A list of speakers
 speakers:
-# Example of speaker object
-# - name: Oleksandr Lapshin
-#   photo: "./images/speakers/oleksandr-lapshin.jpg"
-#   work: Rails Reactor, Kyiv
-#   topic: Peg.js and writing custom grammar parser
+- name: Alex Migutsky
+  photo: /images/speakers/alex-migutsky.jpg
+  work: Microsoft, Berlin, Germany
+  topic: TBA
+  lightning: false
+- name: Aleksandar Simovic
+  photo: /images/speakers/aleksandar-simovic.jpg
+  work: Effortless Serverless, Belgrade, Serbia
+  topic: Serverless for frontend developers
+  lightning: false
+- name: Vasilika Klimova
+  photo: /images/speakers/vasilika-klimova.jpg
+  work: Artec3D, Gostingen, Luxembourg
+  topic: Serverless for frontend developers
+  lightning: false
+- name: Ivan Jovanović
+  photo: /images/speakers/ivan-jovanovic.jpg
+  work: nearForm, Belgrade, Serbia
+  topic: Thinking Reactive in JavaScript
+  lightning: false
+- name: Sergey Rubanov
+  photo: /images/speakers/sergey-rubanov.jpg
+  work: Exantech, Moscow, Russia
+  topic: Просто о WebAssembly
+  lightning: false
+- name: Anton Yatseniuk
+  photo: /images/speakers/anton-yatseniuk.jpg
+  work: Rolique, Lviv, Ukraine
+  topic: How to adopt a project with stack which you don't know
+  lightning: false
+- name: Anastasiia Nedbailo
+  photo: /images/speakers/anastasiia-nedbailo.jpg
+  work: YUKON, Chernivtsi, Ukraine
+  topic: Angular applications with Redux
+  lightning: true
 
 # A schedule of speakers
-schedule:
-- name: Oleksandr Lapshin
-  time: "10:15-10:50"
-  photo: "./images/speakers/oleksandr-lapshin.jpg"
-  work: Rails Reactor, Kyiv
-  topic: Peg.js and writing custom grammar parser
-  tech: false
+# schedule:
+# - name: Oleksandr Lapshin
+#   time: "10:15-10:50"
+#   photo: "/images/speakers/oleksandr-lapshin.jpg"
+#   work: Rails Reactor, Kyiv
+#   topic: Peg.js and writing custom grammar parser
+#   lightning: false
 
 # A list of partners
 partners:
   special:
     # special partners
     - name: AlterEGO
-      logo: './images/partners/alterego.png'
+      logo: '/images/partners/alterego.png'
       link: //alterego.biz.ua
+    - name: Chernivtsi National University
+      logo: '/images/partners/chnu.png'
+      link: //chnu.edu.ua
+  platinum:
+    # platinum partners
+    - name: Bizico
+      logo: /images/partners/bizico.svg
+      link: //bizico.com
   gold:
     # gold partners
   silver:
     # silver partners
+    # - name: NodeSchool Chernivtsi
+    #   logo: '/images/partners/nodeschool.png'
+    #   link: //nodeschool.io/chernivtsi
+    # - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
+    #   logo: '/images/partners/dct.png'
+    #   link: //ptcsi.chnu.edu.ua/en
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
 venue:
-- ./images/venue/1.jpg
-- ./images/venue/2.jpg
-- ./images/venue/3.jpg
-- ./images/venue/4.jpg
-- ./images/venue/5.jpg
+- /images/venue/1.jpg
+- /images/venue/2.jpg
+- /images/venue/3.jpg
+- /images/venue/4.jpg
+- /images/venue/5.jpg
+
+tweets:
+- '873561355571408896'
+- '873485295160885248'
+- '873569566961565701'
+- '873450367668936704'
+- '852477975811547136'
+- '873485917213913089'
 
 # Contacts links
 contacts:
