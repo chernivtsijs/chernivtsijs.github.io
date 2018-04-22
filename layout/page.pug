@@ -1,7 +1,7 @@
 extends _layout.pug
 
 block content
-  header.header.page
+  header.header.header-page
     include _navigation
     include _social
     .header-wrapper
@@ -10,7 +10,6 @@ block content
         div
           h1= title
           p.desc= description
-      .row.date= date
       .row
         a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action.title
 
