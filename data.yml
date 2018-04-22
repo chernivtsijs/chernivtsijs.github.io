@@ -95,18 +95,21 @@ partners:
     - name: Chernivtsi National University
       logo: '/images/partners/chnu.png'
       link: //chnu.edu.ua
-#   platinum:
-#     # platinum partners
-#   gold:
-#     # gold partners
+  platinum:
+    # platinum partners
+    - name: Bizico
+      logo: /images/partners/bizico.svg
+      link: //bizico.com
+  gold:
+    # gold partners
   silver:
     # silver partners
-    - name: NodeSchool Chernivtsi
-      logo: '/images/partners/nodeschool.png'
-      link: //nodeschool.io/chernivtsi
-    - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
-      logo: '/images/partners/dct.png'
-      link: //ptcsi.chnu.edu.ua/en
+    # - name: NodeSchool Chernivtsi
+    #   logo: '/images/partners/nodeschool.png'
+    #   link: //nodeschool.io/chernivtsi
+    # - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
+    #   logo: '/images/partners/dct.png'
+    #   link: //ptcsi.chnu.edu.ua/en
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
