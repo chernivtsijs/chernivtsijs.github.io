@@ -136,8 +136,11 @@ section.content
       width: 150px
       img
         border-radius: 50%
-        height: 150px
-        min-height: @height
+        width: 100%
+        height: auto
+        min-height: 150px
+        min-width: 150px
+        object-fit: cover
       &.is-lightning::after
         background-color: $js-yellow
         border-radius: 3px
@@ -307,6 +310,7 @@ section.schedule
       .welterbe
         padding: 0 5%
         width: 30%
+        object-fit: contain
     &.desc p, a
       color: white
       font-size: 1.6rem
@@ -428,8 +432,6 @@ section.schedule
 .schedule--theme    
   font-family: Arial, sans-serif
 
-#dev-pro img
-  max-width: 80%
 .row-thanks
   margin-bottom: 7%
   & .partners

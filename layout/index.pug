@@ -19,48 +19,51 @@ block content
 
   section.speakers
     h1.title Speakers
-    //- .container
-    //-   each speaker in speakers
-    //-     .speaker
-    //-       .photo(class=speaker.lightning ? 'is-lightning': '')
-    //-         img(src=speaker.photo)
-    //-       .name-speaker=speaker.name
-    //-       .work-place=speaker.work
-    //-       .title-speach=speaker.topic
     .container
-      .row
-        p
-          | Want to join our speaker team?
-          br
-          a(href=action.link) Send you talk
-  //- section.schedule
-  //-   h1.title Schedule
-  //-   .schedule-container
-  //-     each item in schedule
-  //-       .schedule-item(class=item.tech ? 'is-tech' : '')
-  //-         .schedule-time=item.time
-  //-         .schedule-desc
-  //-           .schedule-title=item.name
-  //-           .schedule-theme=item.topic
+      if speakers
+        each speaker in speakers
+          .speaker
+            .photo(class=speaker.lightning ? 'is-lightning': '')
+              img(src=speaker.photo)
+            .name-speaker=speaker.name
+            .work-place=speaker.work
+            .title-speach=speaker.topic
+      else 
+        .row
+          p
+            | Want to join our speaker team?
+            br
+            a(href=action.link) Send you talk
 
+  if schedule
+    section.schedule
+      h1.title Schedule
+      .schedule-container
+        each item in schedule
+          .schedule-item(class=item.tech ? 'is-tech' : '')
+            .schedule-time=item.time
+            .schedule-desc
+              .schedule-title=item.name
+              .schedule-theme=item.topic
 
   section.partners
     h1.title partners
     .container
-      //- each companies, kind in partners
-      //-   .row
-      //-     p.partners-kind=kind
-      //-     if companies
-      //-       .partners-wrapper(class=kind)
-      //-         each partner in companies
-      //-           .partner(id=partner.name.toLowerCase().replace(/\s/g, '-'))
-      //-             a(href=partner.link, title=partner.name, target='_blank')
-      //-               img(src=partner.logo, alt=partner.name)
-      //- .row-thanks
-      //-   p.partners
-      //-     | With thanks to
-      //-     a(href="https://www.behance.net/livespace")
-      //-       | Kyrylo Akulow
+      if partners
+        each companies, kind in partners
+          .row
+            p.partners-kind=kind
+            if companies
+              .partners-wrapper(class=kind)
+                each partner in companies
+                  .partner(id=partner.name.toLowerCase().replace(/\s/g, '-'))
+                    a(href=partner.link, title=partner.name, target='_blank')
+                      img(src=partner.logo, alt=partner.name)
+        .row-thanks
+          p.partners
+            | With thanks to 
+            a(href="https://www.behance.net/livespace")
+              | Kyrylo Akulow
       .row
         p
           | Want to join us?

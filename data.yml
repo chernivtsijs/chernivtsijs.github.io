@@ -34,20 +34,50 @@ social:
 
 # A list of speakers
 speakers:
-# Example of speaker object
-# - name: Oleksandr Lapshin
-#   photo: "./images/speakers/oleksandr-lapshin.jpg"
-#   work: Rails Reactor, Kyiv
-#   topic: Peg.js and writing custom grammar parser
+- name: Alex Migutsky
+  photo: /images/speakers/alex-migutsky.jpg
+  work: Microsoft, Berlin, Germany
+  topic: TBA
+  lightning: false
+- name: Aleksandar Simovic
+  photo: /images/speakers/aleksandar-simovic.jpg
+  work: Effortless Serverless, Belgrade, Serbia
+  topic: Serverless for frontend developers
+  lightning: false
+- name: Vasilika Klimova
+  photo: /images/speakers/vasilika-klimova.jpg
+  work: Artec3D, Gostingen, Luxembourg
+  topic: Serverless for frontend developers
+  lightning: false
+- name: Ivan Jovanović
+  photo: /images/speakers/ivan-jovanovic.jpg
+  work: nearForm, Belgrade, Serbia
+  topic: Thinking Reactive in JavaScript
+  lightning: false
+- name: Sergey Rubanov
+  photo: /images/speakers/sergey-rubanov.jpg
+  work: Exantech, Moscow, Russia
+  topic: Просто о WebAssembly
+  lightning: false
+- name: Anton Yatseniuk
+  photo: /images/speakers/anton-yatseniuk.jpg
+  work: Rolique, Lviv, Ukraine
+  topic: How to adopt a project with stack which you don't know
+  lightning: false
+- name: Anastasiia Nedbailo
+  photo: /images/speakers/anastasiia-nedbailo.jpg
+  work: YUKON, Chernivtsi, Ukraine
+  topic: Angular applications with Redux
+  lightning: true
 
 # A schedule of speakers
-schedule:
-- name: Oleksandr Lapshin
-  time: "10:15-10:50"
-  photo: "/images/speakers/oleksandr-lapshin.jpg"
-  work: Rails Reactor, Kyiv
-  topic: Peg.js and writing custom grammar parser
-  tech: false
+# schedule:
+# - name: Oleksandr Lapshin
+#   time: "10:15-10:50"
+#   photo: "/images/speakers/oleksandr-lapshin.jpg"
+#   work: Rails Reactor, Kyiv
+#   topic: Peg.js and writing custom grammar parser
+#   lightning: false
 
 # A list of partners
 partners:
@@ -56,12 +86,21 @@ partners:
     - name: AlterEGO
       logo: '/images/partners/alterego.png'
       link: //alterego.biz.ua
-  platinum:
-    # platinum partners
-  gold:
-    # gold partners
+    - name: Chernivtsi National University
+      logo: '/images/partners/chnu.png'
+      link: //chnu.edu.ua
+#   platinum:
+#     # platinum partners
+#   gold:
+#     # gold partners
   silver:
     # silver partners
+    - name: NodeSchool Chernivtsi
+      logo: '/images/partners/nodeschool.png'
+      link: //nodeschool.io/chernivtsi
+    - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
+      logo: '/images/partners/dct.png'
+      link: //ptcsi.chnu.edu.ua/en
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
