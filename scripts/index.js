@@ -10,6 +10,8 @@ const { latitude, longitude } = config.place.coords
 const map = L
   .map('embedded-map', {
     scrollWheelZoom: false,
+    dragging: !L.Browser.mobile,
+    tap: false
   })
   .setView([latitude, longitude], 16)
 
