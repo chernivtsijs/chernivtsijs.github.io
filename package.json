@@ -42,7 +42,9 @@
     "js-yaml": "^3.11.0",
     "postcss": "^6.0.21",
     "pug": "^2.0.3",
+    "remark-breaks": "^1.0.0",
     "remark-html": "^7.0.0",
+    "remark-slug": "^5.0.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-yaml": "^1.1.0",
     "through2": "^2.0.3"

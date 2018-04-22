@@ -4,6 +4,8 @@ const gulp = require('gulp')
 const frontMatter = require('gulp-front-matter')
 const remark = require('gulp-remark')
 const html = require('remark-html')
+const slug = require('remark-slug')
+const breaks = require('remark-breaks')
 const plumber = require('gulp-plumber')
 const stylus = require('gulp-stylus')
 const postcss = require('gulp-postcss')
@@ -57,7 +59,7 @@ gulp.task('pages', () =>
       property: 'headers',
       remove: true,
     }))
-    .pipe(remark().use(html))
+    .pipe(remark().use(html).use(slug).use(breaks))
     .pipe(applyTemplate())
     .pipe(gulp.dest('dist'))
 )
