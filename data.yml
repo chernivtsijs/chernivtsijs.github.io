@@ -64,7 +64,7 @@ speakers:
   lightning: false
 - name: Sergey Rubanov
   photo: /images/speakers/sergey-rubanov.jpg
-  work: Exantech, Moscow, Russia
+  work: Exantech, Oryol, Russia
   topic: Просто о WebAssembly
   lightning: false
 - name: Anton Yatseniuk
