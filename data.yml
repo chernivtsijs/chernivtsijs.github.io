@@ -72,6 +72,11 @@ speakers:
   work: Rolique, Lviv, Ukraine
   topic: How to adopt a project with stack which you don't know
   lightning: false
+- name: Artem Denysov
+  photo: /images/speakers/artem-denysov.jpg
+  work: Vinnytsia, Ukraine
+  topic: Make your thread grate again!
+  lightning: false
 - name: Anastasiia Nedbailo
   photo: /images/speakers/anastasiia-nedbailo.jpg
   work: YUKON, Chernivtsi, Ukraine
