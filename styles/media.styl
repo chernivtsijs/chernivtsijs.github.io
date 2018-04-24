@@ -77,26 +77,40 @@
   .schedule-item
     position: relative
 
-  .schedule-desc     
+  .schedule-desc
     position: static
-  
-  .schedule-desc     
+
+  .schedule-desc
     &:before
       left: -5px
-  
+
   .schedule-time
     width: 95%
     padding: 0 0 0 5%
-  
+
   .schedule-desc
     width: 95%
     padding: 0 0 0 5%
-  
+
   .schedule-container
     max-width: 90%
-    margin: 0 auto  
+    margin: 0 auto
 
 @media (max-width: 600px)
+  .header-logo
+    width: 30%
+  .navigation
+    width: 100%
+    padding: 0
+  .navigation ul
+    width: 100%
+    display: block
+    text-align: center
+  .navigation ul li a
+    font-size: 3.7vw
+  .navigation ul li
+    display: inline-block
+    margin: 0 5%
   section.speakers .container .speaker
     width: 100%
   section.partners .container .partner
@@ -107,7 +121,7 @@
       margin-top: 0
   .partners #alterego.partner
     width: 40%
-  .partners .partner#asd-team img,    
+  .partners .partner#asd-team img,
   section.partners .container .partner img
     max-width: 100%
     height: auto
@@ -129,11 +143,11 @@
   .row-thanks .partners
     font-size: 16px
     font-size: 3.5vw
-  
+
   .partners .partner#epam
       margin-top: 3%
 
-  
+
 
 @media (max-width: 500px)
   .header-wrapper .title h1
@@ -141,9 +155,9 @@
 
   section#schedule table tr td
     padding: 5px
-    
-  .partners .partner#cbit img, 
-  .partners .partner#chernivtsi-national-university img, 
+
+  .partners .partner#cbit img,
+  .partners .partner#chernivtsi-national-university img,
   .partners .partner#nodeschool-chernivtsi img
     max-width: 100%
     height: auto
@@ -154,11 +168,22 @@
 
 @media (max-width: 420px)
   .header-title h1
-    font-size: 60px !important
-    font-size: 14vw !important
+    font-size: 55px !important
+    font-size: 12vw !important
+    margin-top: 5%
+  .header-title div p.desc
+    font-size: 30px
+    font-size: 9vw
+  .date
+    font-size: 25px
+    font-size: 8vw
+    margin: 0 auto 5% !important
 
   section#schedule tr td:nth-of-type(5)
     display: none
+
+  .footer
+    padding: 40px 100px 17%
 
 @media (max-width: 355px)
   .header-title h1
