@@ -45,7 +45,7 @@ speakers:
 - name: Alex Migutsky
   photo: /images/speakers/alex-migutsky.jpg
   work: Microsoft, Berlin, Germany
-  topic: TBA
+  topic: How Microsoft uses React in their products
   lightning: false
 - name: Aleksandar Simovic
   photo: /images/speakers/aleksandar-simovic.jpg
@@ -66,6 +66,11 @@ speakers:
   photo: /images/speakers/sergey-rubanov.jpg
   work: Exantech, Oryol, Russia
   topic: Просто о WebAssembly
+  lightning: false
+- name: Anton Nemtsev
+  photo: "./images/speakers/anton-nemtsev.jpg"
+  work: TemplateMonster, Kyiv
+  topic: Make checkout great again
   lightning: false
 - name: Anton Yatseniuk
   photo: /images/speakers/anton-yatseniuk.jpg
