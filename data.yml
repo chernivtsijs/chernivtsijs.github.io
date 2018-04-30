@@ -87,6 +87,11 @@ speakers:
   work: YUKON, Chernivtsi, Ukraine
   topic: Angular applications with Redux
   lightning: true
+- name: Terry Sahaidak
+  photo: /images/speakers/terry-sahaidak.jpg
+  work: Apiko, Ternopil, Ukraine
+  topic: Life with Expo.io
+  lightning: true
 
 # A schedule of speakers
 # schedule:
