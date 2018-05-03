@@ -77,15 +77,15 @@ speakers:
   work: Rolique, Lviv, Ukraine
   topic: How to adopt a project with stack which you don't know
   lightning: false
-- name: Artem Denysov
-  photo: /images/speakers/artem-denysov.jpg
-  work: Vinnytsia, Ukraine
-  topic: Make your thread great again!
-  lightning: false
 - name: Anastasiia Nedbailo
   photo: /images/speakers/anastasiia-nedbailo.jpg
   work: YUKON, Chernivtsi, Ukraine
   topic: Angular applications with Redux
+  lightning: true
+- name: Terry Sahaidak
+  photo: /images/speakers/terry-sahaidak.jpg
+  work: Apiko, Ternopil, Ukraine
+  topic: Life with Expo.io
   lightning: true
 
 # A schedule of speakers
