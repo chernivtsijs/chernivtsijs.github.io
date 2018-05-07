@@ -42,11 +42,6 @@ social:
 
 # A list of speakers
 speakers:
-- name: Alex Migutsky
-  photo: /images/speakers/alex-migutsky.jpg
-  work: Microsoft, Berlin, Germany
-  topic: How Microsoft uses React in their products
-  lightning: false
 - name: Aleksandar Simovic
   photo: /images/speakers/aleksandar-simovic.jpg
   work: Effortless Serverless, Belgrade, Serbia
