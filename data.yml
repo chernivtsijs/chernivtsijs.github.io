@@ -117,6 +117,12 @@ partners:
       link: //asd-team.com/
   silver:
     # silver partners
+    - name: Dou
+      logo: /images/partners/dou-logo.png
+      link: //dou.ua/
+    - name: Fwdays
+      logo: /images/partners/fwdays.png
+      link: //fwdays.com/
     - name: Owlygon
       logo: /images/partners/owlygon.png
       link: //bohdanov.com/
