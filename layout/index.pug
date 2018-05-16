@@ -12,7 +12,7 @@ block content
           p.desc= description
       .row.date= date
       .row
-        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action.title
+        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
       .row.questions
         a(href=social[0].link) Any questions?
       .scroll
@@ -29,12 +29,15 @@ block content
             .name-speaker=speaker.name
             .work-place=speaker.work
             .title-speach=speaker.topic
-      else 
+      else
         .row
           p
             | Want to join our speaker team?
             br
             a(href=action.link) Send you talk
+
+    .speakers-action
+        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
 
   if schedule
     section.schedule
@@ -64,7 +67,7 @@ block content
               p='—'
         .row-thanks
           p.partners
-            | With thanks to 
+            | With thanks to
             a(href="https://www.behance.net/livespace")
               | Kyrylo Akulow
       .row
