@@ -2,6 +2,10 @@
 title: ChernivtsiJS
 description: Let's talk about JavaScript?
 date: June 23, 2018
+speakesAction:
+  link: '#speakers'
+  ankor: 'speakers'
+  title: Our Speakers
 action:
   link: https://2event.com/events/1384395
   title: Buy Tickets

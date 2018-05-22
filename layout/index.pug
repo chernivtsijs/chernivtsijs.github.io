@@ -12,14 +12,14 @@ block content
           p.desc= description
       .row.date= date
       .row
-        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
+        a(href=speakesAction.link, class="action-btn", onclick="fbq('track', 'speakesAction'); ga('send', 'event', 'view speakers', 'click');")=speakesAction.title
       .row.questions
         a(href=social[0].link) Any questions?
       .scroll
         img(src='/images/icons/scroll.png', alt='')
 
   section.speakers
-    h1.title Speakers
+    h1.title(id=speakesAction.ankor) Speakers
     .container
       if speakers
         each speaker in speakers
