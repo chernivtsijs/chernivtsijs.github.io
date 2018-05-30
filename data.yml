@@ -56,11 +56,6 @@ speakers:
   work: Artec3D, Gostingen, Luxembourg
   topic: This terrible word Deadline
   lightning: false
-- name: Ivan Jovanović
-  photo: /images/speakers/ivan-jovanovic.jpg
-  work: nearForm, Belgrade, Serbia
-  topic: Thinking Reactive in JavaScript
-  lightning: false
 - name: Sergey Rubanov
   photo: /images/speakers/sergey-rubanov.jpg
   work: Exantech, Oryol, Russia
@@ -84,7 +79,7 @@ speakers:
 - name: Helen Zhukova
   photo: /images/speakers/helen-zhukova1.jpg
   work: VIDEOGORILLAS, Kyiv, Ukraine
-  topic: TBA
+  topic: О дивный новый JS мир. Как будет выглядеть и чем будет заниматься JS разработчик в будущем
   lightning: false
 - name: Anastasiia Nedbailo
   photo: /images/speakers/anastasiia-nedbailo.jpg
