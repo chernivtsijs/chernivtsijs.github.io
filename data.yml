@@ -130,6 +130,9 @@ partners:
     - name: DataArt
       logo: /images/partners/data-art.svg?v1
       link: //dataart.ua/
+    - name: AMCBridge
+      logo: /images/partners/amc-bridge.svg?v1
+      link: //amcbridge.com.ua/
   silver:
     # silver partners
     - name: Dou
