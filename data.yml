@@ -2,6 +2,10 @@
 title: ChernivtsiJS
 description: Let's talk about JavaScript?
 date: June 23, 2018
+speakesAction:
+  link: '#speakers'
+  ankor: 'speakers'
+  title: Our Speakers
 action:
   link: https://2event.com/events/1384395
   title: Buy Tickets
@@ -52,11 +56,6 @@ speakers:
   work: Artec3D, Gostingen, Luxembourg
   topic: This terrible word Deadline
   lightning: false
-- name: Ivan Jovanović
-  photo: /images/speakers/ivan-jovanovic.jpg
-  work: nearForm, Belgrade, Serbia
-  topic: Thinking Reactive in JavaScript
-  lightning: false
 - name: Sergey Rubanov
   photo: /images/speakers/sergey-rubanov.jpg
   work: Exantech, Oryol, Russia
@@ -64,13 +63,23 @@ speakers:
   lightning: false
 - name: Anton Nemtsev
   photo: "./images/speakers/anton-nemtsev.jpg"
-  work: TemplateMonster, Kyiv
+  work: TemplateMonster, Kyiv, Ukraine
   topic: Make checkout great again
   lightning: false
 - name: Anton Yatseniuk
   photo: /images/speakers/anton-yatseniuk.jpg
   work: Rolique, Lviv, Ukraine
   topic: How to adopt a project with stack which you don't know
+  lightning: false
+- name: Ilya Ivanov
+  photo: /images/speakers/ilya-ivanov.jpg
+  work: Itera Consulting, Kyiv, Ukraine
+  topic: Как React-Native перевернул наше представление о нативных приложениях
+  lightning: false
+- name: Helen Zhukova
+  photo: /images/speakers/helen-zhukova1.jpg
+  work: VIDEOGORILLAS, Kyiv, Ukraine
+  topic: О дивный новый JS мир. Как будет выглядеть и чем будет заниматься JS разработчик в будущем
   lightning: false
 - name: Anastasiia Nedbailo
   photo: /images/speakers/anastasiia-nedbailo.jpg
@@ -115,8 +124,23 @@ partners:
     - name: ASD
       logo: /images/partners/asd.png
       link: //asd-team.com/
+    - name: Svitla Systems
+      logo: /images/partners/SvSys_Logo.svg
+      link: //svitla.com/
+    - name: DataArt
+      logo: /images/partners/data-art.svg?v1
+      link: //dataart.ua/
+    - name: AMCBridge
+      logo: /images/partners/amc-bridge.svg?v1
+      link: //amcbridge.com.ua/
   silver:
     # silver partners
+    - name: Dou
+      logo: /images/partners/dou-logo.png
+      link: //dou.ua/
+    - name: Fwdays
+      logo: /images/partners/fwdays.png
+      link: //fwdays.com/
     - name: Owlygon
       logo: /images/partners/owlygon.png
       link: //bohdanov.com/
@@ -129,6 +153,9 @@ partners:
     - name: DogeCodes
       logo: '/images/partners/dogecodes.png'
       link: //doge.codes
+    - name: TemplateMonster
+      logo: '/images/partners/template-monster.png'
+      link: //www.templatemonster.com/
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl

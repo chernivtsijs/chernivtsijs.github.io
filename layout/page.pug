@@ -11,7 +11,7 @@ block content
           h1= title
           p.desc= description
       .row
-        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action.title
+        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
 
   section.content
     h1.title!=headers.title

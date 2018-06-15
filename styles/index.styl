@@ -109,7 +109,7 @@ section.content
     font-size: 1.5rem
 
   p
-    margin-bottom: 1.3rem 
+    margin-bottom: 1.3rem
 
   code
     // font-size .9rem
@@ -182,6 +182,12 @@ section.content
       font-weight: 700
       padding: 0 5%
       text-align: center
+  .speakers-action
+    text-align: center
+    .action-btn
+      margin-left: auto
+      margin-right: auto
+      box-shadow: 0 0 20px rgba(0,0,0,.2)
 
 // --- --- ---
 
@@ -264,17 +270,25 @@ section.schedule
     img
       width: 100%
     &#alterego
-      padding: 2% 0  
+      padding: 2% 0
       width: 25%
       margin: 0
     &#alterego img
       width: 95%
     &#asd img
       width: 60%
-      margin-top: -10%
+      margin-top: -5%
+    &#svitla-systems img
+      width: 80%
     &#nodeschool-chernivtsi img
     &#відділ-комп’ютерних-технологій-іфткн-чну img
       width: 50%
+    &#templatemonster
+      width: 25%
+    &#amcbridge
+      padding: 1.5% 1% 1%
+      background-color: #ccc9c9
+      border-radius: 4px
 
 // --- --- ---
 
@@ -390,20 +404,20 @@ section.schedule
 
 
 section.schedule
-  background: #fff    
-.schedule--container 
+  background: #fff
+.schedule--container
   width: 100%
   max-width: 600px
-  margin: 0 auto  
+  margin: 0 auto
   position: relative
-.schedule--time 
+.schedule--time
   display: inline-block
   vertical-align: top
   width: 120px
   font-weight: normal
-.schedule--desc 
+.schedule--desc
   display: inline-block
-  vertical-align: top    
+  vertical-align: top
   font-weight: normal
   font-size: 14px
   position: relative
@@ -420,9 +434,9 @@ section.schedule
     position: absolute
     margin: -7px 0 0 0
 .schedule--item
-  margin: 3% 0  
+  margin: 3% 0
 .schedule--item.is-tech
-  .schedule--title 
+  .schedule--title
     font-weight: bold
 .schedule--container
   &:before
@@ -433,7 +447,7 @@ section.schedule
     background: #000
     top: -2%
     left: 105px
-.schedule--theme    
+.schedule--theme
   font-family: Arial, sans-serif
 
 .row-thanks
