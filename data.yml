@@ -79,7 +79,7 @@ speakers:
 - name: Helen Zhukova
   photo: /images/speakers/helen-zhukova1.jpg
   work: VIDEOGORILLAS, Kyiv, Ukraine
-  topic: О дивный новый JS мир. Как будет выглядеть и чем будет заниматься JS разработчик в будущем
+  topic: О дивный новый JS–мир
   lightning: false
 - name: Anastasiia Nedbailo
   photo: /images/speakers/anastasiia-nedbailo.jpg
@@ -93,13 +93,74 @@ speakers:
   lightning: true
 
 # A schedule of speakers
-# schedule:
-# - name: Oleksandr Lapshin
-#   time: "10:15-10:50"
-#   photo: "/images/speakers/oleksandr-lapshin.jpg"
-#   work: Rails Reactor, Kyiv
-#   topic: Peg.js and writing custom grammar parser
-#   lightning: false
+schedule:
+- name: 🥐 Registration & breakfast
+  time: 9:00-9:50
+  tech: true
+- name: 👋🏻 Opening talk
+  time: 9:50-10:00
+  tech: true
+- name: Anton Yatseniuk
+  time: 10:00-10:40
+  topic: How to adopt a project with stack which you don't know
+  tech: false
+- name: Aleksandar Simovic
+  time: 10:40-11:20
+  topic: Serverless for frontend developers
+  tech: false
+- name: ☕️ Coffeebreak
+  time: 11:20-11:50
+  tech: true
+- name: 🗣 Interview session
+  time: 11:50-12:00
+  tech: true
+- name: Vasilika Klimova
+  time: 12:00-12:40
+  topic: This terrible word Deadline
+  tech: false
+- name: Ilya Ivanov
+  time: 12:40-13:20
+  topic: Как React-Native перевернул наше представление о нативных приложениях
+  tech: false
+- name: 🍽 Lunch
+  time: 13:20-14:50
+  tech: true
+- name: Anastasiia Nedbailo
+  time: 14:50-15:05
+  topic: Angular applications with Redux
+  tech: false
+- name: ️️Terry Sahaidak
+  time: 15:05-15:20
+  topic: Life with Expo.io
+  tech: false
+- name: Sergey Rubanov
+  time: 15:20-16:00
+  topic: Просто о WebAssembly
+  tech: false
+- name: ☕️ Coffeebreak
+  time: 16:00-16:30
+  tech: true
+- name: 🗣 Interview session
+  time: 16:30-16:40
+  tech: true
+- name: Helen Zhukova
+  time: 16:40-17:20
+  topic: О дивный новый JS–мир
+  tech: false
+- name: Anton Nemtsev
+  time: 17:20-18:00
+  topic: Make checkout great again
+  tech: false
+- name: 🎤 QA-session
+  time: 18:00-18:40
+  topic: Panel discussion with speakers
+  tech: false
+- name: 🏁 Closing talk
+  time: 18:40-19:00
+  tech: true
+- name: 🍸 Afterparty
+  time: 20:00-∞
+  tech: true
 
 # A list of partners
 partners:
