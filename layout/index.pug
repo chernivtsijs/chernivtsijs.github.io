@@ -40,7 +40,7 @@ block content
         a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
 
   if schedule
-    section.schedule
+    section.schedule#schedule
       h1.title Schedule
       .schedule--container
         each item in schedule
