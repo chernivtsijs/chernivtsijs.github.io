@@ -1,0 +1,43 @@
+doctype html
+html(lang=lang)
+  head
+    if headers.title
+      title #{headers.title} — #{date} — #{title}
+    else
+      title #{date} — #{title}
+    include _head
+  body
+    block content
+      //- Page content goes here
+
+
+section.speakers.speakersMin
+    h1.title(id=speakesAction.ankor) Speakers
+    .container
+      if speakersMin
+        each speaker in speakersMin
+          .speaker
+            .photo(class=speaker.lightning ? 'is-lightning': '')
+              img(src=speaker.photo)
+            .name-speaker=speaker.name
+            .work-place=speaker.work
+            .title-speach=speaker.topic
+      else
+        .row
+          p
+            | Want to join our speaker team?
+            br
+            a(href=action.link) Send you talk
+
+
+section.map
+  h1.title Map
+  p.address!= placeMin.adress
+  div#embedded-map-min
+
+
+footer.footer
+    include _social
+    include _contacts
+include _scripts
+include _analytics

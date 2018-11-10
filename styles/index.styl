@@ -34,6 +34,15 @@
   background-size: cover
   height: 100vh
   position: relative
+  &-min-page
+    .header-title
+      margin: 0 auto
+    .header-logo
+      width: 4.5em
+    .header-title div h1
+      font-size: 1.7em
+    .header-title div p.desc
+      font-size: 1.2em
   &-page
     height: auto
     padding-bottom: 3rem
@@ -135,7 +144,9 @@ section.content
     border-left 3px solid #eee
 
 // --- --- ---
-
+.speakersMin
+  margin: 0 auto
+  padding: 0
 .speakers
   font-weight: 300
   background-color: white
@@ -375,6 +386,8 @@ section.schedule
   width: 100%
   #embedded-map
     height: 600px
+  #embedded-map-min
+    height: 300px
   .address
     color: $js-black
     padding-bottom: 20px

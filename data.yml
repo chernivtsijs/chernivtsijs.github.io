@@ -1,5 +1,6 @@
 # Common
 title: ChernivtsiJS
+titleMinJS: chernivtsi.min.js
 description: Let's talk about JavaScript?
 date: June 23, 2018
 speakesAction:
@@ -22,6 +23,16 @@ place:
   coords:
     latitude: 48.297188
     longitude: 25.9242539
+
+placeMin:
+  adress:
+    Belle Vue <br />
+    Kobylyanska St, 2 <br />
+    Chernivtsi, Ukraine
+  url: 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+  coords:
+    latitude: 48.291658
+    longitude: 25.935338
 
 navigation:
 - link: /code-of-conduct
@@ -248,3 +259,21 @@ contacts:
   email: denis.zavgorodny@gmail.com
   fb: https://www.facebook.com/denis.zavgorodny
   phone: "+380 (50) 76 28 045"
+
+# chernivtsi.min.js
+# A list of speakers
+speakersMin:
+- name: Aleksandar Simovic
+  photo: /images/speakers/aleksandar-simovic.jpg
+  work: Effortless Serverless, Belgrade, Serbia
+  topic: Serverless for frontend developers
+  lightning: false
+- name: Vasilika Klimova
+  photo: /images/speakers/vasilika-klimova.jpg
+  work: Artec3D, Gostingen, Luxembourg
+  topic: This terrible word Deadline
+  lightning: false
+
+# assets version
+assets:
+- version: 1

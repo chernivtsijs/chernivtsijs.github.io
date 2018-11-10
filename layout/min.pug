@@ -1,0 +1,17 @@
+extends _min_layout.pug
+
+block content
+  header.header.header-page.header-min-page
+    include _navigation
+    include _social
+    .header-wrapper
+      a(href='/').row.header-title
+        img.header-logo(src='/images/logo.svg', alt='')
+        div
+          h1= titleMinJS
+          p.desc= description
+
+  section.content
+    h1.title!=headers.title
+    article.container
+      .row!=content
