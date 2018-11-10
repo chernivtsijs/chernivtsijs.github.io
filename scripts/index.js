@@ -1,6 +1,7 @@
 'use strict';
 
 var data = { title: "ChernivtsiJS",
+  titleMinJS: "chernivtsi.min.js",
   description: "Let's talk about JavaScript?",
   date: "June 23, 2018",
   speakesAction: { link: "#speakers",
@@ -12,6 +13,10 @@ var data = { title: "ChernivtsiJS",
     url: "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
     coords: { latitude: 48.297188,
       longitude: 25.9242539 } },
+  placeMin: { adress: "Belle Vue <br /> Kobylyanska St, 2 <br /> Chernivtsi, Ukraine",
+    url: "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+    coords: { latitude: 48.291658,
+      longitude: 25.935338 } },
   navigation: [{ link: "/code-of-conduct",
     title: "Code Of Conduct" }, { link: "/city-guide",
     title: "City Guide" }, { link: "/2017",
@@ -152,7 +157,16 @@ var data = { title: "ChernivtsiJS",
     phone: "+380 (95) 11 00 392" }, { name: "Denis Zavgorodny",
     email: "denis.zavgorodny@gmail.com",
     fb: "https://www.facebook.com/denis.zavgorodny",
-    phone: "+380 (50) 76 28 045" }] };
+    phone: "+380 (50) 76 28 045" }],
+  speakersMin: [{ name: "Aleksandar Simovic",
+    photo: "/images/speakers/aleksandar-simovic.jpg",
+    work: "Effortless Serverless, Belgrade, Serbia",
+    topic: "Serverless for frontend developers",
+    lightning: false }, { name: "Vasilika Klimova",
+    photo: "/images/speakers/vasilika-klimova.jpg",
+    work: "Artec3D, Gostingen, Luxembourg",
+    topic: "This terrible word Deadline",
+    lightning: false }] };
 
 /* eslint no-undef: 0 */
 /**
@@ -162,29 +176,48 @@ var data = { title: "ChernivtsiJS",
 var _config$place$coords = data.place.coords;
 var latitude = _config$place$coords.latitude;
 var longitude = _config$place$coords.longitude;
+var _config$placeMin$coor = data.placeMin.coords;
+var latitudeMin = _config$placeMin$coor.latitude;
+var longitudeMin = _config$placeMin$coor.longitude;
 
+if (document.body.querySelector('#embedded-map')) {
+    var map = L.map('embedded-map', {
+        scrollWheelZoom: false,
+        dragging: !L.Browser.mobile,
+        tap: false
+    }).setView([latitude, longitude], 16);
 
-var map = L.map('embedded-map', {
-  scrollWheelZoom: false,
-  dragging: !L.Browser.mobile,
-  tap: false
-}).setView([latitude, longitude], 16);
+    L.tileLayer(data.place.url, {
+        maxZoom: 18,
+        id: 'mapbox.streets'
+    }).addTo(map);
 
-L.tileLayer(data.place.url, {
-  maxZoom: 18,
-  id: 'mapbox.streets'
-}).addTo(map);
+    L.marker([latitude, longitude]).addTo(map).openPopup();
+}
 
-L.marker([latitude, longitude]).addTo(map).openPopup();
+if (document.body.querySelector('#embedded-map-min')) {
+    var mapMin = L.map('embedded-map-min', {
+        scrollWheelZoom: false,
+        dragging: !L.Browser.mobile,
+        tap: false
+    }).setView([latitudeMin, longitudeMin], 16);
+
+    L.tileLayer(data.placeMin.url, {
+        maxZoom: 20,
+        id: 'mapbox.streets'
+    }).addTo(mapMin);
+
+    L.marker([latitudeMin, longitudeMin]).addTo(mapMin).openPopup();
+}
 
 /**
  * Tweets from last year
  */
 
 if (data.tweets && data.tweets.length > 0) {
-  var tweetsContainer = document.getElementById('tweets-container');
+    var tweetsContainer = document.getElementById('tweets-container');
 
-  data.tweets.forEach(function (tweetId) {
-    return twttr.widgets.createTweet(tweetId, tweetsContainer, { linkColor: 'red' });
-  });
+    data.tweets.forEach(function (tweetId) {
+        return twttr.widgets.createTweet(tweetId, tweetsContainer, { linkColor: 'red' });
+    });
 }
