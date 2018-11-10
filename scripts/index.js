@@ -166,7 +166,8 @@ var data = { title: "ChernivtsiJS",
     photo: "/images/speakers/vasilika-klimova.jpg",
     work: "Artec3D, Gostingen, Luxembourg",
     topic: "This terrible word Deadline",
-    lightning: false }] };
+    lightning: false }],
+  assets: [{ version: 1 }] };
 
 /* eslint no-undef: 0 */
 /**
