@@ -16,6 +16,8 @@
 @media (max-width: 920px)
   section.speakers .container .speaker
     width: 40%
+  section.speakers.speakersMin .container .speaker
+    width: 100%
   section.venue .venue-about
     flex-direction: column
     .venue-half
@@ -168,6 +170,15 @@
     height: auto
 
 @media (max-width: 440px)
+  .speakersMin.speakers .speaker
+    flex-direction: column
+    text-align: center
+    align-items: center
+    .speaker-desc
+      text-align: center
+      .title-speach
+        text-align: center
+
   section#schedule table tr td
     padding: 2px
 

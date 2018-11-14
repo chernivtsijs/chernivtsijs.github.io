@@ -37,7 +37,7 @@ block content
             a(href=action.link) Send you talk
 
     .speakers-action
-        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
+        a(href=action.link, class="action-btn action-btn__disable", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
 
   if schedule
     section.schedule#schedule
@@ -79,6 +79,10 @@ block content
           | Want to join us?
           br
           a(href='mailto:chernivtsijs@gmail.com') Join our community as a partner
+
+  .speakers-action
+    a(href=action.link, class="action-btn action-btn__disable", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
+
 
   section.venue
     h1.title Venue

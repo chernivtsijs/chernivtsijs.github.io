@@ -10,6 +10,9 @@ speakesAction:
 action:
   link: https://2event.com/events/1384395
   title: Buy Tickets
+actionMin:
+  link: https://docs.google.com/forms/d/e/1FAIpQLScyHxN4maV---tJcTXUw4IWtrjGHMPu_CzAtcxfn5KuLV_CPQ/viewform
+  title: Register
 
 # Location information
 place:
@@ -263,15 +266,29 @@ contacts:
 # chernivtsi.min.js
 # A list of speakers
 speakersMin:
-- name: Aleksandar Simovic
-  photo: /images/speakers/aleksandar-simovic.jpg
-  work: Effortless Serverless, Belgrade, Serbia
-  topic: Serverless for frontend developers
+- name: Christina Landvytovych
+  photo: /images/min.js/Christina_Landvytovych.jpg
+  work: Kyiv, Ukraine
+  about: Angular/React dev, codenewbie, AI research student, speaker, lover of beerjs community, girl with great ambitious and low budget
+  topic: TBA
   lightning: false
-- name: Vasilika Klimova
-  photo: /images/speakers/vasilika-klimova.jpg
-  work: Artec3D, Gostingen, Luxembourg
-  topic: This terrible word Deadline
+- name: Sergey Koshman
+  photo: /images/min.js/koshman.640x640.jpg
+  work: Kyiv, Ukraine
+  topic: Where canvas will provide benefits to your experience
+  about: Frontend experimentalist, beerJs activist, speaker, co-organizer of KyivJs, AngularKyiv, PubTalk
+  lightning: false
+- name: Stas Demchuk
+  photo: /images/min.js/Stas_Demchuk.jpg
+  work: Kyiv, Ukraine
+  topic: Make your Product talk With Node.js, AWS Lambda and Alexa
+  about: Frontend experimentalist, beerJs activist, speaker, co-organizer of KyivJs, AngularKyiv, PubTalk
+  lightning: false
+- name: Ivan Lavriv
+  photo: /images/min.js/Ivan_Lavriv.jpg
+  work: Lviv, Ukraine
+  topic: TBA
+  about: Любитель програмування, пива, походів та важкої музики, на час виступу ще буду безробітним. До цього часу програмував на різних технологіях і робив різні задачі в індустрії і буду продовжувати. крім того викладаю курс Web UI в LITS
   lightning: false
 
 # assets version

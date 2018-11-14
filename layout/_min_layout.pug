@@ -9,7 +9,8 @@ html(lang=lang)
   body
     block content
       //- Page content goes here
-
+.speakersMin-action
+    a(href=actionMin.link, target="_blank",  class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'register on meetup', 'click');")=actionMin.title
 
 section.speakers.speakersMin
     h1.title(id=speakesAction.ankor) Speakers
@@ -19,15 +20,20 @@ section.speakers.speakersMin
           .speaker
             .photo(class=speaker.lightning ? 'is-lightning': '')
               img(src=speaker.photo)
-            .name-speaker=speaker.name
-            .work-place=speaker.work
-            .title-speach=speaker.topic
+            .speaker-desc
+              .name-speaker=speaker.name
+              .work-place=speaker.work
+              .title-speach=speaker.topic
+              .title-about=speaker.about
       else
         .row
           p
             | Want to join our speaker team?
             br
             a(href=action.link) Send you talk
+
+.speakersMin-action
+    a(href=actionMin.link, target="_blank", class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'register on meetup', 'click');")=actionMin.title
 
 
 section.map

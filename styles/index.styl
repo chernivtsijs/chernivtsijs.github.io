@@ -144,9 +144,27 @@ section.content
     border-left 3px solid #eee
 
 // --- --- ---
-.speakersMin
+.speakers.speakersMin
   margin: 0 auto
   padding: 0
+  max-width: 800px
+  .speaker
+    align-items: flex-start
+    flex-direction: row
+    width: 100%
+    .speaker-desc
+      width: 100%
+      box-sizing: border-box
+      text-align: left
+      padding: 0 0 0 3%
+    .photo
+      align-items: flex-start
+    .work-place
+      padding: 1% 0
+
+
+
+
 .speakers
   font-weight: 300
   background-color: white
@@ -161,7 +179,6 @@ section.content
     width: 30%
     .photo
       align-items: center
-      display: flex
       justify-content: center
       margin-bottom: 1rem
       position: relative
@@ -188,11 +205,13 @@ section.content
       font-weight: 700
     .work-place
       font-style: italic
+    .title-about
+      font-size: 0.9em
     .title-speach
       font-size: 1.2em
       font-weight: 700
-      padding: 0 5%
-      text-align: center
+      padding: 1% 0
+      text-align: left
   .speakers-action
     text-align: center
     .action-btn
@@ -476,3 +495,17 @@ section.schedule
   & .partners
     font-size: 16px
     font-size: 1.7vw
+
+
+.action-btn__disable
+  pointer-events: none
+  opacity: 0.5
+  background: RGBA(0,0,0,0.3)
+
+section.bottom-banner .action-btn__disable
+  display: none
+
+.speakersMin-action
+  padding: 0 0 4%
+  .action-btn
+    margin: 0 auto

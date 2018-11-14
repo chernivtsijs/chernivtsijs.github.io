@@ -13,7 +13,7 @@ html(lang=lang)
     section.bottom-banner
       .row.date=date
       .row.ticket
-        a(href=action.link, class="action-btn", onclick="fbq('track', 'InitiateCheckout');")=action.title
+        a(href=action.link, class="action-btn action-btn__disable", onclick="fbq('track', 'InitiateCheckout');")=action.title
       .row.questions
         a(href=social[0].link) Any questions?
       include _navigation
