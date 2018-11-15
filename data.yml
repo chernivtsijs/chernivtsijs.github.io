@@ -282,7 +282,7 @@ speakersMin:
   photo: /images/min.js/Stas_Demchuk.jpg
   work: Kyiv, Ukraine
   topic: Make your Product talk With Node.js, AWS Lambda and Alexa
-  about: Frontend experimentalist, beerJs activist, speaker, co-organizer of KyivJs, AngularKyiv, PubTalk
+  about:
   lightning: false
 - name: Ivan Lavriv
   photo: /images/min.js/Ivan_Lavriv.jpg
