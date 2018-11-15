@@ -1,0 +1,35 @@
+extends _layout
+
+block content
+  header.header
+    include _navigation
+    include _social
+    .header-wrapper
+      .row.header-title
+        img.header-logo(src='/images/logo.svg', alt='')
+        div
+          h1= title
+          p.desc= description
+      .row.date
+        span.our-next
+          a(href='/min') Next Event
+          span= dateNext
+      .row.questions
+        a(href=social[0].link) Any questions?
+      .scroll
+        img(src='/images/icons/scroll.png', alt='')
+
+
+
+
+
+  section.last-year
+    h1.title Previous year
+    .container
+      #video-container
+        iframe(
+          src="https://www.youtube.com/embed/qVpddd5JE-Y?rel=0"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+        ).video
+      #tweets-container

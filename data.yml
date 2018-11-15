@@ -3,6 +3,7 @@ title: ChernivtsiJS
 titleMinJS: chernivtsi.min.js
 description: Let's talk about JavaScript?
 date: June 23, 2018
+dateNext: December 01, 2018
 speakesAction:
   link: '#speakers'
   ankor: 'speakers'
@@ -38,10 +39,14 @@ placeMin:
     longitude: 25.935338
 
 navigation:
+- link: /min
+  title: Meetup Winter 2018
 - link: /code-of-conduct
   title: Code Of Conduct
 - link: /city-guide
   title: City Guide
+- link: /2018
+  title: 2018
 - link: /2017
   title: 2017
 
@@ -280,7 +285,7 @@ speakersMin:
   lightning: false
 - name: Stas Demchuk
   photo: /images/min.js/Stas_Demchuk.jpg
-  work: Kyiv, Ukraine
+  work: Ivano-Frankivsk, Ukraine
   topic: Make your Product talk With Node.js, AWS Lambda and Alexa
   about: Software Engineer passionate about front-end, AI and ML
   lightning: false

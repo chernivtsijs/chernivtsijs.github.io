@@ -1,5 +1,5 @@
 ---
-layout: layout/empty_index.pug
+layout: layout/index.pug
 title:
 ---
 
