@@ -181,9 +181,14 @@ var data = { title: "ChernivtsiJS",
     lightning: false }, { name: "Ivan Lavriv",
     photo: "/images/min.js/Ivan_Lavriv.jpg",
     work: "Lviv, Ukraine",
-    topic: "TBA",
+    topic: "Move your code to microservices",
     about: "Любитель програмування, пива, походів та важкої музики, на час виступу ще буду безробітним. До цього часу програмував на різних технологіях і робив різні задачі в індустрії і буду продовжувати. крім того викладаю курс Web UI в LITS",
-    lightning: false }],
+    lightning: false }, { name: "Denys Mohylin",
+    photo: "/images/min.js/Denys_Mohylin.jpg",
+    work: "Chernivtsi, Ukraine",
+    topic: "Why I changed side of \"End\"",
+    about: "I am frontend developer that want to start take some part in IT community of the town",
+    lightning: true }],
   assets: [{ version: 1 }] };
 
 /* eslint no-undef: 0 */
