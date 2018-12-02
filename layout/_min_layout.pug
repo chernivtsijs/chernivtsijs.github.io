@@ -9,6 +9,21 @@ html(lang=lang)
   body
     block content
       //- Page content goes here
+
+.speakersMin-action
+    a(href=actionMin.link, target="_blank",  class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'register on meetup', 'click');")=actionMin.title
+
+
+if scheduleMin
+    section.schedule#schedule
+      h1.title Schedule
+      .schedule-light--container
+        table.schedule-light(cellspacing=0 cellpadding=0)
+          each item in scheduleMin
+            tr.schedule-light--item(class=item.tech ? 'is-tech' : '')
+              td.schedule-light--time=item.time
+              td.schedule--title=item.name
+
 .speakersMin-action
     a(href=actionMin.link, target="_blank",  class="action-btn", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'register on meetup', 'click');")=actionMin.title
 

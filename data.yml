@@ -275,7 +275,7 @@ speakersMin:
   photo: /images/min.js/Christina_Landvytovych.jpg
   work: Kyiv, Ukraine
   about: Angular/React dev, codenewbie, AI research student, speaker, lover of beerjs community, girl with great ambitious and low budget
-  topic: TBA
+  topic: Are you (w)here? Using maps in your projects
   lightning: false
 - name: Sergey Koshman
   photo: /images/min.js/koshman.640x640.jpg
@@ -286,15 +286,45 @@ speakersMin:
 - name: Stas Demchuk
   photo: /images/min.js/Stas_Demchuk.jpg
   work: Ivano-Frankivsk, Ukraine
-  topic: Make your Product talk With Node.js, AWS Lambda and Alexa
+  topic: Make your Product With Node.js, AWS Lambda and Alexa
   about: Software Engineer passionate about front-end, AI and ML
   lightning: false
 - name: Ivan Lavriv
   photo: /images/min.js/Ivan_Lavriv.jpg
   work: Lviv, Ukraine
-  topic: TBA
+  topic: Move your code to microservices
   about: Любитель програмування, пива, походів та важкої музики, на час виступу ще буду безробітним. До цього часу програмував на різних технологіях і робив різні задачі в індустрії і буду продовжувати. крім того викладаю курс Web UI в LITS
   lightning: false
+- name: Denys Mohylin
+  photo: /images/min.js/Denys_Mohylin.jpg
+  work: Chernivtsi, Ukraine
+  topic: Why I changed side of "End"
+  about: I am frontend developer that want to start take some part in IT community of the town
+  lightning: true
+
+# A schedule of speakers
+scheduleMin:
+- name: Registration
+  time: 11:30-12:00
+  tech: true
+- name: 👋🏻 Opening talk
+  time: 12:00-12:05
+  tech: true
+- name: 🗣 First talks section
+  time: 12:05-13:45
+  tech: true
+- name: ☕️ Break
+  time: 13:45-15:00
+  tech: true
+- name: 🗣 Second talks section
+  time: 15:00-17:00
+  tech: true
+- name: 🏁 Closing talk
+  time: 17:00-17:20
+  tech: true
+- name: 🍸 Afterparty
+  time: 20:00-∞
+  tech: true
 
 # assets version
 assets:
