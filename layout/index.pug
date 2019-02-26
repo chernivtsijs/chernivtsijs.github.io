@@ -12,7 +12,7 @@ block content
           p.desc= description
       .row.date= date
       .row
-        a(href=speakesAction.link, class="action-btn", onclick="fbq('track', 'speakesAction'); ga('send', 'event', 'view speakers', 'click');")=speakesAction.title
+        a(href=action.link, class="action-btn")=action.title
       .row.questions
         a(href=social[0].link) Any questions?
       .scroll
@@ -33,11 +33,6 @@ block content
         .row
           p
             | Want to join our speaker team?
-            br
-            a(href=action.link) Send you talk
-
-    .speakers-action
-        a(href=action.link, class="action-btn action-btn__disable", onclick="fbq('track', 'InitiateCheckout'); ga('send', 'event', 'buy tickets', 'click');")=action.title
 
   if schedule
     section.schedule#schedule
@@ -102,12 +97,12 @@ block content
   section.last-year
     h1.title Previous year
     .container
-      #video-container
-        iframe(
-          src="https://www.youtube.com/embed/qVpddd5JE-Y?rel=0"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-        ).video
+      //- #video-container
+      //-   iframe(
+      //-     src="https://www.youtube.com/embed/qVpddd5JE-Y?rel=0"
+      //-     frameborder="0"
+      //-     allow="autoplay; encrypted-media"
+      //-   ).video
       #tweets-container
 
   section.map
