@@ -8,8 +8,8 @@ These are the places that we visit every day so that we can recommend it.
 
 Table of content:
 
-* [🛏 Hostels](#-hostels)
 * [🏨 Hotels](#-hotels)
+* [🛏 Hostels](#-hostels)
 * [🍽 Restaurant](#-restaurants)
 * [☕️ Cafe](#-cafe)
 * [🍔 Fast-food](#-fast-food)
@@ -175,17 +175,7 @@ Address 3: [96А, Nezalezhnosti Ave](https://goo.gl/maps/pHP2RiZeXnA2)
 Address: [1, Zenkovietskoi Street](https://goo.gl/maps/kqWs18WvobB2)
 Number: [+380 68 376 9969](tel:0683769969)
 
-### Food Point
-
-Address: [13, Universytetska Street](https://goo.gl/maps/cGkYEtjZjFH2)
-Number: [+380 50 685 6596](tel:0506856596)
-
 ## 🍸 Bars
-
-### Kanapa
-
-Address: [5, Chaikovkogo Street](https://goo.gl/maps/TheFo5v1kcw)
-Number: [+380 66 649 9627](tel:0666499627)
 
 ### Shypuchka
 

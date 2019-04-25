@@ -2,15 +2,14 @@
 title: ChernivtsiJS
 titleMinJS: chernivtsi.min.js
 description: Let's talk about JavaScript?
-date: June 22-23, 2019
-# dateNext: December 01, 2018
+date: June 22, 2019
+action:
+  link: https://chernivtsijs2019.2event.com/
+  title: Buy Tickets
 speakesAction:
   link: '#speakers'
   ankor: 'speakers'
   title: Our Speakers
-action:
-  link: https://goo.gl/forms/fxUbK8yiUW5jxPcs2
-  title: Submit your talk
 actionMin:
   link: https://docs.google.com/forms/d/e/1FAIpQLScyHxN4maV---tJcTXUw4IWtrjGHMPu_CzAtcxfn5KuLV_CPQ/viewform
   title: Register
@@ -62,12 +61,48 @@ social:
   icon: "/images/icons/github.png"
 
 # A list of speakers
+
 speakers:
-# - name: Aleksandar Simovic
-#   photo: /images/speakers/aleksandar-simovic.jpg
-#   work: Effortless Serverless, Belgrade, Serbia
-#   topic: Serverless for frontend developers
+- name: Andrey Listochkin
+  photo: /images/speakers/andrei-listochkin.jpg
+  work: Wix, Kyiv, Ukraine
+  topic: 🤫 Secret Topic 🤫
+  lightning: false
+- name: Natalia Tepluhina
+  photo: /images/speakers/natalia-tepluhina.jpg
+  work: GitLab, Kyiv, Ukraine
+  topic: What to Expect from Vue 3
+  lightning: false
+- name: Yuriy Artyukh
+  photo: /images/speakers/yuriy-artyukh.jpg
+  work: Coderiver, Kyiv, Ukraine
+  topic: Case of One Animation
+  lightning: false
+# - name: Sergiy Babich
+#   photo: /images/speakers/sergiy-babich.jpg
+#   work: GlobalCSS, Lviv, Ukraine
+#   topic: 🤫 Secret Topic 🤫
 #   lightning: false
+- name: Roman Liutikov
+  photo: /images/speakers/roman-liutikov.jpg
+  work: Pitch, Kyiv, Ukraine
+  topic: On Desktop UIs and Web Tech
+  lightning: false
+- name: Dmitry Barabash
+  photo: /images/speakers/dima-barabash.jpg
+  work: Youwe, Kyiv, Ukraine
+  topic: 🤫 Secret Topic 🤫
+  lightning: false
+- name: Vitalii Rybka
+  photo: /images/speakers/vitalii-rybka.jpg
+  work: EPAM, Dnipro, Ukraine
+  topic: Switching Between Frameworks Without Pain
+  lightning: false
+- name: Khrystyna Landvytovych
+  photo: /images/speakers/khrystyna-landvytovych.jpg
+  work: ChainSystem, Kyiv, Ukraine
+  topic: TensorFlow in Action
+  lightning: true
 
 # A schedule of speakers
 schedule:
@@ -77,13 +112,19 @@ schedule:
 
 # A list of partners
 partners:
-  # special:
-    # - name: AlterEGO
-    #   logo: '/images/partners/alterego.png'
-    #   link: //alterego.digital
-  # platinum:
+  platinum:
+    - name: Chernivtsi National University
+      logo: /images/partners/chnu.png
+      link: //www.chnu.edu.ua
   # gold:
   # silver:
+  info:
+    - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
+      logo: /images/partners/dct.png
+      link: //ptcsi.chnu.edu.ua
+    - name: NodeSchool Chernivtsi
+      logo: /images/partners/nodeschool.png
+      link: //nodeschool.io/chernivtsi
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
