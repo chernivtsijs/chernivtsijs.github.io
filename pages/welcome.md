@@ -15,7 +15,7 @@ Looking where to stay/eat/drink in Chernivtsi? We've made a useful city guide fo
 
 Please, check out our [Code Of Conduct][coc]. Here's a quick version:
 
-> Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference **without a refund** at the discretion of the conference organisers.
+> Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference **without a refund** at the discretion of the conference organizers.
 
 It's very important to ensure a safe environment for everybody.
 
