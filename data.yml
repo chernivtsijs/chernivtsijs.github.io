@@ -112,13 +112,19 @@ schedule:
 
 # A list of partners
 partners:
-  # special:
-    # - name: AlterEGO
-    #   logo: '/images/partners/alterego.png'
-    #   link: //alterego.digital
-  # platinum:
+  platinum:
+    - name: Chernivtsi National University
+      logo: /images/partners/chnu.png
+      link: //www.chnu.edu.ua
   # gold:
   # silver:
+  info:
+    - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
+      logo: /images/partners/dct.png
+      link: //ptcsi.chnu.edu.ua
+    - name: NodeSchool Chernivtsi
+      logo: /images/partners/nodeschool.png
+      link: //nodeschool.io/chernivtsi
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
