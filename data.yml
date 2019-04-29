@@ -93,6 +93,11 @@ speakers:
   work: Youwe, Kyiv, Ukraine
   topic: 🤫 Secret Topic 🤫
   lightning: false
+- name: Sasha Shynkevich
+  photo: /images/speakers/sasha-shynkevich1.jpg
+  work: Minsk, Belarus
+  topic: "Development Standards: A Step-by-step guide to implement it without pain"
+  lightning: false
 - name: Vitalii Rybka
   photo: /images/speakers/vitalii-rybka.jpg
   work: EPAM, Dnipro, Ukraine
