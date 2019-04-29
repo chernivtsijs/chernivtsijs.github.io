@@ -78,11 +78,11 @@ speakers:
   work: Coderiver, Kyiv, Ukraine
   topic: Case of One Animation
   lightning: false
-# - name: Sergiy Babich
-#   photo: /images/speakers/sergiy-babich.jpg
-#   work: GlobalCSS, Lviv, Ukraine
-#   topic: 🤫 Secret Topic 🤫
-#   lightning: false
+- name: Sergiy Babich
+  photo: /images/speakers/sergiy-babich.jpg
+  work: GlobalCSS, Lviv, Ukraine
+  topic: 🤫 Secret Topic 🤫
+  lightning: false
 - name: Roman Liutikov
   photo: /images/speakers/roman-liutikov.jpg
   work: Pitch, Kyiv, Ukraine
