@@ -108,6 +108,11 @@ speakers:
   work: ChainSystem, Kyiv, Ukraine
   topic: TensorFlow in Action
   lightning: true
+- name: Oleksandr Oleksiv
+  photo: /images/speakers/oleksandr-oleksiv1.jpg
+  work: Scalac, Ternopil, Ukraine
+  topic: React Hooks
+  lightning: true
 
 # A schedule of speakers
 schedule:
