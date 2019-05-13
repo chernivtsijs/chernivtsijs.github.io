@@ -126,8 +126,14 @@ partners:
     - name: Chernivtsi National University
       logo: /images/partners/chnu.png
       link: //www.chnu.edu.ua
-  # gold:
-  # silver:
+  gold:
+    - name: AMC Bridge
+      logo: /images/partners/amc-bridge1.svg
+      link: https://amcbridge.com.ua/ua
+  silver:
+    - name: DOU
+      logo: /images/partners/dou-logo.png
+      link: https://dou.ua/
   info:
     - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
       logo: /images/partners/dct.png
