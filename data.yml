@@ -137,6 +137,9 @@ partners:
     - name: DOU
       logo: /images/partners/dou-logo.png
       link: https://dou.ua/
+    - name: Scalac
+      logo: /images/partners/scalac.png
+      link: https://scalac.io/
   info:
     - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
       logo: /images/partners/dct.png
