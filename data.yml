@@ -161,6 +161,9 @@ partners:
     - name: <Input />
       logo: /images/partners/input-conf.png
       link: //inputconf.org/
+    - name: KharkivFrontend
+      logo: /images/partners/kharkivfrontend.png
+      link: //kharkivfrontend.org/
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
