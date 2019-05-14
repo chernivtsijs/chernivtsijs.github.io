@@ -137,6 +137,9 @@ partners:
     - name: DOU
       logo: /images/partners/dou-logo.png
       link: https://dou.ua/
+    - name: Owlygon
+      logo: /images/partners/owlygon.png
+      link: http://bohdanov.com
   info:
     - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
       logo: /images/partners/dct.png
