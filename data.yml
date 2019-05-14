@@ -129,17 +129,17 @@ partners:
   gold:
     - name: AMC Bridge
       logo: /images/partners/amc-bridge.png
-      link: https://amcbridge.com.ua/ua
+      link: //amcbridge.com.ua/ua
     - name: SoftServe
       logo: /images/partners/softserve.svg
-      link: https://www.softserveinc.com/
+      link: //www.softserveinc.com/
   silver:
     - name: DOU
       logo: /images/partners/dou-logo.png
-      link: https://dou.ua/
+      link: //dou.ua/
     - name: Owlygon
       logo: /images/partners/owlygon.png
-      link: http://bohdanov.com
+      link: //bohdanov.com
   info:
     - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
       logo: /images/partners/dct.png
@@ -147,6 +147,9 @@ partners:
     - name: NodeSchool Chernivtsi
       logo: /images/partners/nodeschool.png
       link: //nodeschool.io/chernivtsi
+    - name: <Input />
+      logo: /images/partners/input-confg.png
+      link: //inputconf.org/
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
