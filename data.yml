@@ -68,15 +68,20 @@ speakers:
   work: Wix, Kyiv, Ukraine
   topic: 🤫 Secret Topic 🤫
   lightning: false
+- name: Uri Goldstain
+  photo: /images/speakers/uri-goldshtein.png
+  work: The Guild, Ness Ziona, Israel
+  topic: Redefining the Frontend Developer Role
+  lightning: false
+- name: Sasha Shynkevich
+  photo: /images/speakers/sasha-shynkevich.jpg
+  work: Minsk, Belarus
+  topic: "Development Standards: A Step-by-step guide to implement it without pain"
+  lightning: false
 - name: Natalia Tepluhina
   photo: /images/speakers/natalia-tepluhina.jpg
   work: GitLab, Kyiv, Ukraine
   topic: What to Expect from Vue 3
-  lightning: false
-- name: Sasha Shynkevich
-  photo: /images/speakers/sasha-shynkevich1.jpg
-  work: Minsk, Belarus
-  topic: "Development Standards: A Step-by-step guide to implement it without pain"
   lightning: false
 - name: Yuriy Artyukh
   photo: /images/speakers/yuriy-artyukh.jpg
@@ -109,7 +114,7 @@ speakers:
   topic: TensorFlow in Action
   lightning: true
 - name: Oleksandr Oleksiv
-  photo: /images/speakers/oleksandr-oleksiv1.jpg
+  photo: /images/speakers/oleksandr-oleksiv.jpg
   work: Scalac, Ternopil, Ukraine
   topic: React Hooks
   lightning: true
