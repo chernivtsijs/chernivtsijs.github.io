@@ -135,7 +135,7 @@ partners:
       link: //www.softserveinc.com/
   silver:
     - name: DOU
-      logo: /images/partners/dou-logo.png
+      logo: /images/partners/dou.png
       link: //dou.ua/
     - name: Owlygon
       logo: /images/partners/owlygon.png
@@ -147,8 +147,11 @@ partners:
     - name: NodeSchool Chernivtsi
       logo: /images/partners/nodeschool.png
       link: //nodeschool.io/chernivtsi
+    - name: Kottans
+      logo: /images/partners/kottans.png
+      link: //kottans.org/
     - name: <Input />
-      logo: /images/partners/input-confg.png
+      logo: /images/partners/input-conf.png
       link: //inputconf.org/
 
 # Photos of venue
