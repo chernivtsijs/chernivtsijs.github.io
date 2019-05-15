@@ -138,6 +138,9 @@ partners:
     - name: SoftServe
       logo: /images/partners/softserve.svg
       link: //www.softserveinc.com/
+    - name: ASD
+      logo: /images/partners/asd.png
+      link: //asd-team.com/
   silver:
     - name: DOU
       logo: /images/partners/dou.png
