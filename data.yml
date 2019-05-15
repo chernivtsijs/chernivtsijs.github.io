@@ -170,6 +170,9 @@ partners:
     - name: TernopilJS
       logo: /images/partners/ternopiljs.png
       link: //youtube.com/c/ternopiljs
+    - name: KharkivCSS
+      logo: /images/partners/KharkivCSS_logo_text_rgb.svg
+      link: http://kharkivcss.org/
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
