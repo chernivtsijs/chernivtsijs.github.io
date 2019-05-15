@@ -164,6 +164,9 @@ partners:
     - name: KharkivFrontend
       logo: /images/partners/kharkivfrontend.png
       link: //kharkivfrontend.org/
+    - name: TernopilJS
+      logo: /images/partners/ternopiljs.png
+      link: //youtube.com/c/ternopiljs
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
