@@ -78,11 +78,6 @@ speakers:
   work: Minsk, Belarus
   topic: "Development Standards: A Step-by-step guide to implement it without pain"
   lightning: false
-- name: Natalia Tepluhina
-  photo: /images/speakers/natalia-tepluhina.jpg
-  work: GitLab, Kyiv, Ukraine
-  topic: What to Expect from Vue 3
-  lightning: false
 - name: Yuriy Artyukh
   photo: /images/speakers/yuriy-artyukh.jpg
   work: Coderiver, Kyiv, Ukraine
