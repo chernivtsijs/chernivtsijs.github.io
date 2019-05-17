@@ -168,6 +168,9 @@ partners:
     - name: KharkivCSS
       logo: /images/partners/KharkivCSS_logo_text_rgb.svg
       link: http://kharkivcss.org/
+    - name: FWDays
+      logo: /images/partners/fwdays.png
+      link: https://fwdays.com/
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
