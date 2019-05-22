@@ -147,30 +147,42 @@ partners:
       logo: /images/partners/owlygon.png
       link: //bohdanov.com
   info:
+    - name: KharkivCSS
+      logo: /images/partners/kharkivcss.svg
+      link: http://kharkivcss.org/
+    - name: FWDays
+      logo: /images/partners/fwdays.png
+      link: https://fwdays.com/
+    - name: KharkivFrontend
+      logo: /images/partners/kharkivfrontend.png
+      link: //kharkivfrontend.org/
+    - name: Kottans
+      logo: /images/partners/kottans.png
+      link: //kottans.org/
+    - name: KyivJS
+      logo: /images/partners/kyivjs.svg
+      link: //kyivjs.org
+    - name: Zlit
+      logo: /images/partners/zlit.png
+      link: //zlit.events
+    - name: BeerJS Kyiv
+      logo: /images/partners/beerjskyiv.png
+      link: //www.meetup.com/BeerJSKyiv
+    - name: <Input />
+      logo: /images/partners/input-conf.png
+      link: //inputconf.org/
+    - name: TernopilJS
+      logo: /images/partners/ternopiljs.png
+      link: //www.facebook.com/groups/FrontSpot
+    - name: FrontSpot
+      logo: /images/partners/frontspot.png
+      link: //youtube.com/c/ternopiljs
     - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
       logo: /images/partners/dct.png
       link: //ptcsi.chnu.edu.ua
     - name: NodeSchool Chernivtsi
       logo: /images/partners/nodeschool.png
       link: //nodeschool.io/chernivtsi
-    - name: Kottans
-      logo: /images/partners/kottans.png
-      link: //kottans.org/
-    - name: <Input />
-      logo: /images/partners/input-conf.png
-      link: //inputconf.org/
-    - name: KharkivFrontend
-      logo: /images/partners/kharkivfrontend.png
-      link: //kharkivfrontend.org/
-    - name: TernopilJS
-      logo: /images/partners/ternopiljs.png
-      link: //youtube.com/c/ternopiljs
-    - name: KharkivCSS
-      logo: /images/partners/KharkivCSS_logo_text_rgb.svg
-      link: http://kharkivcss.org/
-    - name: FWDays
-      logo: /images/partners/fwdays.png
-      link: https://fwdays.com/
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
