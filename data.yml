@@ -121,6 +121,9 @@ partners:
     - name: Chernivtsi National University
       logo: /images/partners/chnu.png
       link: //www.chnu.edu.ua
+    - name: Bizico
+      logo: /images/partners/bizico.svg
+      link: //bizico.com
   gold:
     - name: AMC Bridge
       logo: /images/partners/amc-bridge.png
@@ -131,6 +134,9 @@ partners:
     - name: ASD
       logo: /images/partners/asd.png
       link: //asd-team.com/
+    - name: Wix Engineering
+      logo: /images/partners/wix.svg
+      link: //wix.engineering
   silver:
     - name: DOU
       logo: /images/partners/dou.png
