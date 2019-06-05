@@ -190,6 +190,9 @@ partners:
     - name: NodeSchool Chernivtsi
       logo: /images/partners/nodeschool.png
       link: //nodeschool.io/chernivtsi
+    - name: Ivano-Frankivsk IT-cluster
+      logo: /images/partners/if-cluster.png
+      link: //it-cluster.if.ua
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
