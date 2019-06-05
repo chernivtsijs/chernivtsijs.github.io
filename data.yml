@@ -137,6 +137,9 @@ partners:
     - name: Wix Engineering
       logo: /images/partners/wix.svg
       link: //wix.engineering
+    - name: ImproveIT
+      logo: /images/partners/improveit.svg
+      link: //improveit.solutions
   silver:
     - name: DOU
       logo: /images/partners/dou.png
