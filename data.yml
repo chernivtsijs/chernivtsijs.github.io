@@ -172,6 +172,9 @@ partners:
     - name: BeerJS Kyiv
       logo: /images/partners/beerjskyiv.png
       link: //www.meetup.com/BeerJSKyiv
+    - name: OdessaFrontend
+      logo: /images/partners/odessafrontend.svg
+      link: //odessafrontend.org/
     - name: <Input />
       logo: /images/partners/input-conf.png
       link: //inputconf.org/
