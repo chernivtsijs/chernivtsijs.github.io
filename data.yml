@@ -196,9 +196,15 @@ partners:
     - name: Ivano-Frankivsk IT-cluster
       logo: /images/partners/if-cluster.png
       link: //it-cluster.if.ua
+    - name: Vinnytsia JavaScript Community
+      logo: /images/partners/vinjs.png
+      link: //t.me/joinchat/JDqM1A9BbYqG5OsdsrP9RA?fbclid=IwAR0uygUKJ1U4m9fsf8soKlGivXC6UiHd1uTk2YYCIYKCLjIhPDPB_GcSQbs
     - name: InventorSoft
       logo: /images/partners/inventor-soft.svg
       link: //inventorsoft.co/
+    - name: BeerJS Zhytomyr
+      logo: /images/partners/zhytomyr-beerjs.jpg
+      link: //www.facebook.com/groups/beerJSZhytomyr/
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
