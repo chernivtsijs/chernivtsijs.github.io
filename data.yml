@@ -81,7 +81,7 @@ speakers:
 - name: Sergiy Babich
   photo: /images/speakers/sergiy-babich.jpg
   work: GlobalCSS, Lviv, Ukraine
-  topic: 🤫 Secret Topic 🤫
+  topic: Як навчитися робити прості речі просто
   lightning: false
 - name: Roman Liutikov
   photo: /images/speakers/roman-liutikov.jpg
@@ -96,8 +96,8 @@ speakers:
 - name: Dmitry Barabash
   photo: /images/speakers/dima-barabash.jpg
   work: Youwe, Kyiv, Ukraine
-  topic: 🤫 Secret Topic 🤫
-  lightning: true
+  topic: Как мы строили дизайн систему
+  lightning: false
 - name: Khrystyna Landvytovych
   photo: /images/speakers/khrystyna-landvytovych.jpg
   work: ChainSystem, Kyiv, Ukraine
@@ -111,9 +111,73 @@ speakers:
 
 # A schedule of speakers
 schedule:
-# - name: 🥐 Registration & breakfast
-#   time: 9:00-9:50
-#   tech: true
+ - name: Registration & breakfast
+   time: 9:00-9:50
+   tech: false
+ - name: 👋🏻 Opening talk
+   time: 9:00-9:50
+   tech: false
+ - name: Dmytro Barabash
+   topic: Как мы строили дизайн систему
+   time: 10:00-10:40
+   tech: true
+ - name: Sasha Shynkevich
+   topic: 'Development Standards: A Step-by-step guide to implement it without pain'
+   time: 10:40-11:20
+   tech: true
+ - name: ☕️ Coffeebreak
+   time: 11:20-11:50
+   tech: false
+ - name: 🗣 Interview session
+   time: 11:50-12:00
+   tech: false
+ - name: Roman Liutikov
+   topic: On Desktop UIs and Web Tech
+   time: 12:00-12:40
+   tech: true
+ - name: Vitalii Rybka
+   topic: Switching Between Frameworks Without Pain
+   time: 12:40-13:20
+   tech: true
+ - name: 🍽 Lunch
+   time: 13:20-14:50
+   tech: false
+ - name: Khrystyna Landvytovych
+   topic: TensorFlow in Action
+   time: 14:50-15:05
+   tech: true
+ - name: Oleksandr Oleksiv
+   topic: React Hooks
+   time: 15:05-15:20
+   tech: true
+ - name: Yuriy Artyukh
+   topic: Case of One Animation
+   time: 15:20-16:00
+   tech: true
+ - name: ☕️ Coffeebreak
+   time: 16:00-16:30
+   tech: false
+ - name: 🗣 Interview session
+   time: 16:30-16:40
+   tech: false
+ - name: Sergiy Babich
+   topic: Як навчитися робити прості речі просто
+   time: 16:40-17:20
+   tech: true
+ - name: Andrey Listochkin
+   topic: 🤫 Secret Topic 🤫
+   time: 17:20-18:00
+   tech: true
+ - name: 🎤 QA-session
+   topic: Panel discussion with speakers
+   time: 18:00-18:40
+   tech: true
+ - name: 🏁 Closing talk
+   time: 18:40-19:00
+   tech: false
+ - name: 🍸 Afterparty
+   time: 21:00-∞
+   tech: false
 
 # A list of partners
 partners:
