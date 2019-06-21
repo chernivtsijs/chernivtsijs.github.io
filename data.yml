@@ -278,6 +278,9 @@ partners:
     - name: Nexteum
       logo: /images/partners/nexteum.png
       link: //nexteum.com/
+    - name: css-minsk-js
+      logo: /images/partners/css-minsk-js-logo-2019.svg
+      link: //css-minsk-js.by
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
