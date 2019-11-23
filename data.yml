@@ -310,36 +310,17 @@ contacts:
 # chernivtsi.min.js
 # A list of speakers
 speakersMin:
-- name: Christina Landvytovych
-  photo: /images/min.js/Christina_Landvytovych.jpg
-  work: Kyiv, Ukraine
-  about: Angular/React dev, codenewbie, AI research student, speaker, lover of beerjs community, girl with great ambitious and low budget
-  topic: Are you (w)here? Using maps in your projects
-  lightning: false
-- name: Sergey Koshman
-  photo: /images/min.js/koshman.640x640.jpg
-  work: Kyiv, Ukraine
-  topic: Where canvas will provide benefits to your experience
-  about: Frontend experimentalist, beerJs activist, speaker, co-organizer of KyivJs, AngularKyiv, PubTalk
-  lightning: false
-- name: Stas Demchuk
-  photo: /images/min.js/Stas_Demchuk.jpg
-  work: Ivano-Frankivsk, Ukraine
-  topic: Make your Product With Node.js, AWS Lambda and Alexa
-  about: Software Engineer passionate about front-end, AI and ML
-  lightning: false
-- name: Ivan Lavriv
-  photo: /images/min.js/Ivan_Lavriv.jpg
-  work: Lviv, Ukraine
-  topic: Move your code to microservices
-  about: Любитель програмування, пива, походів та важкої музики, на час виступу ще буду безробітним. До цього часу програмував на різних технологіях і робив різні задачі в індустрії і буду продовжувати. крім того викладаю курс Web UI в LITS
+- name: Anastasiia Nedbailo
+  photo: /images/min.js/2019/Anastasiia_Nedbailo.jpg
+  work: Ukraine, Chernivtsi
+  topic: Secret topic
   lightning: false
 - name: Denys Mohylin
-  photo: /images/min.js/Denys_Mohylin.jpg
-  work: Chernivtsi, Ukraine
-  topic: Why I changed side of "End"
-  about: I am frontend developer that want to start take some part in IT community of the town
-  lightning: true
+  photo: /images/min.js/2019/Denys_Mohylin.jpg
+  work: Ukraine, Chernivtsi
+  topic: Your architectural hell
+  lightning: false
+
 
 # A schedule of speakers
 scheduleMin:
