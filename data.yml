@@ -323,7 +323,7 @@ speakersMin:
 - name: Denis Zavgorodny
   photo: /images/min.js/2019/Denis_Zavgorodny.jpg
   work: Ukraine, Kyiv
-  topic: What about biometric authentication?
+  topic: What about Biometric and U2F Token Web Authentication?
   lightning: false
 
 # A schedule of speakers
