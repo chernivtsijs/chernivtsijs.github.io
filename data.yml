@@ -325,6 +325,11 @@ speakersMin:
   work: Ukraine, Kyiv
   topic: What about Biometric and U2F Token Web Authentication?
   lightning: false
+- name: Denys Dovhan
+  photo: /images/min.js/2019/denys_dovhan.jpg
+  work: Ukraine, Kyiv
+  topic: Як писати пет-проекти
+  lightning: false
 
 # A schedule of speakers
 scheduleMin:
