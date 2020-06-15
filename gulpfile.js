@@ -36,7 +36,7 @@ const getData = (path) => {
 
 const applyTemplate = () => through.obj((file, enc, callback) => {
   const layout = file.headers.layout || 'layout/index.pug'
-  const data = getData('./data.yml');
+  const data = getData('./data.yml')
   const locals = Object.assign(data, {
     headers: file.headers,
     content: file.contents,

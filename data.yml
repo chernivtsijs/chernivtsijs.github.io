@@ -2,10 +2,10 @@
 title: ChernivtsiJS
 titleMinJS: chernivtsi.min.js
 description: Let's talk about JavaScript?
-date: June 22, 2019
+date: June 20, 2020
 action:
-  link: https://2event.com/en/events/1662800
-  title: Buy Tickets
+  link: https://forms.gle/HZ7s3gTHkcyZhGHT9
+  title: Call For Papers
 speakesAction:
   link: '#speakers'
   ankor: 'speakers'
@@ -42,9 +42,11 @@ navigation:
   title: Code Of Conduct
 - link: /city-guide
   title: City Guide
-- link: /2018
+- link: /archive/2019
+  title: 2019
+- link: /archive/2018
   title: 2018
-- link: /2017
+- link: /archive/2017
   title: 2017
 
 # Social links
@@ -62,225 +64,34 @@ social:
 
 # A list of speakers
 
-speakers:
-- name: Andrey Listochkin
-  photo: /images/speakers/andrei-listochkin.jpg
-  work: Wix, Kyiv, Ukraine
-  topic: 🤫 Secret Topic 🤫
-  lightning: false
-- name: Sasha Shynkevich
-  photo: /images/speakers/sasha-shynkevich.jpg
-  work: Minsk, Belarus
-  topic: "Development Standards: A Step-by-step guide to implement it without pain"
-  lightning: false
-- name: Yuriy Artyukh
-  photo: /images/speakers/yuriy-artyukh.jpg
-  work: Coderiver, Kyiv, Ukraine
-  topic: Case of One Animation
-  lightning: false
-- name: Sergiy Babich
-  photo: /images/speakers/sergiy-babich.jpg
-  work: GlobalCSS, Lviv, Ukraine
-  topic: Як навчитися робити прості речі просто
-  lightning: false
-- name: Roman Liutikov
-  photo: /images/speakers/roman-liutikov.jpg
-  work: Pitch, Kyiv, Ukraine
-  topic: On Desktop UIs and Web Tech
-  lightning: false
-- name: Vitalii Rybka
-  photo: /images/speakers/vitalii-rybka.jpg
-  work: EPAM, Dnipro, Ukraine
-  topic: Switching Between Frameworks Without Pain
-  lightning: false
-- name: Dmitry Barabash
-  photo: /images/speakers/dima-barabash.jpg
-  work: Youwe, Kyiv, Ukraine
-  topic: Как мы строили дизайн систему
-  lightning: false
-- name: Khrystyna Landvytovych
-  photo: /images/speakers/khrystyna-landvytovych.jpg
-  work: ChainSystem, Kyiv, Ukraine
-  topic: TensorFlow in Action
-  lightning: true
-- name: Oleksandr Oleksiv
-  photo: /images/speakers/oleksandr-oleksiv.jpg
-  work: Scalac, Ternopil, Ukraine
-  topic: React Hooks
-  lightning: true
+# speakers:
+# - name: Name Surname
+#   photo: /images/speakers/picture.jpg
+#   work: Company, City, Country
+#   topic: This is Topic
+#   lightning: false
 
 # A schedule of speakers
-schedule:
- - name: Registration & breakfast
-   time: 9:00-9:50
-   tech: false
- - name: 👋🏻 Opening talk
-   time: 9:00-9:50
-   tech: false
- - name: Dmytro Barabash
-   topic: Как мы строили дизайн систему
-   time: 10:00-10:40
-   tech: true
- - name: Sasha Shynkevich
-   topic: 'Development Standards: A Step-by-step guide to implement it without pain'
-   time: 10:40-11:20
-   tech: true
- - name: ☕️ Coffeebreak
-   time: 11:20-11:50
-   tech: false
- - name: 🗣 Interview session
-   time: 11:50-12:00
-   tech: false
- - name: Roman Liutikov
-   topic: On Desktop UIs and Web Tech
-   time: 12:00-12:40
-   tech: true
- - name: Vitalii Rybka
-   topic: Switching Between Frameworks Without Pain
-   time: 12:40-13:20
-   tech: true
- - name: 🍽 Lunch
-   time: 13:20-14:50
-   tech: false
- - name: Khrystyna Landvytovych
-   topic: TensorFlow in Action
-   time: 14:50-15:05
-   tech: true
- - name: Oleksandr Oleksiv
-   topic: React Hooks
-   time: 15:05-15:20
-   tech: true
- - name: Yuriy Artyukh
-   topic: Case of One Animation
-   time: 15:20-16:00
-   tech: true
- - name: ☕️ Coffeebreak
-   time: 16:00-16:30
-   tech: false
- - name: 🗣 Interview session
-   time: 16:30-16:40
-   tech: false
- - name: Sergiy Babich
-   topic: Як навчитися робити прості речі просто
-   time: 16:40-17:20
-   tech: true
- - name: Andrey Listochkin
-   topic: 🤫 Secret Topic 🤫
-   time: 17:20-18:00
-   tech: true
- - name: 🎤 QA-session
-   topic: Panel discussion with speakers
-   time: 18:00-18:40
-   tech: true
- - name: 🏁 Closing talk
-   time: 18:40-19:00
-   tech: false
- - name: 🍸 Afterparty
-   time: 21:00-∞
-   tech: false
+# schedule:
+#  - name: Item in Schedule
+#    time: 9:00-9:50
+#    tech: false
 
 # A list of partners
 partners:
-  platinum:
-    - name: Chernivtsi National University
-      logo: /images/partners/chnu.png
-      link: //www.chnu.edu.ua
-    - name: Bizico
-      logo: /images/partners/bizico.svg
-      link: //bizico.io/
-  gold:
-    - name: AMC Bridge
-      logo: /images/partners/amc-bridge.png
-      link: //amcbridge.com.ua/ua
-    - name: SoftServe
-      logo: /images/partners/softserve.svg
-      link: //www.softserveinc.com/
-    - name: ASD
-      logo: /images/partners/asd.png
-      link: //asd-team.com/
-    - name: Wix Engineering
-      logo: /images/partners/wix.svg
-      link: //wix.engineering
-    - name: ImproveIT
-      logo: /images/partners/improveit.svg
-      link: //improveit.solutions
-  silver:
-    - name: DOU
-      logo: /images/partners/dou.png
-      link: //dou.ua/
-    - name: Scalac
-      logo: /images/partners/scalac.png
-      link: https://scalac.io/
-    - name: Owlygon
-      logo: /images/partners/owlygon.png
-      link: //bohdanov.com
-  info:
-    - name: KharkivCSS
-      logo: /images/partners/kharkivcss.svg
-      link: http://kharkivcss.org/
-    - name: FWDays
-      logo: /images/partners/fwdays.png
-      link: https://fwdays.com/
-    - name: KharkivFrontend
-      logo: /images/partners/kharkivfrontend.png
-      link: //kharkivfrontend.org/
-    - name: Kottans
-      logo: /images/partners/kottans.png
-      link: //kottans.org/
-    - name: OdessaJS
-      logo: /images/partners/odessajs.svg
-      link: //odessajs.org
-    - name: KyivJS
-      logo: /images/partners/kyivjs.svg
-      link: //kyivjs.org
-    - name: Zlit
-      logo: /images/partners/zlit.png
-      link: //zlit.events
-    - name: OdessaFrontend
-      logo: /images/partners/odessafrontend.svg
-      link: //odessafrontend.org/
-    - name: BeerJS Kyiv
-      logo: /images/partners/beerjskyiv.png
-      link: //www.meetup.com/BeerJSKyiv
-    - name: <Input />
-      logo: /images/partners/input-conf.png
-      link: //inputconf.org/
-    - name: TernopilJS
-      logo: /images/partners/ternopiljs.png
-      link: //youtube.com/c/ternopiljs
-    - name: TechMagic
-      logo: /images/partners/tech_magic.svg
-      link: https://www.techmagic.co/
-    - name: FrontSpot
-      logo: /images/partners/frontspot.png
-      link: //www.facebook.com/groups/FrontSpot
-    - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
-      logo: /images/partners/dct.png
-      link: //ptcsi.chnu.edu.ua
-    - name: NodeSchool Chernivtsi
-      logo: /images/partners/nodeschool.png
-      link: //nodeschool.io/chernivtsi
-    - name: Ivano-Frankivsk IT-cluster
-      logo: /images/partners/if-cluster.png
-      link: //it-cluster.if.ua
-    - name: Vinnytsia JavaScript Community
-      logo: /images/partners/vinjs-community.png
-      link: //t.me/joinchat/JDqM1A9BbYqG5OsdsrP9RA?fbclid=IwAR0uygUKJ1U4m9fsf8soKlGivXC6UiHd1uTk2YYCIYKCLjIhPDPB_GcSQbs
-    - name: VinnytsiaJS
-      logo: /images/partners/vinjs.png
-      link: //vinnytsiajs.org/
-    - name: InventorSoft
-      logo: /images/partners/inventor-soft.svg
-      link: //inventorsoft.co/
-    - name: BeerJS Zhytomyr
-      logo: /images/partners/zhytomyr-beerjs.jpg
-      link: //www.facebook.com/groups/beerJSZhytomyr/
-    - name: Nexteum
-      logo: /images/partners/nexteum.png
-      link: //nexteum.com/
-    - name: css-minsk-js
-      logo: /images/partners/css-minsk-js-logo-2019.svg
-      link: //css-minsk-js.by
+  # platinum:
+    # - name: Chernivtsi National University
+    #   logo: /images/partners/chnu.png
+    #   link: //www.chnu.edu.ua
+  # gold:
+  # silver:
+  # info:
+    # - name: Відділ комп’ютерних технологій ІФТКН ЧНУ
+    #   logo: /images/partners/dct.png
+    #   link: //ptcsi.chnu.edu.ua
+    # - name: NodeSchool Chernivtsi
+    #   logo: /images/partners/nodeschool.png
+    #   link: //nodeschool.io/chernivtsi
 
 # Photos of venue
 # DONT FORGET TO UPDATE A $slides-amount VARIABLE in styles/_variables.styl
@@ -292,9 +103,12 @@ venue:
 - /images/venue/5.jpg
 
 tweets:
-- '1010494117187588098'
-- '873981443910840322'
-- '1010640903357247488'
+- '1143241743619579908'
+- '1144316340477583360'
+- '1142495470180327427'
+- '1142760083081895937'
+- '1145591159529627648'
+- '1142481777015103488'
 
 # Contacts links
 contacts:
