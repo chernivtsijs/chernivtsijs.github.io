@@ -1,3 +1,6 @@
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
+
+
 <a href="https://t.me/chernivtsijs">
   <div align="center">
     <img src="https://chernivtsi.js.org/images/logo.svg" width="250px">
